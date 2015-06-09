@@ -1,0 +1,688 @@
+[ 2015-04-28T11:28:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006016s ]
+
+[ 2015-04-28T11:28:07+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+
+[ 2015-04-28T14:17:42+08:00 ] 127.0.0.1 /public/ueditor/ueditor.config.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-04-28T14:17:42+08:00 ] 127.0.0.1 /public/ueditor/ueditor.all.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-04-28T14:25:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+
+[ 2015-04-28T14:25:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+
+[ 2015-04-28T14:26:18+08:00 ] 127.0.0.1 /index.php/index/introduction.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+
+[ 2015-04-28T14:26:33+08:00 ] 127.0.0.1 /index.php/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+
+[ 2015-04-28T14:27:54+08:00 ] 127.0.0.1 /index.php/index/introduction.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+
+[ 2015-04-28T14:28:15+08:00 ] 127.0.0.1 /index.php/index/active.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+
+[ 2015-04-28T14:28:30+08:00 ] 127.0.0.1 /index.php/index/news.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+
+[ 2015-04-28T14:28:39+08:00 ] 127.0.0.1 /index.php/Index/news/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+
+[ 2015-04-28T14:28:42+08:00 ] 127.0.0.1 /index.php/Index/news/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+
+[ 2015-04-28T14:28:52+08:00 ] 127.0.0.1 /index.php/index/member.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+
+[ 2015-04-28T14:28:58+08:00 ] 127.0.0.1 /index.php/index/apply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+
+[ 2015-04-28T14:29:02+08:00 ] 127.0.0.1 /index.php/index/apy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+
+[ 2015-04-28T14:29:14+08:00 ] 127.0.0.1 /index.php/index/apy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `yzclub_apply` [ RunTime:0.0498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2015-04-28T14:29:18+08:00 ] 127.0.0.1 /index.php/index/apy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `yzclub_apply` [ RunTime:0.0063s ]
+SQL: INSERT INTO `yzclub_apply` (`name`,`company`,`position`,`phone`,`add_time`,`status`) VALUES ('asdf','asdf','','adsf','1430202558','2') [ RunTime:0.0732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2015-04-28T14:29:25+08:00 ] 127.0.0.1 /index.php/index/contactUs.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+
+[ 2015-04-28T14:29:34+08:00 ] 127.0.0.1 /index.php/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+
+[ 2015-04-28T14:30:05+08:00 ] 127.0.0.1 /index.php/index/active.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2015-04-28T14:30:06+08:00 ] 127.0.0.1 /index.php/index/news.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+
+[ 2015-04-28T14:30:06+08:00 ] 127.0.0.1 /index.php/index/news.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2015-04-28T14:30:19+08:00 ] 127.0.0.1 /index.php/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2015-04-28T15:21:07+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430205667669
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+
+[ 2015-04-28T15:22:54+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430205774372
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+
+[ 2015-04-28T15:24:06+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430205846049
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+
+[ 2015-04-28T15:25:04+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430205904371
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2015-04-28T15:26:25+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430205985750
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+
+[ 2015-04-28T15:26:28+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430205988480
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+
+[ 2015-04-28T15:27:03+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206023216
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+
+[ 2015-04-28T15:27:09+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206029834
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2015-04-28T15:29:41+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206181861
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+
+[ 2015-04-28T15:29:42+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206182282
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+
+[ 2015-04-28T15:31:40+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206300124
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+
+[ 2015-04-28T15:31:40+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206300126
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+
+[ 2015-04-28T15:31:40+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206300370
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-04-28T15:31:40+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206300754
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2015-04-28T15:32:19+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206339773
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+
+[ 2015-04-28T15:32:25+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206345167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+
+[ 2015-04-28T15:33:26+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206406779
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+
+[ 2015-04-28T15:33:26+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206406777
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+
+[ 2015-04-28T15:33:27+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206407477
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+
+[ 2015-04-28T15:33:38+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206418329
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+
+[ 2015-04-28T15:33:38+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206418329
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+
+[ 2015-04-28T15:33:38+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206418822
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+
+[ 2015-04-28T15:35:00+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206500383
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+
+[ 2015-04-28T15:35:00+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206500384
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+
+[ 2015-04-28T15:35:01+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206501076
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2015-04-28T15:35:29+08:00 ] 127.0.0.1 /upload?action=undefined&
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+
+[ 2015-04-28T15:36:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+
+[ 2015-04-28T15:36:44+08:00 ] 127.0.0.1 /upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+
+[ 2015-04-28T15:37:31+08:00 ] 127.0.0.1 /upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+
+[ 2015-04-28T15:37:37+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206657602
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+
+[ 2015-04-28T15:37:38+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206658083
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+
+[ 2015-04-28T15:37:38+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206658083
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+
+[ 2015-04-28T15:39:57+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206797304
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+
+[ 2015-04-28T15:39:57+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206797300
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+
+[ 2015-04-28T15:39:57+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430206797814
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+
+[ 2015-04-28T15:48:03+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207283362
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+
+[ 2015-04-28T15:48:03+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207283361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2015-04-28T15:48:04+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207284135
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+
+[ 2015-04-28T15:49:40+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207380342
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+
+[ 2015-04-28T15:49:40+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207380343
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+
+[ 2015-04-28T15:49:41+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207381077
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+
+[ 2015-04-28T15:50:55+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207455405
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+
+[ 2015-04-28T15:50:55+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207455767
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+
+[ 2015-04-28T15:51:22+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207482063
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+
+[ 2015-04-28T15:51:22+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207482456
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+
+[ 2015-04-28T15:52:05+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207525294
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+
+[ 2015-04-28T15:52:05+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207525726
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+
+[ 2015-04-28T15:52:29+08:00 ] 127.0.0.1 /upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+
+[ 2015-04-28T15:53:04+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207455405
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+
+[ 2015-04-28T15:55:39+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207739494
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+
+[ 2015-04-28T15:55:39+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207739495
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001617s ]
+
+[ 2015-04-28T15:55:40+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207740219
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+
+[ 2015-04-28T15:56:18+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207778354
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+
+[ 2015-04-28T15:56:18+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207778355
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+
+[ 2015-04-28T15:56:18+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207778913
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+
+[ 2015-04-28T15:56:29+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207778354
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+
+[ 2015-04-28T15:58:42+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207922191
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+
+[ 2015-04-28T15:58:42+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207922192
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+
+[ 2015-04-28T15:58:42+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430207922789
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+
+[ 2015-04-28T16:02:01+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430208121596
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2015-04-28T16:02:01+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430208121595
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2015-04-28T16:02:02+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430208122279
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2015-04-28T16:02:10+08:00 ] 127.0.0.1 /upload?action=uploadimage&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+NOTIC: [8] Use of undefined constant CURLOPT_CLOSEPOLICY - assumed 'CURLOPT_CLOSEPOLICY' E:\server\Apache2.4\htdocs\club\oss_php_sdk\lib\requestcore\requestcore.class.php 第 610 行.
+NOTIC: [8] Use of undefined constant CURLCLOSEPOLICY_LEAST_RECENTLY_USED - assumed 'CURLCLOSEPOLICY_LEAST_RECENTLY_USED' E:\server\Apache2.4\htdocs\club\oss_php_sdk\lib\requestcore\requestcore.class.php 第 610 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given E:\server\Apache2.4\htdocs\club\oss_php_sdk\lib\requestcore\requestcore.class.php 第 610 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead E:\server\Apache2.4\htdocs\club\oss_php_sdk\lib\requestcore\requestcore.class.php 第 625 行.
+ERR: 日志路径不存在
+
+[ 2015-04-28T16:03:16+08:00 ] 127.0.0.1 /upload?action=uploadimage&encode=utf-8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+NOTIC: [8] Use of undefined constant CURLOPT_CLOSEPOLICY - assumed 'CURLOPT_CLOSEPOLICY' E:\server\Apache2.4\htdocs\club\oss_php_sdk\lib\requestcore\requestcore.class.php 第 610 行.
+NOTIC: [8] Use of undefined constant CURLCLOSEPOLICY_LEAST_RECENTLY_USED - assumed 'CURLCLOSEPOLICY_LEAST_RECENTLY_USED' E:\server\Apache2.4\htdocs\club\oss_php_sdk\lib\requestcore\requestcore.class.php 第 610 行.
+NOTIC: [2] curl_setopt() expects parameter 2 to be long, string given E:\server\Apache2.4\htdocs\club\oss_php_sdk\lib\requestcore\requestcore.class.php 第 610 行.
+NOTIC: [8] curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead E:\server\Apache2.4\htdocs\club\oss_php_sdk\lib\requestcore\requestcore.class.php 第 625 行.
+ERR: 日志路径不存在
+
+[ 2015-04-28T16:05:18+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430208318816
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2015-04-28T16:05:19+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430208319640
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001128s ]
+
+[ 2015-04-28T16:05:19+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430208319641
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000282s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2015-04-28T16:06:32+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430208392147
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2015-04-28T16:06:32+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430208392649
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000675s ]
+
+[ 2015-04-28T16:06:32+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430208392649
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2015-04-28T16:08:08+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430208488016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2015-04-28T16:08:08+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430208488018
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001784s ]
+
+[ 2015-04-28T16:08:08+08:00 ] 127.0.0.1 /upload?action=config&&noCache=1430208488017
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+NOTIC: [8] Constant OSS_ACCESS_ID already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 4 行.
+NOTIC: [8] Constant OSS_ACCESS_KEY already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 7 行.
+NOTIC: [8] Constant ALI_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 11 行.
+NOTIC: [8] Constant ALI_DISPLAY_LOG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 17 行.
+NOTIC: [8] Constant ALI_LANG already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 20 行.
+NOTIC: [8] Constant BUCKET already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 23 行.
+NOTIC: [8] Constant URL already defined E:\server\Apache2.4\htdocs\club\oss_php_sdk\conf.inc.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+

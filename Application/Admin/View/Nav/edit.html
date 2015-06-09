@@ -1,0 +1,39 @@
+<include file="Common:header" />
+<form method=post  name="form1" action="" onSubmit="return CheckSubmit();">
+	<table border="0" cellspacing="0" cellpadding="0" class="vbm">
+		<input type="hidden" name="id" value="<{$nav.id}>" />
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">url</td>
+			<td colspan="3"> <input name="url" id="url" type="text" class="text" value="<{$nav.url}>" size="50"> <font color="red">*</font></td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">title</td>
+			<td colspan="3"> <input name="title" id="title" type="text" class="text" value="<{$nav.title}>" size="50"> <font color="red">*</font></td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">condition</td>
+			<td colspan="3"> <input name="condition" id="condition" type="text" class="text" value="<{$nav.condition}>" size="50"> <font color="red">*</font></td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">type</td>
+			<td colspan="3"> <input name="type" id="type" type="text" class="text" value="<{$nav.type}>" size="50"> <font color="red">*</font></td>
+		</tr>
+		<tr bgcolor="#f5fbff">
+			<td width="50px" align="right">父节点</td>
+			<td colspan="3">
+				<select name="pid" id="pid">
+					<option value="0" <if condition="$nav['pid'] eq 0">selected</if>>无</option>
+					<foreach name="pidList" item="pl">
+						<option value="<{$pl['id']}>" <if condition="$nav['pid'] eq $pl['id']">selected</if>><{$pl['title']}></option>
+					</foreach>
+				</select>
+			</td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">排序</td>
+			<td colspan="3"> <input name="sort" id="sort" type="text" class="text" value="<{$nav.sort}>" size="50"> <font color="red">*</font></td>
+		</tr>
+	</table>
+	<center><input type="submit" value="提 交" style="float:left;margin-left:70px" class="sunjoin large"/><input type="button" style="float:left;margin-left:5px" onclick="history.back()" value="返 回" class="sunjoin large"></center>
+</form>
+<include file="Common:footer" />

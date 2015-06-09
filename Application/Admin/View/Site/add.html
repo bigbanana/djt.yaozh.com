@@ -1,0 +1,41 @@
+<include file="Common:header" />
+	<script language=javascript>
+	function CheckSubmit(){
+		if(document.form1.name.value==""){
+			alert('请输入name!');
+			document.form1.name.focus();
+			return false;
+		}
+		if(document.form1.title.value==""){
+			alert('请输入title！');
+			document.form1.title.focus();
+			return false;
+		}
+	}
+	</script>
+<form method=post  name="form1" action="" onSubmit="return CheckSubmit();">
+	<table border="0" cellspacing="0" cellpadding="0" class="vbm">
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">名称</td>
+			<td colspan="3"><input name="title" id="title" type="text" class="text" value="" size="50"> <font color="red">*</font></td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">标记</td>
+			<td colspan="3"><input name="name" id="name" type="text" class="text" value="" size="50"> <font color="red">*</font></td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">类型</td>
+			<td colspan="3">
+				<input type="radio" name="type" value="input" checked="checked" />INPUT 
+				<input type="radio" name="type" value="radio" />RADIO 
+				<input type="radio" name="type" value="textarea" />TEXTAREA <font color="red">*</font>
+			</td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">说明</td>
+			<td colspan="3"><input name="description" id="description" type="text" value="" size="100"> <font color="red">*</font></td>
+		</tr>
+	</table>
+	<center><input type="submit" value="提 交" style='float:left;margin-left:70px' class="sunjoin large"/><input type="button" style='float:left;margin-left:5px' onclick="history.back()" value="返 回" class="sunjoin large"></center>
+</form>
+<include file="Common:footer" />

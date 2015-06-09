@@ -1,0 +1,1531 @@
+[ 2015-04-16T15:30:49+08:00 ] 127.0.0.1 /club/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'index' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: authId E:\server\Apache2.4\htdocs\club\Application\Common\Controller\BaseController.class.php 第 36 行.
+
+[ 2015-04-16T15:30:49+08:00 ] 127.0.0.1 /club/index.php/admin/public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Public' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'login' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: authId E:\server\Apache2.4\htdocs\club\Application\Common\Controller\BaseController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:31:46+08:00 ] 127.0.0.1 /club/admin/public/css/login.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Public' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'css' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: authId E:\server\Apache2.4\htdocs\club\Application\Common\Controller\BaseController.class.php 第 36 行.
+ERR: 非法操作:css
+
+[ 2015-04-16T15:35:59+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'index' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: authId E:\server\Apache2.4\htdocs\club\Application\Common\Controller\BaseController.class.php 第 36 行.
+
+[ 2015-04-16T15:35:59+08:00 ] 127.0.0.1 /index.php/admin/public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Public' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'login' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: authId E:\server\Apache2.4\htdocs\club\Application\Common\Controller\BaseController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:36:13+08:00 ] 127.0.0.1 /index.php/admin/public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Public' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'login' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: authId E:\server\Apache2.4\htdocs\club\Application\Common\Controller\BaseController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `yzclub_admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin` WHERE `username` = 'admin' AND `status` > 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-16T15:36:18+08:00 ] 127.0.0.1 /index.php/admin/public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Public' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'login' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: authId E:\server\Apache2.4\htdocs\club\Application\Common\Controller\BaseController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-16T15:37:14+08:00 ] 127.0.0.1 /index.php/admin/public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Public' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'login' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: authId E:\server\Apache2.4\htdocs\club\Application\Common\Controller\BaseController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:37:19+08:00 ] 127.0.0.1 /index.php/admin/public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Public' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'login' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: authId E:\server\Apache2.4\htdocs\club\Application\Common\Controller\BaseController.class.php 第 36 行.
+SQL: SHOW COLUMNS FROM `yzclub_admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin` WHERE `username` = 'admin' AND `status` > 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: login_count E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\PublicController.class.php 第 38 行.
+SQL: UPDATE `yzclub_admin` SET `last_login_time`='1429169839',`last_login_ip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:37:22+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'index' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+ERR: 模板不存在:./Application/Admin/View/Index/index.html
+
+[ 2015-04-16T15:42:32+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'index' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-16T15:42:33+08:00 ] 127.0.0.1 /index.php/admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'top' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level="0" ) ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: menus_id E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+
+[ 2015-04-16T15:42:33+08:00 ] 127.0.0.1 /index.php/admin/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'left' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level != "-1" and status > 0 ) ORDER BY id asc  [ RunTime:0.0000s ]
+
+[ 2015-04-16T15:42:33+08:00 ] 127.0.0.1 /index.php/admin/index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'right' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'club.yzshop_admin' doesn't exist
+
+[ 2015-04-16T15:48:27+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'index' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:48:27+08:00 ] 127.0.0.1 /index.php/admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'top' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level="0" ) ORDER BY sort asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: menus_id E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+
+[ 2015-04-16T15:48:27+08:00 ] 127.0.0.1 /index.php/admin/index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'right' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 43 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 44 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 45 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 46 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 47 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 48 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 54 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 55 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 61 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 62 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:48:27+08:00 ] 127.0.0.1 /index.php/admin/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'left' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level != "-1" and status > 0 ) ORDER BY id asc  [ RunTime:0.0000s ]
+
+[ 2015-04-16T15:48:29+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'index' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:48:29+08:00 ] 127.0.0.1 /index.php/admin/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'left' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level != "-1" and status > 0 ) ORDER BY id asc  [ RunTime:0.0000s ]
+
+[ 2015-04-16T15:48:30+08:00 ] 127.0.0.1 /index.php/admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'top' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level="0" ) ORDER BY sort asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: menus_id E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+
+[ 2015-04-16T15:48:30+08:00 ] 127.0.0.1 /index.php/admin/index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'right' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 43 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 44 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 45 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 46 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 47 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 48 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 54 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 55 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 61 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 62 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:48:31+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'index' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:48:31+08:00 ] 127.0.0.1 /index.php/admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'top' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level="0" ) ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: menus_id E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+
+[ 2015-04-16T15:48:31+08:00 ] 127.0.0.1 /index.php/admin/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'left' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level != "-1" and status > 0 ) ORDER BY id asc  [ RunTime:0.0000s ]
+
+[ 2015-04-16T15:48:31+08:00 ] 127.0.0.1 /index.php/admin/index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'right' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 43 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 44 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 45 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 46 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 47 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 48 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 54 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 55 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 61 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 62 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:48:37+08:00 ] 127.0.0.1 /index.php/admin/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'left' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level != "-1" and status > 0 ) ORDER BY id asc  [ RunTime:0.0000s ]
+
+[ 2015-04-16T15:48:41+08:00 ] 127.0.0.1 /index.php/admin/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'left' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level != "-1" and status > 0 ) ORDER BY id asc  [ RunTime:0.0000s ]
+
+[ 2015-04-16T15:50:26+08:00 ] 127.0.0.1 /index.php/admin/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'left' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level != "-1" and status > 0 ) ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:50:30+08:00 ] 127.0.0.1 /index.php/admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'top' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level="0" ) ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: menus_id E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:50:34+08:00 ] 127.0.0.1 /index.php/admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'top' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level="0" ) ORDER BY sort asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: menus_id E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-16T15:50:42+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'index' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:50:42+08:00 ] 127.0.0.1 /index.php/admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'top' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level="0" ) ORDER BY sort asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: menus_id E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:50:42+08:00 ] 127.0.0.1 /index.php/admin/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'left' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level != "-1" and status > 0 ) ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T15:50:42+08:00 ] 127.0.0.1 /index.php/admin/index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'right' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: info E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 29 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 43 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 44 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 45 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 46 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 47 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 48 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 54 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 55 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 61 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 62 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:01+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'index' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:01+08:00 ] 127.0.0.1 /index.php/admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'top' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level="0" ) ORDER BY sort asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: menus_id E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:01+08:00 ] 127.0.0.1 /index.php/admin/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'left' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level != "-1" and status > 0 ) ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:01+08:00 ] 127.0.0.1 /index.php/admin/index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'right' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 43 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 44 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 45 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 46 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 47 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 48 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 54 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 55 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 61 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 62 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:03+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'index' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-16T16:07:03+08:00 ] 127.0.0.1 /index.php/admin/index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'right' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 43 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 44 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 45 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 46 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 47 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 48 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 54 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 55 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 61 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 62 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-16T16:07:03+08:00 ] 127.0.0.1 /index.php/admin/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'left' AND `pid` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level != "-1" and status > 0 ) ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-16T16:07:03+08:00 ] 127.0.0.1 /index.php/admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'top' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level="0" ) ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: menus_id E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-16T16:07:04+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'index' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-16T16:07:04+08:00 ] 127.0.0.1 /index.php/admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'top' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level="0" ) ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: menus_id E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:04+08:00 ] 127.0.0.1 /index.php/admin/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'left' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level != "-1" and status > 0 ) ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:04+08:00 ] 127.0.0.1 /index.php/admin/index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'right' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yzclub_admin` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 43 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 44 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 45 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 46 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 47 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 48 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 54 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 55 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 61 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 62 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:30+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'index' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-04-16T16:07:30+08:00 ] 127.0.0.1 /index.php/admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'top' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level="0" ) ORDER BY sort asc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: menus_id E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:30+08:00 ] 127.0.0.1 /index.php/admin/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'left' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level != "-1" and status > 0 ) ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:30+08:00 ] 127.0.0.1 /index.php/admin/index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'right' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `yzclub_admin` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 43 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 44 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 45 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 46 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 47 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 48 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 54 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 55 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 61 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 62 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:45+08:00 ] 127.0.0.1 /index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'index' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:45+08:00 ] 127.0.0.1 /index.php/admin/index/top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'top' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level="0" ) ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: menus_id E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\server\Apache2.4\htdocs\club\Application\Admin\Controller\IndexController.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:45+08:00 ] 127.0.0.1 /index.php/admin/index/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'left' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE ( level != "-1" and status > 0 ) ORDER BY id asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:07:45+08:00 ] 127.0.0.1 /index.php/admin/index/right
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin_node` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'Index' AND `level` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yzclub_admin_node` WHERE `name` = 'right' AND `pid` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yzclub_admin` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yzclub_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 43 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 44 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 45 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 46 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 47 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 48 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 54 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 55 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 61 行.
+NOTIC: [8] Undefined variable: count E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 62 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+NOTIC: [2048] Only variables should be passed by reference E:\server\Apache2.4\htdocs\club\Application\Runtime\Cache\Admin\7e2e2045534c88122b0a2676c2fd3203.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-04-16T16:09:10+08:00 ] 127.0.0.1 /admin/user/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:User
+

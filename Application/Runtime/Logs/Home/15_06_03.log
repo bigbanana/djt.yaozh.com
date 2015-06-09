@@ -1,0 +1,63 @@
+[ 2015-06-03T15:54:07+08:00 ] 10.159.63.161 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003682s ]
+SQL: SHOW COLUMNS FROM `yzclub_site` [ RunTime:0.0022s ]
+SQL: SELECT `value` FROM `yzclub_site` WHERE `name` = 'status' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `value` FROM `yzclub_site` WHERE `name` = 'title' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `value` FROM `yzclub_site` WHERE `name` = 'keywords' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `value` FROM `yzclub_site` WHERE `name` = 'description' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `yzclub_nav` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `yzclub_nav` WHERE `type` = '顶部导航'  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yzclub_nav` WHERE `type` = '底部导航'  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yzclub_site` WHERE `name` = 'copyright' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yzclub_friendlink` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `yzclub_friendlink`  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yzclub_news` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `yzclub_news` WHERE `type` = 1 AND `status` = 1 AND `is_top` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `new`.`news_article` [ RunTime:0.0023s ]
+SQL: SELECT * FROM new.news_article WHERE `id` = 4631 LIMIT 1   [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: k /alidata/www/club.yaozh.com/Application/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SELECT * FROM new.news_article WHERE `id` = 4950 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: k /alidata/www/club.yaozh.com/Application/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SELECT * FROM new.news_article WHERE `id` = 4951 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: k /alidata/www/club.yaozh.com/Application/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SELECT * FROM new.news_article WHERE `id` = 52 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: k /alidata/www/club.yaozh.com/Application/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SELECT * FROM new.news_article WHERE `id` = 81 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: k /alidata/www/club.yaozh.com/Application/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SELECT * FROM new.news_article WHERE `id` = 107 LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: k /alidata/www/club.yaozh.com/Application/Home/Controller/IndexController.class.php 第 17 行.
+SQL: SELECT * FROM `yzclub_news` WHERE `type` = 2 AND `status` = 1 AND `is_top` = 1  [ RunTime:0.0009s ]
+SQL: SELECT * FROM new.news_article WHERE `id` = 4952 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM new.news_article WHERE `id` = 74 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM new.news_article WHERE `id` = 51 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yzclub_adv` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `yzclub_adv` WHERE `adv_id` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined variable: keywords /alidata/www/club.yaozh.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 6 行.
+NOTIC: [8] Undefined offset: 0 /alidata/www/club.yaozh.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined offset: 0 /alidata/www/club.yaozh.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined offset: 0 /alidata/www/club.yaozh.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined offset: 0 /alidata/www/club.yaozh.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined offset: 0 /alidata/www/club.yaozh.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined offset: 0 /alidata/www/club.yaozh.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined offset: 0 /alidata/www/club.yaozh.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 30 行.
+NOTIC: [8] Undefined offset: 0 /alidata/www/club.yaozh.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined index: title /alidata/www/club.yaozh.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+NOTIC: [8] Undefined index: title /alidata/www/club.yaozh.com/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004823s ]
+

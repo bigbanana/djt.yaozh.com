@@ -1,0 +1,32 @@
+  <div class="w t">
+    <div class="top">
+      <a class="logo" href="#" target="_blank" title="药智俱乐部"><img src="__HOME__/images/logo.png"></a>
+      <div class="to">
+        <div id="nav" class="nav">
+          <foreach name="topNav" item="tn" key="k">
+            <div class="item <?php if($k==0){echo 'first-item';} ?>"><a class="name" href="<?php if($tn['_child'][0]!='') echo 'javascript:;'; else echo $tn['url']; ?>"><{$tn['title']}></a>
+            <if condition="$tn['_child'][0] neq ''">
+              <div class="subnav">
+                <div class="arrow">
+                  <i class="arrow-top"></i>
+                  <i class="arrow-bottom"></i>
+                </div>
+                <ul>
+                <foreach name="tn['_child']" item='tnc'>
+                  <li><a href="<{$tnc['url']}>" class="sname"><{$tnc['title']}></a></li>
+                </foreach>
+                </ul>
+              </div>
+            </if> 
+            </div>
+          </foreach>
+        </div>
+        <div class="search">
+          <div class="to-input">
+            <input class="text" type="text" />
+            <a href="javascript:;" class="button"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
