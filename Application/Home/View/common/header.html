@@ -4,7 +4,7 @@
       <div class="to">
         <div id="nav" class="nav">
           <foreach name="topNav" item="tn" key="k">
-            <div class="item <?php if($k==0){echo 'first-item';} ?>"><a class="name" href="<?php if($tn['_child'][0]!='') echo 'javascript:;'; else echo $tn['url']; ?>"><{$tn['title']}></a>
+            <div class="item <?php if($k==0){echo 'first-item';} ?>"><a class="name" href="<?php echo $tn['url']; ?>"><{$tn['title']}></a>
             <if condition="$tn['_child'][0] neq ''">
               <div class="subnav">
                 <div class="arrow">
@@ -21,12 +21,12 @@
             </div>
           </foreach>
         </div>
-        <div class="search">
+        <form action="#" target="_blank" class="search">
           <div class="to-input">
             <input class="text" type="text" />
             <a href="javascript:;" class="button"></a>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>

@@ -31,7 +31,7 @@
       <a class="logo" href="#" target="_blank" title="药智俱乐部"><img src="/public/home/images/logo.png"></a>
       <div class="to">
         <div id="nav" class="nav">
-          <?php if(is_array($topNav)): foreach($topNav as $k=>$tn): ?><div class="item <?php if($k==0){echo 'first-item';} ?>"><a class="name" href="<?php if($tn['_child'][0]!='') echo 'javascript:;'; else echo $tn['url']; ?>"><?php echo ($tn['title']); ?></a>
+          <?php if(is_array($topNav)): foreach($topNav as $k=>$tn): ?><div class="item <?php if($k==0){echo 'first-item';} ?>"><a class="name" href="<?php echo $tn['url']; ?>"><?php echo ($tn['title']); ?></a>
             <?php if($tn['_child'][0] != ''): ?><div class="subnav">
                 <div class="arrow">
                   <i class="arrow-top"></i>
@@ -43,12 +43,12 @@
               </div><?php endif; ?> 
             </div><?php endforeach; endif; ?>
         </div>
-        <div class="search">
+        <form action="#" target="_blank" class="search">
           <div class="to-input">
             <input class="text" type="text" />
             <a href="javascript:;" class="button"></a>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
@@ -121,14 +121,14 @@
         <?php echo (htmlspecialchars_decode($copyright['value'])); ?>
         <div class="lik">
           <a href="http://weibo.com/yaozh008" target="_blank" title="新浪微博"><img src="/public/home/images/sina.png"></a>
-          <a href="http://e.t.qq.com/yaozhcom" target="_blank" title="微信"><img src="/public/home/images/weixin.png"></a>
-          <a href="http://user.qzone.qq.com/845146016/infocenter" target="_blank" title="腾讯微博"><img src="/public/home/images/tencent.png"></a>
-          <a href="http://mp.weixin.qq.com/s?__biz=MzAxODA5MTU3NQ==&mid=203896545&idx=7&sn=9241981401196ce48b35f9b37eeee09b#rd" target="_blank" title="QQ空间"><img src="/public/home/images/qq.png"></a>
+          <a href="http://mp.weixin.qq.com/s?__biz=MzAxODA5MTU3NQ==&mid=203896545&idx=7&sn=9241981401196ce48b35f9b37eeee09b#rd" target="_blank" title="微信"><img src="/public/home/images/weixin.png"></a>
+          <a href="http://e.t.qq.com/yaozhcom" target="_blank" title="腾讯微博"><img src="/public/home/images/tencent.png"></a>
+          <a href="http://user.qzone.qq.com/845146016/infocenter" target="_blank" title="QQ空间"><img src="/public/home/images/qq.png"></a>
         </div>    
       </div>
       <div class="ft-xx">
         <div class="fx-1">
-          <span>客服QQ：1609316746</span>
+          <span>会员部：1609316746</span>
           <span>电子邮箱：1609316746@qq.com</span>
           <span>电话：023-62988285-8005</span>
         </div>
@@ -138,7 +138,8 @@
         </div>  
       </div> 
     </div>
-  </div>     
+  </div> 
+    
 </div>
 </body>
 </html>

@@ -33,7 +33,7 @@
       <a class="logo" href="#" target="_blank" title="药智俱乐部"><img src="/public/home/images/logo.png"></a>
       <div class="to">
         <div id="nav" class="nav">
-          <?php if(is_array($topNav)): foreach($topNav as $k=>$tn): ?><div class="item <?php if($k==0){echo 'first-item';} ?>"><a class="name" href="<?php if($tn['_child'][0]!='') echo 'javascript:;'; else echo $tn['url']; ?>"><?php echo ($tn['title']); ?></a>
+          <?php if(is_array($topNav)): foreach($topNav as $k=>$tn): ?><div class="item <?php if($k==0){echo 'first-item';} ?>"><a class="name" href="<?php echo $tn['url']; ?>"><?php echo ($tn['title']); ?></a>
             <?php if($tn['_child'][0] != ''): ?><div class="subnav">
                 <div class="arrow">
                   <i class="arrow-top"></i>
@@ -45,12 +45,12 @@
               </div><?php endif; ?> 
             </div><?php endforeach; endif; ?>
         </div>
-        <div class="search">
+        <form action="#" target="_blank" class="search">
           <div class="to-input">
             <input class="text" type="text" />
             <a href="javascript:;" class="button"></a>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
@@ -62,7 +62,7 @@
                         <div class="intss-ws">
                             <div class="us-o">
                                 <span class="us-o-t">网址</span>
-                                <span class="us-o-x"><a href="http://www.yaozh.com/" title="药智网">jlb.yaozh.com</a></span>
+                                <span class="us-o-x"><a href="http://club.yaozh.com/" title="药智俱乐部">club.yaozh.com</a></span>
                             </div>
                             <div class="us-o">
                                 <span class="us-o-t">联系人</span>
@@ -104,7 +104,7 @@
       </div>
       <div class="ft-xx">
         <div class="fx-1">
-          <span>客服QQ：1609316746</span>
+          <span>会员部：1609316746</span>
           <span>电子邮箱：1609316746@qq.com</span>
           <span>电话：023-62988285-8005</span>
         </div>

@@ -32,9 +32,9 @@ h1{ font-size:28px; font-weight:normal; padding:50px 0; letter-spacing:1px; colo
 .to{ float:right; font-size:16px;}
 .to .nav{ float:left;line-height: 80px;}
 .to .to-h{ color:#00aeff}
-.to .item{display: inline-block;*zoom:1;*display:inline;*line-height:16px;position: relative;}
+.to .item{display: inline-block;*zoom:1;*display:inline;*line-height:16px;position: relative;height:80px;}
 .to .first-item{border:none;}
-.to .item .name{padding:0 25px;display: inline-block;color:#fff;}
+.to .item .name{padding:0 25px;display: inline-block;color:#fff;line-height: 80px;}
 .to .item:hover .name{color:#00aeff;}
 .to .item.active .name{
   color:#fff;
@@ -72,7 +72,7 @@ h1{ font-size:28px; font-weight:normal; padding:50px 0; letter-spacing:1px; colo
 .banner .ui-sliderbox-box img{width:1800px;height:100%;}
 .banner .ui-sliderbox-control{width:100%;text-align: center;bottom: 20px;}
 .banner .ui-sliderbox-control a{
-  display: inline-block;height: 60px;width:100px;border:4px solid #333;
+  display: inline-block;height: 50px;width:86px;border:4px solid #333;
   overflow: hidden;margin-right: 10px;opacity: 0.5;filter:alpha(opacity=50);
 }
 .banner .ui-sliderbox-control a.active{opacity: 1;filter:alpha(opacity=100);}

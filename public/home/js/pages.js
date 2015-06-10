@@ -1,6 +1,8 @@
 define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jquery.sliderbox'],function($,TweenMax,browser){
 
   (function(){
+    var $banner = $('.banner');
+    var $search = $('.search');
     var start = {top : 10,opacity:'0'};
     var end = {top:44,opacity:1};
 
@@ -17,7 +19,7 @@ define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jque
       });
     });
 
-    $('.banner').sliderbox({
+    $banner.sliderbox({
       fx:{
         duration:500
       },
@@ -25,7 +27,13 @@ define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jque
         return $('<a href="javascript:;"><img src="'+$this.attr('src')+'" /></a>');
       }
     });
-
+    $banner.on('mouseenter','.ui-sliderbox-control>a',function(){
+      $banner.sliderbox('slider',$(this).index());
+    });
+    $search.on('click keydown','.button',function(e){
+      if(e.keyCode && e.keyCode != 27) return;
+      $search.submit();
+    });
   })();
 
   function share_s_weibo(url,title){
@@ -89,55 +97,16 @@ define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jque
     tl.staggerFrom($label,0.2,{height:0,opacity:0,ease:Back.easeOut},0.08,"-=0.5");
     tl.staggerFrom($text,0.4,{top:"+=10",opacity:0,ease:Power4.easeOut},0.15,"-=1");
     tl.pause();
-    /**
-     * t2
-     */
-    var textTimeline = new TimelineMax();
-    var $h1 = $('.p-left h1');
-    var $h2 = $h1.next();
-    var $text = $('.p-x p');
-    textTimeline.staggerFrom($h1.add($h2),0.3,{autoAlpha:0,left:"+=100",ease:Back.easeOut},0.05);
-    $text.each(function(){
-      var $this = $(this);
-      var texts = $this.text().split("");
-      $this.empty();
-      $.each(texts, function(index, val) {
-        if(val === " "){
-          val = "&nbsp;";
-        }
-        var $letter = $("<span/>", {
-          id : "txt" + index
-        }).addClass('txt').html(val).appendTo($this);
-
-        $letter.css({"position":"relative","display":"inline-block"});
-      });
-      textTimeline.staggerFrom($this.find('.txt'), 0.6, {scale:4, autoAlpha:0,  rotationX:-180,  transformOrigin:"100% 50%", ease:Back.easeOut}, 0.01);
-    });
-    textTimeline.pause();
 
     $ints.waypoint({
       handler:function(direction){
         if(direction == "down"){
-          tl.reverse();
-          textTimeline.reverse();
-        }else if(direction == "up"){
           tl.restart();
-          textTimeline.restart();
-        }
-      },
-      offset:'0'
-    });
-    $ints.waypoint({
-      handler:function(direction){
-        if(direction == "down"){
-          tl.restart();
-          textTimeline.restart();
         }else if(direction == "up"){
           tl.reverse();
-          textTimeline.reverse();
         }
       },
-      offset:'bottom-in-view'
+      offset:'100%'
     });
 
 
