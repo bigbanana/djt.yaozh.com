@@ -1,0 +1,36 @@
+<include file="Common:header" />
+<form method=post  name="form1" action="" onSubmit="return CheckSubmit();">
+	<table border="0" cellspacing="0" cellpadding="0" class="vbm">
+		<input type="hidden" name="id" value="{$admin_node.id}" />
+		<tr bgcolor="#f5fbff" >
+			<td width="12%" align="right">name</td>
+			<td colspan="3"> <input name="name" id="name" type="text" class="text" value="<{$admin_node.name}>" size="50"> <font color="red">*</font></td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="12%" align="right">title</td>
+			<td colspan="3"> <input name="title" id="title" type="text" class="text" value="<{$admin_node.title}>" size="50"> <font color="red">*</font></td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="12%" align="right">status</td>
+			<td colspan="3"> <input name="status" id="status" type="text" class="text" value="<{$admin_node.status}>" size="50"> <font color="red">*</font></td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="12%" align="right">remark</td>
+			<td colspan="3"> <input name="remark" id="remark" type="text" class="text" value="<{$admin_node.remark}>" size="50"> <font color="red">*</font></td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="12%" align="right">sort</td>
+			<td colspan="3"> <input name="sort" id="sort" type="text" class="text" value="<{$admin_node.sort}>" size="50"> <font color="red">*</font></td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="12%" align="right">pid</td>
+			<td colspan="3"> <input name="pid" id="pid" type="text" class="text" value="<{$admin_node.pid}>" size="50"> <font color="red">*</font></td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="12%" align="right">level</td>
+			<td colspan="3"> <input name="level" id="level" type="text" class="text" value="<{$admin_node.level}>" size="50"> <font color="red">*</font></td>
+		</tr>
+	</table>
+	<center><input type="submit" value="提 交" class="sunjoin large"/></center>
+</form>
+<include file="Common:footer" />

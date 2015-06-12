@@ -1,0 +1,85 @@
+<include file="Common:header" />
+<div id="sunjoin">
+<form action="" method="get">
+    <table border="0" cellspacing="0" cellpadding="0" class="vbm">
+        <tr class="firstr">
+            <td colspan="2">
+                搜索符合条件的广告
+            </td>
+        </tr>
+        <tr bgcolor="#ffffff">
+            <td style="background-color:#f1f5f8; width:50%;text-align:right">
+                标识
+            </td>
+            <td>
+                &nbsp;
+                <input name="name" class="text" value="<?php echo $_GET['name'];?>">
+            </td>
+        </tr>
+        <tr bgcolor="#ffffff">
+            <td style="background-color:#f1f5f8; width:50%;text-align:right">
+                名称
+            </td>
+            <td>
+                &nbsp;
+                <input name="title" class="text" value="<?php echo $_GET['title'];?>">
+            </td>
+        </tr>
+        <tr bgcolor="#ffffff">
+            <td style="background-color:#f1f5f8; width:50%;text-align:right">
+                所属广告位
+            </td>
+            <td>
+                &nbsp;
+                <select name="place_id">
+                    <option value=''>
+                        >不限广告位
+                    </option>
+                    <foreach name='place' item='vo'>
+                    <option value="<{$vo['id']}>" <if condition="$vo[id] eq $_GET['place_id']">selected</if>>
+                        <{$vo['title']}>
+                    </option>
+                    </foreach>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <center>
+        <input type="submit" value="提 交" class="sunjoin large" />
+    </center>
+    <div class="clear" style="margin-bottom:5px"></div>
+</form>
+<table border="0" cellspacing="0" cellpadding="0" class="vbm">
+	<tbody>
+		<tr class="firstr">
+			<td width="60">ID</td>
+			<td>名称</td>
+			<td>广告位</td>
+			<td>内容</td>
+			<!-- <td>开始时间</td>
+			<td>结束时间</td> -->
+			<td width='100'>URL</td>
+			<td width='100'>操作</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<volist name="list" id="vo">
+		<tr bgcolor="white">
+			<td align="left"><{$vo.id}></td>
+			<td align="left"><{$vo.title}></td>
+			<td align="left"><{$vo.place_title}></td>
+			<td align="left"><img src="<{$vo.content}>" style='max-height:100px;max-width:610px' /></td>
+			<!-- <td align="left"><{$vo.begin_time}></td>
+			<td align="left"><{$vo.end_time}></td> -->
+			<td align="left"><{$vo.url}></td>
+			<td align="center"><a href="<{:U('Adv/edit')}>?id=<{$vo.id}>">编辑</a> | <a href="<{:U('Adv/delete')}>?id=<{$vo.id}>" onclick='return confirm("确定删除吗？")'>删除</a></td>
+		</tr>
+		</volist>
+	</tbody>
+</table>
+
+</div>
+<div class="pagination">
+<{$page}>
+</div>
+<include file="Common:footer" />
