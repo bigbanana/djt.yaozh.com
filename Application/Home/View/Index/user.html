@@ -100,15 +100,14 @@ foreach ($pic_list as $pic) { ?>
                 <div class="ui-panel-content">
                   <ul class="news-list square">
                     <div class="first">
-                      <p class="title"><a href="#" target="_blank"><{$trends[0].title}></a></p>
+                      <p class="title"><a href="/index/newsDetail/id/<{$trends[0].id}>" target="_blank"><{$trends[0].title}></a></p>
                       <p class="summary"><{$trends[0].description|htmlspecialchars_decode|strip_tags|mb_substr=0,25}>...
-                        <a class="cl-blue" target="_blank" href="#">[详细]</a>
+                        <a class="cl-blue" target="_blank" href="/index/newsDetail/id/<{$trends[0].id}>">[详细]</a>
                       </p>
                     </div>
-                    <li><a href="#" target="_blank">于明德：2015年医药营销实战解析</a></li>
-                    <li><a href="#" target="_blank">于明德：2015年医药营销实战解析</a></li>
-                    <li><a href="#" target="_blank">于明德：2015年医药营销实战解析</a></li>
-                    <li><a href="#" target="_blank">于明德：2015年医药营销实战解析</a></li>
+                    <?php foreach ($trends as $key => $trend): ?>
+                    <if condition='$key gt 0'><li><a href="/index/newsDetail/id/<{$trend.id}>" target="_blank"><{$trend.title}></a></li></if>
+                    <?php endforeach ?>
                   </ul>
                 </div>
               </div>
@@ -124,10 +123,9 @@ foreach ($pic_list as $pic) { ?>
                         <a class="cl-blue" target="_blank" href="#">[详细]</a>
                       </p>
                     </div>
-                    <li><a href="#" target="_blank">于明德：2015年医药营销实战解析</a></li>
-                    <li><a href="#" target="_blank">于明德：2015年医药营销实战解析</a></li>
-                    <li><a href="#" target="_blank">于明德：2015年医药营销实战解析</a></li>
-                    <li><a href="#" target="_blank">于明德：2015年医药营销实战解析</a></li>
+                    <?php foreach ($reports as $key => $report): ?>
+                    <if condition='$key gt 0'><li><a href="/index/newsDetail/id/<{$report.id}>" target="_blank"><{$report.title}></a></li></if>
+                    <?php endforeach ?>
                   </ul>
                 </div>
               </div>
