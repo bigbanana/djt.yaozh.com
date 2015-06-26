@@ -117,7 +117,7 @@ class BaseController extends Controller
             $sortAlt = $sort == 'desc' ? '升序排列' : '倒序排列'; //排序提示
             $sort = $sort == 'desc' ? 1 : 0; //排序方式
             //模板赋值显示
-            // var_dump($voList);
+            var_dump($voList);
             $this->assign('list', $voList);
             $this->assign('sort', $sort);
             $this->assign('order', $order);

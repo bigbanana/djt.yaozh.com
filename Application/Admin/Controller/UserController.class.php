@@ -13,8 +13,9 @@ class UserController extends BaseController
 		$this->display();
 	}
 	public function index(){
-		$list = M('User')->order('sort desc')->select();
-		dump($list);exit;
+		$map = array(
+        );
+        $this->_list(M('User'), $map);
 		$this->display();
 	}
 	public function add (){
