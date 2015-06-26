@@ -151,4 +151,9 @@ class IndexController extends BaseController
         $this->detail = $detail;
         $this->display();
     }
+    public function user(){
+        $id = I('get.id');
+        $user_info = M('User')->getbyId($id);
+        dump($user_info);
+    }
 }
