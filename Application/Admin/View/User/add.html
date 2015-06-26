@@ -56,7 +56,6 @@
 		<tr bgcolor="#f5fbff" >
 			<td width="50px" align="right">会员简介</td>
 			<td colspan="3"><textarea name="description" id="ueditor_contents" cols="100" rows="5"><{$vo.description}></textarea></td>
-			<{:printUeditor('250',"100%")}>
 		</tr>
         <tr bgcolor="#f5fbff" >
             <td width="50px" align="right">会员公司</td>
@@ -127,6 +126,7 @@
         window.UEDITOR_CONFIG.wordCount =false;
         window.UEDITOR_CONFIG.autoHeightEnabled = false;
         // window.UEDITOR_CONFIG.imagePath='/Uploads/thumb/';//编辑器调用图片的地址
+        ueditor_contents_ueditor_contents = UE.getEditor('ueditor_contents');
         ueditor_contents_ueditor_contents2 = UE.getEditor('ueditor_contents2');
     }
 </script>
