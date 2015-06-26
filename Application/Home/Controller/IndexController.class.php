@@ -165,7 +165,7 @@ class IndexController extends BaseController
     }
     public function search()
     {
-        echo $key = I('get.q');
+        echo $key = '%'.I('get.q').'%';
         $listRows = 5;
         $count = M('news')->where(array('title'=>['LIKE',$key],'status' => 1, 'user_id' => 0))->count();
         $p = new Page($count, $listRows);
