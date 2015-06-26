@@ -81,7 +81,11 @@
         </tr>
         <tr bgcolor="#f5fbff" >
             <td width="50px" align="right">公司简介</td>
-            <td colspan="3"><textarea name="description" id="ueditor_contents2" cols="100" rows="20"><{$vo.description}></textarea></td>
+            <td colspan="3"><textarea name="company_description" id="ueditor_contents2" cols="100" rows="20"><{$vo.company_description}></textarea></td>
+        </tr>
+        <tr bgcolor="#f5fbff" >
+            <td width="50px" align="right">排序</td>
+            <td colspan="3"> <input name="sort" id="sort" type="text" class="text" value="<{$vo.sort}>" size="50"> <font color="red">*</font></td>
         </tr>
 	</table>
 	<center><input type="submit" value="提 交" style="float:left;margin-left:70px" class="sunjoin large"/><input type="button" style="float:left;margin-left:5px" onclick="history.back()" value="返 回" class="sunjoin large"></center>
