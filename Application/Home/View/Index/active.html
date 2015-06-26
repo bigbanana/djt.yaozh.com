@@ -31,7 +31,7 @@
                 <div class="me-imgs"><img src="<{$ls['pic_title']}>"></div>
                 <div class="me-w me-ww">
                     <div class="me-x">
-                        <h3><a href="club-news-detail.html" target="_blank"><{$ls['title']}></a><span class="me-w-span"><{:date('Y-m-d',$ls['create_time'])}></span></h3>
+                        <h3><a href="<{:U('index/newsDetail',array('id'=>$ls['id']))}>" target="_blank"><{$ls['title']}></a><span class="me-w-span"><{:date('Y-m-d',$ls['create_time'])}></span></h3>
                         <P><{$ls['description']}></P>
                     </div>
                 </div>
