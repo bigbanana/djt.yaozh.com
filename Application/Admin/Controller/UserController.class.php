@@ -6,14 +6,18 @@ use Common\Controller\BaseController;
 class UserController extends BaseController
 {
 
-	public function _list()
+	public function __list()
 	{
 		// $UserList = M('member')->select();
 		$this->assign('list',$UserList);
 		$this->display();
 	}
 	public function index(){
-		die('ok');
+		$map = array(
+			'1'=>1
+        );
+        $this->_list(M('User'), $map);
+		// $this->display();
 	}
 	public function add (){
 		if(IS_POST){
