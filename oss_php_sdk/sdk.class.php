@@ -2323,9 +2323,9 @@ class ALIOSS{
 		}
 		
 		//检测日志目录是否存在
-		if(!file_exists($log_path)){
+		/*if(!file_exists($log_path)){
 			throw new OSS_Exception(OSS_LOG_PATH_NOT_EXIST);
-		}
+		}*/
 
 		$log_name = $log_path.'oss_sdk_php_'.date('Y-m-d').'.log';
 
