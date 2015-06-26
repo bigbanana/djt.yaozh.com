@@ -162,6 +162,8 @@ class IndexController extends BaseController
 
         $reports = M("News")->where(['user_id'=>$id,'user_news_type'=>2,'status'=>1])->select();
         $this->assign(reports,$reports);
+
+        $this->banner = M('adv')->where(array('adv_id' => '5', 'status' => 1))->getField('pic');
         $this->display();
     }
     public function search()
