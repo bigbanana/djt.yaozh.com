@@ -1,104 +1,33 @@
 <include file="Common:header" />
-            <script language="javascript" src="/public/js/vbm.js"></script>
-            <form action="" method="get">
-                <table border="0" cellspacing="0" cellpadding="0" class="vbm">
-                    <tr class="firstr">
-                        <td colspan="2">
-                            搜索符合条件的会员
-                        </td>
-                    </tr>
-                    <tr bgcolor="#ffffff">
-                        <td style="background-color:#f1f5f8; width:40%">
-                            用户名(username)
-                        </td>
-                        <td>
-                            &nbsp;
-                            <input name="username" class="text" value="<{:I('get.username')}>">
-                        </td>
-                    </tr>
-                    <tr bgcolor="#ffffff">
-                        <td style="background-color:#f1f5f8; width:40%">
-                            所属用户组
-                        </td>
-                        <td>
-                            &nbsp;
-                            <select name="role_id">
-                                <option value=''>
-                                    >不限组别
-                                </option>
-                                <foreach name='role' item='vo'>
-                                <if condition="$vo['id'] neq 1">
-                                    <option value="<{$vo['id']}>" <if condition="$vo[id] eq $role_id">selected</if>>
-                                        <{$vo['name']}>
-                                    </option>
-                                </if>
-                                </foreach>
-                            </select>
-                        </td>
-                    </tr>
-                </table>
-                <center>
-                    <input type="submit" value="提 交" class="sunjoin large" />
-                </center>
-                <div class="clear" style="margin-bottom:5px">
-                </div>
-            </form>
-            <form name='form1' method='post' action='<{:u('user/do_action')}>' onSubmit='return checkSubmit();'>
-                <table border="0" cellspacing="0" cellpadding="0" class="vbm">
-                    <tr class="firstr">
-                        <td width="30">选择</td>
-                        <td width="30">编号</td>
-                        <td>用户名</td>
-                        <td width="300">用户组</td>
-                        <td>上次登陆IP</td>
-                        <td>注册时间</td>
-                        <td>上次登录</td>
-                        <td width="30">编辑</td>
-                    </tr>
-                    <tbody>
-                    	<foreach name="list" item="vo">
-                        <tr align="center" bgcolor="white">
-                            <td><input type='checkbox' name='ids[]' value='<{$vo.uid}>' class='checkbox' id="<{$vo.uid}>"></td>
-                            <td><{$vo.uid}></td>
-                            <td><a href="javascript:void(0);" onclick="javascript:;"><{$vo.username}></a></td>
-                            <td><if condition="$vo.role_name eq ''">普通用户<else/><{$vo.role_name}>&nbsp;&nbsp;&nbsp;<if condition='$vo.deadline gt time()'>[过期时间：<{$vo.deadline|date='Y-m-d',###}>]<else/>已过期</if></if></td>
-                            <td><a href="javascript:setbg('查看IP所在地',600,405,'http://ip.cn/index.php?ip=<{$vo.lastloginip}>')" title="点击查看注册地"><{$vo.lastloginip}></a></td>
-                            <td><?php echo date('Y-m-d H:i',$vo['regdate'])?></td>
-                            <td><?php echo date('Y-m-d H:i',$vo['lastlogintime'])?></td>
-                            <td><a href="javascript:;">详情</a></td>
-                        </tr>
-                        </foreach>
-                    </tbody>
-                    <tr bgcolor="#ffffff" height="28">
-                        <td style="border-right:1px #fff solid;">
-                            <input name="checkall" type="checkbox" id="checkall" onClick="CheckAll(this.form)"
-                            class="checkbox" />
-                        </td>
-                        <td colspan="10">
-                                <b>
-                                    转为->
-                                </b>
-                                <?php foreach ($role as $k => $v): ?>
-                                <label for='<{$k+1}>'>
-                                    <input name='change_role' value='<{$v.id}>' type='radio' id='<{$k+1}>'>
-                                    <{$v.name}>
-                                </label>    
-                                <?php endforeach ?>
-                                <hr style="height:1px; border:1px #c5d8e8 solid;" />
-                                <b>
-                                    过期时间->
-                                </b>
-                                <label for="deadline">
-                                    <input name="deadline" class="datepicker" value="0" size='10' style='text-align:center'><font color="red">*</font>
-                                </label>
-                        </td>
-                    </tr>
-                </table>
-                <center>
-                    <input type="submit" value="提 交" class="sunjoin large" />
-                </center>
-            </form>
-            <div class="pagination">
-                <{$page}>
-            </div>
+    <div class="ccc2">
+        <ul>
+       <input class="sunjoin large" type="button" onClick="location.href='/admin/user/add'" value="添加会员">
+        </ul>
+    </div>
+    <div id="sunjoin">
+    <table border="0" cellspacing="0" cellpadding="0" class="vbm">
+        <tbody><tr class="firstr">
+          <td width="60">编号</td>
+          <td>文章标题</td>
+          <td>关联药智新闻id</td>
+          <td>操作</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <?php foreach ($list as $vo): ?>
+        <tr bgcolor="white">
+          <td><label><?=$vo['id']?></label></td>
+          <td align="left"><a href="/index/newDetail/id/<?=$vo['id']?>.html" target="_blank"><?=$vo['title']?></a></td>
+          <td align="left"><?=$vo['news_id']?></td>
+          <td align="center"><a href="<{:U('edit')}>?id=<?=$vo['id']?>">编辑</a> / <a href="<{:U('delete')}>?id=<?=$vo['id']?>" onclick="if(!confirm('确定要删除吗？\n\n此操作不可以恢复！'))return false;">删除</a>
+          </td>
+        </tr>
+        <?php endforeach ?>
+      </tbody>
+
+    </table>
+  </div>
+    <div class="pagination">
+        <{$page}>
+    </div>
 <include file="Common:footer" />
