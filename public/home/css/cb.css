@@ -146,7 +146,7 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 .ni-1 .i{ background:url(../images/icon_1_1.png) no-repeat;}
 .ni-2 .i{ background:url(../images/icon_2_2.png) no-repeat;}
 .ni-3 .i{ background:url(../images/icon_3_3.png) no-repeat;}
-.nots h2{ font-size:26px; font-weight:normal; color:#3498DB; padding:40px 0 20px;}
+.nots h2{ font-size:26px; font-weight:normal; color:#3498DB; padding:40px 0 20px; text-align: center;}
 .nots .noe li{ white-space:nowrap; text-overflow:ellipsis; overflow:hidden; line-height:30px; width:250px; }
 .nots .noe li a{ font-size:14px;color:#606060}
 
