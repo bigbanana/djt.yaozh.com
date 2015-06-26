@@ -20,7 +20,7 @@ $a = array(
     'ALI_DISPLAY_LOG'=>FALSE,
     'ALI_LANG'=>'zh',
     'BUCKET'=>'yzclub',
-    'URL'=>'http://yzclub.oss-cn-hangzhou.aliyuncs.com/',
+    'URL'=>'http://img.club.yaozh.com/',
     'CACHE_TIME' => 1, // 缓存时间，单位为小时,
     'UPLOAD_CONFIG' => $b,
 );
