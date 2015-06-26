@@ -153,6 +153,7 @@ class IndexController extends BaseController
     }
     public function user(){
         $this->condition = 5;
+        $id = I('get.id');
         $user_info = M('User')->getbyId($id);
         dump($user_info);
     }
