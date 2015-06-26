@@ -11,7 +11,7 @@ class IndexController extends BaseController
     }
     public function top()
     {
-        $menus = M('AdminNode')->where('level="0"')->order("sort asc")->select();
+        $menus = M('AdminNode')->where('level="0" && status = "1"')->order("sort asc")->select();
 
         foreach ($menus as $key => $value) {
             $menus_id[] = "'" . $value['name'] . "'";
