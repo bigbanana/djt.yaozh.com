@@ -21,10 +21,10 @@
             </div>
           </foreach>
         </div>
-        <form action="/index/search" target="_blank" class="search">
+        <form action="/index/search" target="_blank" class="search" id='search'>
           <div class="to-input">
             <input class="text" type="text" name='q' value="<?=I('get.q')?>" />
-            <a href="javascript:;" class="button"></a>
+            <a href="javascript:$('#search').submit();" class="button"></a>
           </div>
         </form>
       </div>
