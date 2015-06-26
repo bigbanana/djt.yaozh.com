@@ -172,6 +172,7 @@ class IndexController extends BaseController
         $count = M('news')->where(array('title'=>['like',$key],'status' => 1, 'user_id' => 0))->count();
         $p = new Page($count, $listRows);
         $list = M('news')->where(array('title'=>['like',$key],'status' => 1, 'user_id' => 0))->limit($p->firstRow . ',' . $p->listRows)->select();
+        echo M('News')->getlastsql();
         foreach ($list as $key => $value) {
             if ($value['news_id']) {
                 $list[$key] = D('News')->find($value['news_id']);
