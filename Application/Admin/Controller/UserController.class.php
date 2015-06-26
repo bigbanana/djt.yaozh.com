@@ -19,7 +19,12 @@ class UserController extends BaseController
 		if(IS_POST){
 			$data = I('post.');
 			unset($data['editorValue']);
-			dump($data);
+			// dump($data);
+			if(M('User')->add($data)){
+				$this->success('添加成功！');
+			}else{
+				$this->error('添加失败！');
+			}
 		} else {
 			$this->display();
 		}
