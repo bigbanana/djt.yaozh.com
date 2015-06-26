@@ -18,6 +18,16 @@
                 <input type="button" id='image2' value='上传图片'/>
             </td>
         </tr>
+        <tr>
+            <td width="50px" align="right"></td>
+            <td colspan="3" id="previewtr2">
+                <if condition="$vo['pic_title'] neq ''">
+                    <img src="<{$vo.pic_title}>@1e_113w_113h_1c_0i_1o_90Q_1x.jpg" id="preview2" style='max-height:200px'/>
+                <else />
+                    <img src="/public/images/nopic.gif" id="preview<{$i}>" style='max-height:200px'/>
+                </if>
+            </td>
+        </tr>
 		<tr bgcolor="#f5fbff" >
 			<td width="50px" align="right">图片列表</td>
 			<td colspan="3">
@@ -48,16 +58,7 @@
 			<td colspan="3"><textarea name="describe" id="ueditor_contents" cols="100" rows="5"><{$vo.describe}></textarea></td>
 			<{:printUeditor('250',"100%")}>
 		</tr>
-        <tr>
-            <td width="50px" align="right"></td>
-            <td colspan="3" id="previewtr2">
-                <if condition="$vo['index_ad_picture'] neq ''">
-                    <img src="<{$vo.index_ad_picture}>@1e_113w_113h_1c_0i_1o_90Q_1x.jpg" id="preview2" style='max-height:200px'/>
-                <else />
-                    <img src="/public/images/nopic.gif" id="preview<{$i}>" style='max-height:200px'/>
-                </if>
-            </td>
-        </tr>
+        
         <tr bgcolor="#f5fbff" >
             <td width="50px" align="right">推荐标题</td>
             <td colspan="3"> <input name="index_title" id="index_title" type="text" class="text" value="<{$vo.index_title}>" size="50"> <font color="red">仅显示在首页楼层左边的2个推荐位置，用英文逗号分隔</font></td>
