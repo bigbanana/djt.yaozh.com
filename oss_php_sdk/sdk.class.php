@@ -314,7 +314,7 @@ class ALIOSS{
 	 * @return void
 	 */
 	public function set_debug_mode($debug_mode = true){
-		$this->debug_mode = $debug_mode;
+		$this->debug_mode = false;
 	}
 	
 	/**
