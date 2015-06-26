@@ -16,7 +16,11 @@ class UserController extends BaseController
 		$this->display();
 	}
 	public function add (){
-		$this->display();
+		if(IS_POST){
+			dump(I('post.'));
+		} else {
+			$this->display();
+		}
 	}
 	public function apply()
 	{
