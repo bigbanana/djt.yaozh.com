@@ -23,10 +23,14 @@ class UserController extends BaseController
 			$data = I('post.');
 			unset($data['editorValue']);
 			// dump($data);
-			if(M('User')->add($data)){
-				$this->success('添加成功！');
+			if(I('get.id')) 
+				$req = M('User')->save($data);
+			else
+				$req = M('User')->add($data);
+			if($req){
+				$this->success('操作成功！');
 			}else{
-				$this->error('添加失败！');
+				$this->error('操作失败！');
 			}
 		} else {
 			if(I('get.id')) {
