@@ -101,7 +101,7 @@ foreach ($pic_list as $pic) { ?>
                   <ul class="news-list square">
                     <div class="first">
                       <p class="title"><a href="#" target="_blank"><{$trends[0].title}></a></p>
-                      <p class="summary"><{$trends[0].description|truncate:30:"...":true}> 
+                      <p class="summary"><{$trends[0].description|truncate=0,"...",true}> 
                         <a class="cl-blue" target="_blank" href="#">[详细]</a>
                       </p>
                     </div>
@@ -120,7 +120,7 @@ foreach ($pic_list as $pic) { ?>
                   <ul class="news-list square">
                     <div class="first">
                       <p class="title"><a href="#" target="_blank"><{$reports[0].title}></a></p>
-                      <p class="summary"><{$reports[0].description|truncate:30:"...":true}> 
+                      <p class="summary"><{$reports[0].description|truncate=0,"...",true}> 
                         <a class="cl-blue" target="_blank" href="#">[详细]</a>
                       </p>
                     </div>
