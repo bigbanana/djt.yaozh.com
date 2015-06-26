@@ -121,7 +121,7 @@
                 //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）
                 //和网上一些朋友的代码不同之处就在这里
                 $("#" + id).click(function() {
-                    var image = _editor.getDialog("wordimage");
+                    var image = _editor.getDialog("insertimage");
                     image.render();
                     image.open();
                 });
