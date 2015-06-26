@@ -119,6 +119,15 @@
             image.show("image2");
         });
     })(jQuery);
-    ue2 = UE.getEditor('ueditor_contents2');
+    window.UEDITOR_HOME_URL = "/public/ueditor/";  //UEDITOR_HOME_URL、config、all这三个顺序不能改变
+    window.onload=function(){
+        window.UEDITOR_CONFIG.initialFrameHeight="250";//编辑器的高度
+        window.UEDITOR_CONFIG.initialFrameWidth="100%";
+        window.UEDITOR_CONFIG.elementPathEnabled=false;
+        window.UEDITOR_CONFIG.wordCount =false;
+        window.UEDITOR_CONFIG.autoHeightEnabled = false;
+        // window.UEDITOR_CONFIG.imagePath='/Uploads/thumb/';//编辑器调用图片的地址
+        ueditor_contents_ueditor_contents2 = UE.getEditor('ueditor_contents2');
+    }
 </script>
 <include file="Common:footer" />
