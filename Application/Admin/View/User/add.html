@@ -1,0 +1,151 @@
+<include file="Common:header" />
+<form method="post"  name="form1" action="">
+	<table border="0" cellspacing="0" cellpadding="0" class="vbm">
+		<input type="hidden" name="id" value="<{$vo.id}>" />
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">名称</td>
+			<td colspan="3"> <input name="name" id="name" type="text" class="text" value="<{$vo.name}>" size="50"> <font color="red">*</font></td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">分类</td>
+			<td colspan="3">
+				<select name="cid">
+                    <option value=''>
+                        >不限分类
+                    </option>
+                    <foreach name='category_list' item='vo1'>
+                    <option value="<{$vo1['id']}>" disabled='disabled'>
+                        <{$vo1['name']}>
+                    </option>
+                    <foreach name='vo1._child' item='voo'>
+                    	<option value="<{$voo['id']}>"<if condition="$vo['cid'] eq $voo['id']"> selected</if>>
+	                        --<{$voo['name']}>
+	                    </option>
+                    </foreach>
+                    </foreach>
+                </select>
+			</td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">截止日期</td>
+			<td colspan="3"><input name="deadline" class="text datepicker" value="<{$vo.deadline|date='Y-m-d',###}>" size="50"><font color="red">*</font></td>
+			<input type="hidden" name="refresh_time" value='<?=time();?>'>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">CAS号</td>
+			<td colspan="3"> <input name="cas" id="cas" type="text" class="text" value="<{$vo.cas}>" size="50"> <font color="red">*</font></td>
+		</tr>
+
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">图片</td>
+			<td colspan="3">
+				<input id="upload" name='thumb' type="hidden" style='width: 300px' value="<{$vo.thumb}>" />
+                <div id="myeditor" class="edui-default" style="display: none;"></div>
+                <input type="button" id='image' value='上传图片'/>
+			</td>
+		</tr>
+		<tr>
+			<td width="50px" align="right"></td>
+			<td colspan="3" id="previewtr">
+				<?php $pic_arr = explode(',', $vo['thumb']); foreach ($pic_arr as $i => $pic): ?>
+					<if condition="$pic neq ''">
+                        <?php if (strpos($pic, 'http://s.yaozh.com') === false): ?>
+                        <img src="<{$pic}>@1e_113w_113h_1c_0i_1o_90Q_1x.jpg" id="preview<{$i}>" style='max-height:200px'/>
+                        <?php else: ?>
+                        <img src="<{$pic}>" id="preview<{$i}>" style='max-height:200px'/>
+                        <?php endif ?>
+                    <else />
+                        <img src="/public/images/nopic.gif" id="preview<{$i}>" style='max-height:200px'/>
+                    </if>
+				<?php endforeach ?>
+				
+			</td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="50px" align="right">描述</td>
+			<td colspan="3"><textarea name="describe" id="ueditor_contents" cols="100" rows="5"><{$vo.describe}></textarea></td>
+			<{:printUeditor('250',"100%")}>
+		</tr>
+
+        <tr bgcolor="#f5fbff" >
+            <td width="50px" align="right">首页推广图片</td>
+            <td colspan="3">
+                <input id="upload2" name='index_ad_picture' type="hidden" style='width: 300px' value="<{$vo.index_ad_picture}>" />
+                <div id="myeditor2" class="edui-default" style="display: none;"></div>
+                <input type="button" id='image2' value='上传图片'/>
+            </td>
+        </tr>
+        <tr>
+            <td width="50px" align="right"></td>
+            <td colspan="3" id="previewtr2">
+                <if condition="$vo['index_ad_picture'] neq ''">
+                    <img src="<{$vo.index_ad_picture}>@1e_113w_113h_1c_0i_1o_90Q_1x.jpg" id="preview2" style='max-height:200px'/>
+                <else />
+                    <img src="/public/images/nopic.gif" id="preview<{$i}>" style='max-height:200px'/>
+                </if>
+            </td>
+        </tr>
+        <tr bgcolor="#f5fbff" >
+            <td width="50px" align="right">推荐标题</td>
+            <td colspan="3"> <input name="index_title" id="index_title" type="text" class="text" value="<{$vo.index_title}>" size="50"> <font color="red">仅显示在首页楼层左边的2个推荐位置，用英文逗号分隔</font></td>
+        </tr>
+        <tr bgcolor="#f5fbff" >
+            <td width="50px" align="right">推荐描述</td>
+            <td colspan="3"> <input name="index_desc" id="index_desc" type="text" class="text" value="<{$vo.index_desc}>" size="50"> <font color="red">仅显示在首页楼层左边的2个推荐位置，用英文逗号分隔</font></td>
+        </tr>
+	</table>
+	<center><input type="submit" value="提 交" style="float:left;margin-left:70px" class="sunjoin large"/><input type="button" style="float:left;margin-left:5px" onclick="history.back()" value="返 回" class="sunjoin large"></center>
+</form>
+<script type="text/javascript">
+//这个是图片上传的，网上还有附件上传的
+    (function($) {
+        var image = {
+            editor: null,
+            init: function(editorid, keyid) {
+                var _editor = this.getEditor(editorid);
+                _editor.ready(function() {
+                    // _editor.hide();
+                    _editor.addListener('beforeInsertImage', function(t, args) {
+                    	val = new Array();
+                    	prehtml = '';
+                    	$.each(args, function(i, item){
+                    	    val[i] = item['src']; 
+                    	    prehtml = prehtml+"<img src='"+ item['src']+"@1e_113w_113h_1c_0i_1o_90Q_1x.jpg' id='preview"+i+"'/>\r\n";
+						});
+                        $("#" + keyid).val(val.join(','));
+                        $("#previewtr"+keyid.replace('upload','')).html(prehtml);
+                        // ('src',args[0].src+'@1e_200w_200h_1c_0i_1o_90Q_1x.jpg');
+                    });
+                });
+            },
+            getEditor: function(editorid) {
+                this.editor = UE.getEditor(editorid);
+                return this.editor;
+            },
+            show: function(id) {
+                var _editor = this.editor;
+                //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）
+                //和网上一些朋友的代码不同之处就在这里
+                $("#" + id).click(function() {
+                    var image = _editor.getDialog("insertimage");
+                    image.render();
+                    image.open();
+                });
+            },
+            render: function(editorid) {
+                var _editor = this.getEditor(editorid);
+                _editor.render();
+            }
+        };
+        $(function() {
+            image.init("myeditor", "upload");
+            image.show("image");
+        });
+        $(function() {
+            image.init("myeditor2", "upload2");
+            image.show("image2");
+        });
+    })(jQuery);
+</script>
+
+<include file="Common:footer" />

@@ -15,6 +15,9 @@ class UserController extends BaseController
 	public function index(){
 		$this->display();
 	}
+	public function add (){
+		$this->display();
+	}
 	public function apply()
 	{
 			$start_time = strtotime(I('get.start_time'));
