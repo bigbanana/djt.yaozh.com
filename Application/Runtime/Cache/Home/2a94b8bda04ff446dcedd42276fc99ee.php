@@ -59,17 +59,30 @@
         <div class="nis ni-1"><i class="i"></i></div>
         <h2>俱乐部活动</h2>
         <div class="noe">
-          <ul>
-            <?php if(is_array($last_active)): foreach($last_active as $key=>$la): ?><li><a href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>" title="<?php echo ($la['title']); ?>"><?php echo ($la['title']); ?></a></li><?php endforeach; endif; ?>
+          <ul class="circle">
+            <?php if(is_array($last_active)): foreach($last_active as $key=>$la): if($key == 0): ?><div class="first-item">
+                <a class="text-overflow" href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>" title="<?php echo ($la['title']); ?>"><?php echo ($la['title']); ?></a>
+                <p class="summary"><?php echo ($la['description']); ?></p>
+              </div>
+            <?php else: ?>
+              <li><a href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>" title="<?php echo ($la['title']); ?>"><?php echo ($la['title']); ?></a></li><?php endif; endforeach; endif; ?>
           </ul>
+          <!-- <p>
+            <a href="/index/active.html">More</a>
+          </p> -->
         </div>
       </div>
       <div class="nots nots2">
         <div class="nis ni-2"><i class="i"></i></div>
         <h2>俱乐部新闻</h2>
         <div class="noe">
-          <ul>
-            <?php if(is_array($last_news)): foreach($last_news as $key=>$ln): ?><li><a href="<?php echo U('index/newsDetail',array('id'=>$ln['id']));?>" title="<?php echo ($ln['title']); ?>"><?php echo ($ln['title']); ?></a></li><?php endforeach; endif; ?>
+          <ul class="circle">
+            <?php if(is_array($last_news)): foreach($last_news as $key=>$ln): if($key == 0): ?><div class="first-item">
+                <a class="text-overflow" href="<?php echo U('index/newsDetail',array('id'=>$ln['id']));?>" title="<?php echo ($ln['title']); ?>"><?php echo ($ln['title']); ?></a>
+                <p class="summary"><?php echo ($ln['description']); ?></p>
+              </div>
+            <?php else: endif; ?>
+              <li><a href="<?php echo U('index/newsDetail',array('id'=>$ln['id']));?>" title="<?php echo ($ln['title']); ?>"><?php echo ($ln['title']); ?></a></li><?php endforeach; endif; ?>
           </ul>
         </div>
       </div>
@@ -90,7 +103,7 @@
   <div class="w intr intrs">
     <div class="w1 int p-p">
       <div class="p-left">
-        <h1 class="h1-56">俱乐部简介</h1>
+        <h1 class="h1-56"><span class="title">俱乐部简介</span></h1>
         <h2>INTRODUCTION OF THE CLUB</h2>
         <div class="p-x">
           <p>药智精英俱乐部是由药智网和高圣生物医药发起组建，由大健康产业的专业技术精英及企业家、银行家组成的非营利性的服务组织,秉承“整合资源，发展事业，共创辉煌”之理念，定期或不定期向俱乐部成员提供：项目路演，学术研讨，政策解读，企业诊断，游学考试，案例分析，项目对接等活动。</p>
@@ -190,7 +203,7 @@
 <!--Member-->
   <div class=" w mbr">
         <div class="w1 mb">
-          <h1>会员介绍<span>MEMBER PROFILE</span></h1>
+          <h1><span class="title">会员介绍</span><span class="en">MEMBER PROFILE</span></h1>
           <div class="mbs">
             <div class="mbs-x">
               <div class="img">

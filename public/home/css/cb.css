@@ -1,6 +1,6 @@
 /* CSS Document */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, blockquote, textarea, p, th, td ,table {margin:0;padding:0;}
-body, input, select, button, textarea { font-size: 12px; font-family: Tahoma, Geneva, sans-serif;}
+body, input, select, button, textarea { font-size: 12px; font-family: Tahoma, Geneva, sans-serif;color:#404040;}
 table {border-collapse:collapse;}
 button { cursor: pointer;}
 fieldset{border:0;}
@@ -26,6 +26,59 @@ html{overflow:-moz-scrollbars-vertical;}
 .w1{ width:1200px;margin:0 auto;}
 .main{ font-family:"microsoft yahei";overflow: hidden;}
 h1{ font-size:28px; font-weight:normal; padding:50px 0; letter-spacing:1px; color:#404040}
+.tc{text-align: center;}
+.tr{text-align: right;}
+ul.circle{}
+ul.circle li{background: url(../../images/circle.png) 0 center no-repeat transparent;padding-left: 10px;}
+ul.circle-big li{background: url(../../images/circle_big.png) 0 center no-repeat transparent;padding-left: 15px;}
+ul.square li{background: url(../../images/square.png) 0 center no-repeat transparent;padding-left: 15px;}
+.fs14{font-size: 14px;}
+.fs16{font-size: 16px;}
+.fs18{font-size: 18px;}
+.fl{float:left;}
+
+.mt10{margin-top: 10px;}
+.ml20{margin-left: 20px;}
+.mt20{margin-top: 20px;}
+.indent{text-indent: 2em;}
+
+.clear{clear:both;}
+.cl-blue{color:#005ca1;}
+/*文字溢出*/
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*panel*/
+.ui-panel {
+  background-color: #f9f9fa;
+}
+.ui-panel .ui-panel-title {
+  position: relative;
+  line-height: 30px;
+  padding: 0 10px;
+  border-bottom: 2px solid #34495e;
+}
+.ui-panel .ui-panel-title .ui-panel-name {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #34495e;
+  font-weight: 700;
+}
+.ui-panel .ui-panel-title .ui-panel-side {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  line-height: 30px;
+}
+.ui-panel .ui-panel-title .ui-panel-side a:hover {
+  color: #3366cc;
+}
+.ui-panel .ui-panel-content {
+  padding: 10px;
+}
 
 .top{ width:1200px; margin:0 auto; height:80px;  }
 .logo{ float:left; margin-top:10px}
@@ -68,7 +121,7 @@ h1{ font-size:28px; font-weight:normal; padding:50px 0; letter-spacing:1px; colo
 .to .button:hover {}
 
 
-.banner{position: relative;left:50%;margin-left: -900px; width:1800px; height:550px; overflow:hidden;}
+.banner{overflow:hidden;height: 300px;}
 .banner .ui-sliderbox-box img{width:1800px;height:100%;}
 .banner .ui-sliderbox-control{width:100%;text-align: center;bottom: 20px;}
 .banner .ui-sliderbox-control a{
@@ -78,8 +131,8 @@ h1{ font-size:28px; font-weight:normal; padding:50px 0; letter-spacing:1px; colo
 .banner .ui-sliderbox-control a.active{opacity: 1;filter:alpha(opacity=100);}
 .banner .ui-sliderbox-control img{height:100%;}
 
-.not{ height:500px; overflow:hidden;  }
-.nots{ width:250px; overflow:hidden; text-align:center; height:auto; float:left; display:inline; margin-top:100px}
+.not{ overflow:hidden; *zoom:1; }
+.nots{ width:250px; overflow:hidden; color: #606060; height:auto; float:left; display:inline; margin-top:100px}
 .nots2{ margin:100px 225px 0}
 .nis{width:100px;height:100px;margin:0 auto;background-color: #bbb;border-radius:50%;position: relative;cursor:pointer;overflow: hidden;}
 .nis:after{content: "";position:absolute;width:100%;height:100%;top:100%;left:0;border-radius: 50%;
@@ -97,11 +150,16 @@ h1{ font-size:28px; font-weight:normal; padding:50px 0; letter-spacing:1px; colo
 .nots .noe li{ white-space:nowrap; text-overflow:ellipsis; overflow:hidden; line-height:30px; width:250px; }
 .nots .noe li a{ font-size:14px;color:#606060}
 
-.intr{  overflow:hidden;}
+.nots .noe .circle li{background-position: 0 center;padding-left: 10px;}
+.nots .noe .first-item a{display: block;color:#111;font-weight:700;font-size: 14px;}
+.nots .noe .first-item .summary{color:#606060;height: 36px;overflow: hidden;line-height: 18px;margin: 5px;}
+
+.intr{ overflow:hidden; color:#666;line-height: 1.8;}
 .intrs{ background:#f9f9fa;height:550px;}
-.w h1 span{ font-size:18px; color:#404040}
+.w h1 span{display: inline-block;background-color: #fff;position: relative;top: -22px;line-height: 40px;float: left;padding-right: 10px;}
+.w h1 .en{ font-size:18px; margin-top: 3px; color:#404040}
 .int p{ font-size:14px; padding:10px 0; line-height:24px; color:#606060; letter-spacing:1px;}
-.w h1{ padding-top:50px; color:#3498DB; }
+.w h1{ padding: 0; color:#3498DB; border-bottom: 2px dotted #999; height: 0px; margin: 50px 0 90px; line-height: 0px;}
 .int h3{ font-size:16px; color:#404040; margin-top:40px; color:#909090;}
 .int h3 span{ color:#00aeff;}
 
@@ -182,9 +240,12 @@ h1{ font-size:28px; font-weight:normal; padding:50px 0; letter-spacing:1px; colo
 .map{ overflow:hidden; background:#fafafa; padding:10px; color:#606060; margin-top:20px}
 .map a{ padding:0 5px; color:#606060}
 .map span{ color:#0091fc}
-.detail{ padding-top:50px;}
-.detail h1{ padding:20px; text-align:center; color:#404040}
-.detail h2{ font-weight:normal; font-size:13px; color:#909090; text-align:center; position:relative; border-bottom:1px #aaa dotted; padding-bottom:30px; font-family:"宋体"; }
+.detail{ padding-top:50px;width:900px; float: left;}
+.sidebar{width:280px;float:left;margin-left: 20px;}
+.sidebar .square a{color:#404040;line-height: 2;display: inline-block;}
+.sidebar .square a:hover{color:#34495e;}
+.detail h1{ color:#404040; border: none; margin: 0; line-height: 1.8; height: auto;}
+.detail h2{ font-weight:normal; font-size:13px; color:#909090; position:relative; border-bottom:1px #aaa dotted; padding-bottom:30px; font-family:"宋体";}
 .detail h2 span{ position:absolute; padding-left:20px; top:-6px; line-height:14px; right:0}
 .detail h2 span a{ width:18px; height:19px; overflow:hidden; display:inline-block; margin:0 5px}
 .detail h2 .de1{ background:url(../images/icons_v3.png) 0 0 no-repeat;}
@@ -201,7 +262,7 @@ h1{ font-size:28px; font-weight:normal; padding:50px 0; letter-spacing:1px; colo
 
 .t{ background:#34495e;position: relative;z-index: 2;}
 .w .h1-56{ font-size:40px; padding:80px 0 10px; color:#3498DB;position: relative;}
-.w .h1-56 span{ font-size:24px}
+.w .h1-56 span{}
 .p-x{ width:450px; padding-top:20px}
 .p-x p{  color:#707070; padding:15px 0 }
 .p-left{ float:left;}
@@ -382,3 +443,38 @@ div.quotes span.disabled {
     padding-top: 2px;
     border-bottom: #f3f3f3 1px solid
 }
+
+.jiesao-main{line-height: 1.8;}
+.jiesao-main .indent{line-height: 2.2;}
+.jiesao-main a:hover{color:#005ca1;}
+.jiesao-main .top-box{overflow: hidden;*zoom:1;}
+.jiesao-main .top-box .img{float:left;width:370px;height:230px;padding: 6px;border:1px solid #ddd;}
+.jiesao-main .top-box .img img{width:100%;height:100%;}
+.jiesao-main .top-box .summary{overflow: hidden;*zoom:1;background-color: #f9f9fa;padding: 20px 40px;height: 204px;}
+.jiesao-main .top-box .yuedu-btn{padding: 5px 10px;background-color: #517394;color:#fff;}
+
+.jiesao-main .bottom-box{overflow: hidden;*zoom:1;margin-top: 40px;}
+.jiesao-main .left-box{width:830px;float:left;}
+.jiesao-main .right-box{width:350px;margin-left:20px;float:left;}
+.jiesao-main .w350{width:350px;}
+.jiesao-main .w450{width:450px;}
+.jiesao-main .ui-panel-title{border-bottom:1px solid #ddd;padding: 0;line-height: 36px;font-size: 18px;}
+.jiesao-main .ui-panel-title .ui-panel-name{border-left: 8px solid #34495e;padding-left: 8px;font-weight: 400;}
+.jieshao_icon{width:30px;margin-right:6px;height:25px;display: inline-block;vertical-align:middle;background: url(../images/jieshao_icon.png) no-repeat 0 0 transparent;}
+.jieshao_icon.icon2{background-position: 0 -25px;}
+.jieshao_icon.icon3{background-position: 0 -50px;}
+
+.jiesao-main .company-img{display: block;text-align: center;height: 180px;line-height: 180px;}
+
+.jiesao-main .img-list{}
+.jiesao-main .img-list a{width:130px;height:150px;display: inline-block;margin: 0px 14px;}
+.jiesao-main .img-list a img{width:100%;height:100%;}
+.jiesao-main .yvlu-list{overflow: hidden;}
+.jiesao-main .yvlu-list .mark{font-size: 30px;color:#ddd;font-family: "SimSun";line-height: 0;display: inline-block;position: relative;top: 10px;}
+.jiesao-main .yvlu-list li{margin-top: -1px;border-top:1px dashed #ddd;padding: 14px;}
+.jiesao-main .news-list{font-size: 14px;}
+.jiesao-main .news-list li{background-position: -5px center;padding-left: 10px;margin-top: 4px;}
+.jiesao-main .news-list .first{margin: 10px 0;}
+.jiesao-main .news-list .first .title{overflow: hidden;}
+.jiesao-main .news-list .first .summary{font-size: 12px;text-indent: 2em;}
+.jiesao-main .news-list .first .title a{color:#005ca1;}

@@ -1,6 +1,6 @@
-define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jquery.sliderbox'],function($,TweenMax,browser){
-
+define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jquery.sliderbox','jquery.lightbox'],function($,TweenMax,browser){
   (function(){
+    var $body = $(document.body);
     var $banner = $('.banner');
     var $search = $('.search');
     var start = {top : 10,opacity:'0'};
@@ -19,6 +19,7 @@ define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jque
       });
     });
 
+    $banner.find('img').width($body.width());
     $banner.sliderbox({
       fx:{
         duration:500
