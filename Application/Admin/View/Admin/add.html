@@ -1,0 +1,84 @@
+<include file="Common:header" />
+<script language="javascript">
+  function checkSubmit()
+  {
+     if(document.form1.username.value==""){
+       alert("用户名不能为空！");
+       document.form1.username.focus();
+       return false;
+     }
+     if(document.form1.password.value==""){
+       alert("用户密码不能为空！");
+       document.form1.password.focus();
+       return false;
+     }
+     if(document.form1.role_id.value==""){
+       alert("管理组不能为空！");
+       document.form1.password.focus();
+       return false;
+     }
+     return true;
+ }
+</script>
+<div id="sunjoin">
+  <form name="form1" action="" method="post" onSubmit="return checkSubmit();">
+    <table class="vbm" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+          <tr bgcolor="#F5FBFF">
+              <td height="30" width="16%">
+                  用户名：
+              </td>
+              <td width="84%">
+                  <input name="username" class="text" id="username" size="16" value="" style="width:200px" type="text">
+                  （只能用'0-9'、'a-z'、'A-Z'、'.'、'@'、'_'、'-'、'!'以内范围的字符）
+              </td>
+          </tr>
+          <tr bgcolor="#F5FBFF">
+              <td height="30" width="16%">
+                  姓名：
+              </td>
+              <td width="84%">
+                  <input name="name" class="text" id="name" size="16" value="" style="width:200px" type="text">
+                  （填写真实姓名！）
+              </td>
+          </tr>
+          <tr bgcolor="#F5FBFF">
+              <td height="30">
+                  用户密码：
+              </td>
+              <td>
+                  <input name="password" class="text" id="password" size="16" style="width:200px" type="password"> 
+                  （只能用'0-9a-zA-Z.@_-!'以内范围的字符）
+              </td>
+          </tr>
+          <tr bgcolor="#F5FBFF">
+              <td height="30">
+                  用户组：
+              </td>
+              <td>
+                  <select name="role_id" id="role_id" style="width:200px">
+                      <option value=''>
+                            >请选择管理组
+                        </option>
+                      <foreach name='admin_role' item='vo'>
+                        <option value="<{$vo['id']}>" <if condition="$vo[id] eq $admin_role_id">selected</if>>
+                            <{$vo['name']}>
+                        </option>
+                        </foreach>
+                  </select>
+              </td>
+          </tr>
+          <tr bgcolor="#F5FBFF">
+              <td height="60">
+                  　
+              </td>
+              <td>
+                  <input name="Submit" value="添加管理员" class="sunjoin large" type="submit">
+                  <input onclick="history.back()" value="返 回" class="sunjoin large" type="button">
+              </td>
+          </tr>
+      </tbody>
+    </table>
+  </form>
+</div>
+<include file="Common:footer" />

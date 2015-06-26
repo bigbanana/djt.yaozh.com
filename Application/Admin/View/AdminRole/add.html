@@ -1,0 +1,91 @@
+<include file="Common:header" />
+<style>
+label{float:left; width:180px; height:16px; display:block}
+</style>
+<script language='javascript'>
+    function checkSubmit()
+  {
+     if(document.form1.role_name.value==""){
+         alert("组名不能为空！");
+         document.form1.role_name.focus();
+         return false;
+     }
+     return true;
+ }
+</script>
+<table cellspacing="0" cellpadding="0" border="0" class="vbm">
+    <form method="post" onsubmit="return checkSubmit();" action="" name="form1">
+    <tbody><tr class="firstr">
+      <td colspan="4">管理组基本设置</td>
+      </tr>
+      <tr bgcolor="#f5fbff">
+        <td width="80">管理组名称：</td>
+        <td><input type="text" class="text" size="16" id="role_name" name="role_name"></td>
+      </tr>
+      <tr bgcolor="#f5fbff">
+        <td width="80">状态：</td>
+        <td>
+            <select name="status">
+                <option value='1'>
+                    >启用<
+                </option>
+                <option value='0'>
+                    >禁用<
+                </option>
+            </select>
+        </td>
+      </tr>
+      <tr class="firstr">
+      <td colspan="2">
+        <div class="left"><a href="javascript:collapse_change('2')">管理组权限设置</a></div>
+        <div class="right"><a href="javascript:collapse_change('2')"><img src="/public/images/menu_reduce.gif" id="menuimg_2"></a></div>
+      </td>
+      </tr>
+      </tbody>
+      <tbody id="menu_2">
+
+
+        <foreach name="all_nodes" item="vo" key='k'>
+        <tr style="font-weight:bold; background-color:#dff6ff">
+            <td><{$vo.title}></td><td><input type="button" value="全选" onclick="selectAll('<{$vo.name}>_all')"> <a href='javascript:;' onclick="unselectAll('<{$vo.name}>_all')">清除</a></td>
+        </tr>
+        <foreach name="vo._child" item="vo1">
+        <tr bgcolor="#f5fbff" id="<{$vo1.name}>">
+            <td><{$vo1.title}> </td>
+            <td>
+                <foreach name="vo1._child" item="vo2">
+                <label style="width:110px" for="<{$vo2.name}>">
+                    <input type="checkbox" value="<{$vo2.id}>" id="<{$vo1.name}>_<{$vo2.name}>" name="nodes[]" class="checkbox <{$vo.name}>_all"><{$vo2.title}>
+                </label> 
+                </foreach>
+            </td>
+        </tr>
+        </foreach>
+        </foreach>
+      </tbody>
+      <tbody>
+        <tr bgcolor="#fff">
+            <td height="60">&#12288;</td>
+            <td>
+                <input type="submit" class="sunjoin large" value="增加用户组" name="Submit">
+                &#12288;<input type="button" class="sunjoin large" value="返 回" onclick="history.back()">            
+            </td>
+        </tr>
+      </tbody>
+      </form>
+    </table>
+<script>
+function selectAll(id){
+  var a = document.getElementsByClassName(id);
+  for(var i = 0;i<a.length;i++){
+    if(a[i].type == "checkbox") a[i].checked = true;
+  }
+}
+function unselectAll(id){
+  var a = document.getElementsByClassName(id);
+  for(var i = 0;i<a.length;i++){
+    if(a[i].type == "checkbox") a[i].checked = false;
+  }
+}
+</script>
+<include file="Common:footer" />

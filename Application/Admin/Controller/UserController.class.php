@@ -6,13 +6,40 @@ use Common\Controller\BaseController;
 class UserController extends BaseController
 {
 
-	public function _list()
+	public function __list()
 	{
-		$UserList = M('member')->select();
+		// $UserList = M('member')->select();
 		$this->assign('list',$UserList);
 		$this->display();
 	}
-
+	public function index(){
+		$map = array(
+        );
+        $this->_list(M('User'), $map);
+		$this->display();
+	}
+	public function add (){
+		if(IS_POST){
+			$data = I('post.');
+			unset($data['editorValue']);
+			// dump($data);
+			if(I('get.id')) 
+				$req = M('User')->save($data);
+			else
+				$req = M('User')->add($data);
+			if($req){
+				$this->success('操作成功！');
+			}else{
+				$this->error('操作失败！');
+			}
+		} else {
+			if(I('get.id')) {
+				$vo = M('User')->getbyId(I('get.id'));
+				$this->assign('vo',$vo);
+			}
+			$this->display();
+		}
+	}
 	public function apply()
 	{
 			$start_time = strtotime(I('get.start_time'));

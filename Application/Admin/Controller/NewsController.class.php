@@ -14,7 +14,11 @@ class NewsController extends BaseController
         $map = array(
             'type' => 1,
             'status' => 1,
+            'user_id' => 0
         );
+        if(I('get.user_id')) $map['user_id'] = I('get.user_id');
+        if(I('get.user_news_type')) $map['user_news_type'] = I('get.user_news_type');
+
         $this->_list(M('news'), $map);
         $this->display();
     }

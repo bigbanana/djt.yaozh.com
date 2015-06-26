@@ -10,14 +10,14 @@ class IndexController extends BaseController
     public function index()
     {
         $this->condition = 1;
-        $last_news = M('news')->where(array('type' => 1, 'status' => 1, 'is_top' => 1))->select();
+        $last_news = M('news')->where(array('type' => 1, 'status' => 1, 'is_top' => 1, 'user_id' => 0))->limit(6)->select();
         foreach ($last_news as $key => $value) {
             if ($value['news_id']) {
                 $last_news[$key] = D('news')->find($value['news_id']);
                 $last_news[$k]['id'] = $value['id'];
             }
         }
-        $last_active = M('news')->where(array('type' => 2, 'status' => 1, 'is_top' => 1))->select();
+        $last_active = M('news')->where(array('type' => 2, 'status' => 1, 'is_top' => 1, 'user_id' => 0))->limit(6)->select();
         foreach ($last_active as $k => $v) {
             if ($v['news_id']) {
                 $last_active[$k] = D('news')->find($v['news_id']);
@@ -28,6 +28,7 @@ class IndexController extends BaseController
         $this->last_news = $last_news;
         $this->last_active = $last_active;
 
+        $this->users = M('User')->order('sort desc')->limit(5)->select();
         $this->display();
     }
 
@@ -60,9 +61,9 @@ class IndexController extends BaseController
     {
         $this->condition = 3;
         $listRows = 5;
-        $count = M('news')->where(array('status' => 1, 'type' => 2))->count();
+        $count = M('news')->where(array('status' => 1, 'type' => 2, 'user_id' => 0))->count();
         $p = new Page($count, $listRows);
-        $list = M('news')->where(array('status' => 1, 'type' => 2))->limit($p->firstRow . ',' . $p->listRows)->select();
+        $list = M('news')->where(array('status' => 1, 'type' => 2, 'user_id' => 0))->limit($p->firstRow . ',' . $p->listRows)->select();
         foreach ($list as $key => $value) {
             if ($value['news_id']) {
                 $list[$key] = D('News')->find($value['news_id']);
@@ -115,9 +116,9 @@ class IndexController extends BaseController
     {
         $this->condition = 4;
         $listRows = 5;
-        $count = M('news')->where(array('status' => 1, 'type' => 1))->count();
+        $count = M('news')->where(array('status' => 1, 'type' => 1, 'user_id' => 0))->count();
         $p = new Page($count, $listRows);
-        $list = M('news')->where(array('status' => 1, 'type' => 1))->limit($p->firstRow . ',' . $p->listRows)->select();
+        $list = M('news')->where(array('status' => 1, 'type' => 1, 'user_id' => 0))->limit($p->firstRow . ',' . $p->listRows)->select();
         foreach ($list as $key => $value) {
             if ($value['news_id']) {
                 $list[$key] = D('News')->find($value['news_id']);
@@ -150,4 +151,41 @@ class IndexController extends BaseController
         $this->detail = $detail;
         $this->display();
     }
+    public function user(){
+        $this->condition = 5;
+        $id = I('get.id');
+        $user_info = M('User')->getbyId($id);
+        $this->assign('user_info',$user_info);
+
+        $trends = M("News")->where(['user_id'=>$id,'user_news_type'=>1,'status'=>1])->select();
+        $this->assign('trends',$trends);
+
+        $reports = M("News")->where(['user_id'=>$id,'user_news_type'=>2,'status'=>1])->select();
+        $this->assign(reports,$reports);
+
+        $this->banner = M('adv')->where(array('adv_id' => '5', 'status' => 1))->getField('pic');
+        $this->display();
+    }
+    public function search()
+    {
+        $key = '%'.I('get.q').'%';
+        $listRows = 5;
+        $count = M('news')->where(array('title'=>['LIKE',$key],'status' => 1, 'user_id' => 0, 'news_id'=>0))->count();
+        $p = new Page($count, $listRows);
+        $list = M('news')->where(array('title'=>['LIKE',$key],'status' => 1, 'user_id' => 0, 'news_id'=>0))->limit($p->firstRow . ',' . $p->listRows)->select();
+
+        foreach ($list as $key => $value) {
+            if ($value['news_id']) {
+                $list[$key] = D('News')->find($value['news_id']);
+                $list[$key]['create_time'] = $value['create_time'];
+                $list[$key]['id'] = $value['id'];
+                isset($list[$key]['pic_title']) ? $list[$key]['pic_title'] = 'http://news.yaozh.com' . $list[$key]['pic_title'] : $list[$key]['pic_title'] = '';
+            }
+        }
+        $this->banner = M('adv')->where(array('adv_id' => '4', 'status' => 1))->getField('pic');
+        $this->list = $list;
+        $this->page = $p->show();
+        $this->display();
+    }
+
 }

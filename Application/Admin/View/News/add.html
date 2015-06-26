@@ -14,6 +14,10 @@ function CheckSubmit()
 </script>
 <form method=post  name="form1" action="<{:U('news/add')}>" onSubmit="return CheckSubmit();">
 	<input type="hidden" name="id" value="<{$info['id']}>">
+<?php if(I('get.user_id') || I('get.user_news_type')) { ?>
+	<input type="hidden" name="user_id" value="<?=I('get.user_id')?>">
+	<input type="hidden" name="user_news_type" value="<?=I('get.user_news_type')?>">
+<?php } ?>
 	<table border="0" cellspacing="0" cellpadding="0" class="vbm">
 		<tr bgcolor="#f5fbff" >
 		  <td width="12%" align="right">文章标题： </td>
@@ -51,11 +55,11 @@ function CheckSubmit()
 		  <td width="12%" align="right">是否上首页： </td>
 		  <td colspan="3"> <input name="is_top" type="radio" value="1" <if condition="$info['is_top'] eq 1"> checked </if>>是<input name="is_top" type="radio" value="0" <if condition="$info['is_top'] eq 0"> checked </if>>否</td>
 		</tr>
+		<tr bgcolor="#f5fbff" >
+		  <td width="12%" align="right">描述：</td>
+		  <td colspan="3"><textarea name="description" cols="" style='height:100px;width:70%'><{$info['description']}></textarea></td>
+		</tr>
 	</table>
-	<div style="margin-top:3px;">
-		描述：
-		<textarea name="description" id="ueditor_contents2" cols="" style='height:100px;width:50%'><{$info['description']}></textarea>
-	</div>
 	<div style="margin-top:3px;">
 		内容：
 		<textarea name="content" id="ueditor_contents" cols="" rows="10" style='height:500px;width:100%'><{$info['content']}></textarea>
@@ -106,7 +110,6 @@ function CheckSubmit()
     })(jQuery);
     window.UEDITOR_HOME_URL = "/public/ueditor/";
     ue1 = UE.getEditor('ueditor_contents');
-    ue2 = UE.getEditor('ueditor_contents2');
 </script>
 
 <include file="Common:footer" />

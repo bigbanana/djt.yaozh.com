@@ -69,7 +69,7 @@ class ALIOSS{
 	/**
 	 * OSS服务地址
 	 */
-	const DEFAULT_OSS_HOST = 'oss.aliyuncs.com';
+	const DEFAULT_OSS_HOST = 'oss-internal.aliyuncs.com';
 	//const DEFAULT_OSS_HOST = '10.230.201.90';
 	/**
 	 * 软件名称
@@ -314,7 +314,7 @@ class ALIOSS{
 	 * @return void
 	 */
 	public function set_debug_mode($debug_mode = true){
-		$this->debug_mode = $debug_mode;
+		$this->debug_mode = false;
 	}
 	
 	/**
@@ -2323,9 +2323,9 @@ class ALIOSS{
 		}
 		
 		//检测日志目录是否存在
-		if(!file_exists($log_path)){
+		/*if(!file_exists($log_path)){
 			throw new OSS_Exception(OSS_LOG_PATH_NOT_EXIST);
-		}
+		}*/
 
 		$log_name = $log_path.'oss_sdk_php_'.date('Y-m-d').'.log';
 

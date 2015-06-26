@@ -117,3 +117,9 @@ function unlimitListTree($arr, $pk = 'id', $pid = 'pid', $child = '_child', $roo
 
     return $tree;
 }
+function getConfig($name){
+    $model = M('Site');
+    $value = $model->field('value')->getByName($name);
+
+    return htmlspecialchars_decode($value['value']);
+}

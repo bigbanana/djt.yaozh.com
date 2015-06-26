@@ -7,7 +7,7 @@ class AdminRoleController extends BaseController {
 	public function _initialize() {
         parent::_initialize();
         $all_nodes = M('AdminNode')->where('status > 0')->select();
-        $this->all_nodes = array_values(list_to_tree($all_nodes, $pk = 'id', $pid = 'pid', $child = '_child', $root = 0));
+        $this->all_nodes = array_values(listToTree($all_nodes, $pk = 'id', $pid = 'pid', $child = '_child', $root = 0));
     }
     public function index() {
         // echo "角色列表";
