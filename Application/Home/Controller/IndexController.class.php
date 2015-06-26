@@ -28,6 +28,7 @@ class IndexController extends BaseController
         $this->last_news = $last_news;
         $this->last_active = $last_active;
 
+        $this->users = M('User')->order('sort desc')->limit(5)->select();
         $this->display();
     }
 
