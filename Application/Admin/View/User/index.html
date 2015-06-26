@@ -7,9 +7,10 @@
     <div id="sunjoin">
     <table border="0" cellspacing="0" cellpadding="0" class="vbm">
         <tbody><tr class="firstr">
-          <td width="60">编号</td>
-          <td>文章标题</td>
-          <td>关联药智新闻id</td>
+          <td width="60">ID</td>
+          <td>名称</td>
+          <td>职位</td>
+          <td>公司</td>
           <td>操作</td>
         </tr>
       </tbody>
@@ -17,8 +18,9 @@
         <?php foreach ($list as $vo): ?>
         <tr bgcolor="white">
           <td><label><?=$vo['id']?></label></td>
-          <td align="left"><a href="/index/newDetail/id/<?=$vo['id']?>.html" target="_blank"><?=$vo['title']?></a></td>
-          <td align="left"><?=$vo['news_id']?></td>
+          <td align="left"><?=$vo['name']?></td>
+          <td align="left"><?=$vo['duty']?></td>
+          <td align="left"><?=$vo['company']?></td>
           <td align="center"><a href="<{:U('edit')}>?id=<?=$vo['id']?>">编辑</a> / <a href="<{:U('delete')}>?id=<?=$vo['id']?>" onclick="if(!confirm('确定要删除吗？\n\n此操作不可以恢复！'))return false;">删除</a>
           </td>
         </tr>
