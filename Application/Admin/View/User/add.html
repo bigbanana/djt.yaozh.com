@@ -62,6 +62,24 @@
             <td colspan="3"> <input name="company" id="company" type="text" class="text" value="<{$vo.company}>" size="50"> <font color="red">*</font></td>
         </tr>
         <tr bgcolor="#f5fbff" >
+            <td width="50px" align="right">会员公司头像</td>
+            <td colspan="3">
+                <input id="upload3" name='company_logo' type="hidden" style='width: 300px' value="<{$vo.company_logo}>" />
+                <div id="myeditor3" class="edui-default" style="display: none;"></div>
+                <input type="button" id='image2' value='上传图片'/>
+            </td>
+        </tr>
+        <tr>
+            <td width="50px" align="right"></td>
+            <td colspan="3" id="previewtr3">
+                <if condition="$vo['company_logo'] neq ''">
+                    <img src="<{$vo.company_logo}>@1e_113w_113h_1c_0i_1o_90Q_1x.jpg" id="preview3" style='max-height:200px'/>
+                <else />
+                    <img src="/public/images/nopic.gif" id="preview<{$i}>" style='max-height:200px'/>
+                </if>
+            </td>
+        </tr>
+        <tr bgcolor="#f5fbff" >
             <td width="50px" align="right">会员公司简介</td>
             <td colspan="3"><textarea name="description" id="ueditor_contents2" cols="100" rows="20"><{$vo.description}></textarea></td>
         </tr>
@@ -116,6 +134,10 @@
         $(function() {
             image.init("myeditor2", "upload2");
             image.show("image2");
+        });
+        $(function() {
+            image.init("myeditor3", "upload3");
+            image.show("image3");
         });
     })(jQuery);
     window.UEDITOR_HOME_URL = "/public/ueditor/";  //UEDITOR_HOME_URL、config、all这三个顺序不能改变
