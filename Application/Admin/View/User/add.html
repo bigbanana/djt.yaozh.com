@@ -7,39 +7,21 @@
 			<td colspan="3"> <input name="name" id="name" type="text" class="text" value="<{$vo.name}>" size="50"> <font color="red">*</font></td>
 		</tr>
 		<tr bgcolor="#f5fbff" >
-			<td width="50px" align="right">分类</td>
-			<td colspan="3">
-				<select name="cid">
-                    <option value=''>
-                        >不限分类
-                    </option>
-                    <foreach name='category_list' item='vo1'>
-                    <option value="<{$vo1['id']}>" disabled='disabled'>
-                        <{$vo1['name']}>
-                    </option>
-                    <foreach name='vo1._child' item='voo'>
-                    	<option value="<{$voo['id']}>"<if condition="$vo['cid'] eq $voo['id']"> selected</if>>
-	                        --<{$voo['name']}>
-	                    </option>
-                    </foreach>
-                    </foreach>
-                </select>
-			</td>
-		</tr>
-		<tr bgcolor="#f5fbff" >
-			<td width="50px" align="right">截止日期</td>
-			<td colspan="3"><input name="deadline" class="text datepicker" value="<{$vo.deadline|date='Y-m-d',###}>" size="50"><font color="red">*</font></td>
-			<input type="hidden" name="refresh_time" value='<?=time();?>'>
-		</tr>
-		<tr bgcolor="#f5fbff" >
 			<td width="50px" align="right">CAS号</td>
 			<td colspan="3"> <input name="cas" id="cas" type="text" class="text" value="<{$vo.cas}>" size="50"> <font color="red">*</font></td>
 		</tr>
-
+        <tr bgcolor="#f5fbff" >
+            <td width="50px" align="right">会员头像</td>
+            <td colspan="3">
+                <input id="upload2" name='pic_title' type="hidden" style='width: 300px' value="<{$vo.pic_title}>" />
+                <div id="myeditor2" class="edui-default" style="display: none;"></div>
+                <input type="button" id='image2' value='上传图片'/>
+            </td>
+        </tr>
 		<tr bgcolor="#f5fbff" >
-			<td width="50px" align="right">图片</td>
+			<td width="50px" align="right">图片列表</td>
 			<td colspan="3">
-				<input id="upload" name='thumb' type="hidden" style='width: 300px' value="<{$vo.thumb}>" />
+				<input id="upload" name='pic_list' type="hidden" style='width: 300px' value="<{$vo.pic_list}>" />
                 <div id="myeditor" class="edui-default" style="display: none;"></div>
                 <input type="button" id='image' value='上传图片'/>
 			</td>
@@ -66,15 +48,6 @@
 			<td colspan="3"><textarea name="describe" id="ueditor_contents" cols="100" rows="5"><{$vo.describe}></textarea></td>
 			<{:printUeditor('250',"100%")}>
 		</tr>
-
-        <tr bgcolor="#f5fbff" >
-            <td width="50px" align="right">首页推广图片</td>
-            <td colspan="3">
-                <input id="upload2" name='index_ad_picture' type="hidden" style='width: 300px' value="<{$vo.index_ad_picture}>" />
-                <div id="myeditor2" class="edui-default" style="display: none;"></div>
-                <input type="button" id='image2' value='上传图片'/>
-            </td>
-        </tr>
         <tr>
             <td width="50px" align="right"></td>
             <td colspan="3" id="previewtr2">
