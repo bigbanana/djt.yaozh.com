@@ -24,7 +24,7 @@ $url = "/admin/news/add?user_id=".I('get.user_id')."&user_news_type=".I('get.use
       	<?php foreach ($list as $vo): ?>
     	<tr bgcolor="white">
     	  <td><label><?=$vo['id']?></label></td>
-    	  <td align="left"><a href="/index/newDetail/id/<?=$vo['id']?>.html" target="_blank"><?=$vo['title']?></a></td>
+    	  <td align="left"><a href="/index/newsDetail/id/<?=$vo['id']?>.html" target="_blank"><?=$vo['title']?></a></td>
           <td align="left"><?=$vo['news_id']?></td>
     	  <td align="center"><a href="<{:U('edit')}>?id=<?=$vo['id']?>">编辑</a> / <a href="<{:U('delete')}>?id=<?=$vo['id']?>" onclick="if(!confirm('确定要删除吗？\n\n此操作不可以恢复！'))return false;">删除</a>
     	  </td>
