@@ -156,5 +156,11 @@ class IndexController extends BaseController
         $id = I('get.id');
         $user_info = M('User')->getbyId($id);
         dump($user_info);
+
+        $trends = M("News")->where(['user_id'=>$id,'user_news_type'=>1,'status'=>1])->select();
+        dump($trends);
+
+        $reports = M("News")->where(['user_id'=>$id,'user_news_type'=>2,'status'=>1])->select();
+        dump($reports);
     }
 }
