@@ -8,7 +8,7 @@ class UserController extends BaseController
 
 	public function _list()
 	{
-		$UserList = M('member')->select();
+		// $UserList = M('member')->select();
 		$this->assign('list',$UserList);
 		$this->display();
 	}
