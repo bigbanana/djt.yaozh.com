@@ -165,12 +165,12 @@ class IndexController extends BaseController
     }
     public function search()
     {
-        echo $key = '%'.I('get.q').'%';
+        $key = '%'.I('get.q').'%';
         $listRows = 5;
         $count = M('news')->where(array('title'=>['LIKE',$key],'status' => 1, 'user_id' => 0))->count();
         $p = new Page($count, $listRows);
         $list = M('news')->where(array('title'=>['LIKE',$key],'status' => 1, 'user_id' => 0))->limit($p->firstRow . ',' . $p->listRows)->select();
-        echo M('news')->getlastsql();
+        // echo M('news')->getlastsql();
         foreach ($list as $key => $value) {
             if ($value['news_id']) {
                 $list[$key] = D('News')->find($value['news_id']);
