@@ -70,7 +70,6 @@ class NavController extends BaseController
         } else {
             $id = I('id');
             $nav = $navModel->find($id);
-            dump($nav);
             if ($nav['type'] == '顶部导航') {
                 $this->pidList = M('nav')->where(array('pid' => 0, 'type' => '顶部导航'))->select();
             } else {
