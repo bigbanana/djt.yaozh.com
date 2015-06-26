@@ -13,11 +13,7 @@ class UserController extends BaseController
 		$this->display();
 	}
 	public function index(){
-		$map = array(
-			'1'=>1
-        );
-        $this->_list(M('User'), $map);
-		// $this->display();
+		die('ok');
 	}
 	public function add (){
 		if(IS_POST){
