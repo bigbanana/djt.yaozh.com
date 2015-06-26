@@ -1,7 +1,11 @@
 <include file="Common:header" />
 	<div class="ccc2">
 		<ul>
-	   <input class="sunjoin large" type="button" onClick="location.href='/admin/news/add'" value="发布文章">
+<?php if(I('get.user_id') || I('get.user_news_type')) { ?>
+	   <input class="sunjoin large" type="button" onClick="location.href='/admin/news/add?user_id=I(\'get.user_id\')&user_news_type=I(\'get.user_news_type\')'" value="发布会员新闻">
+<?php }else{ ?>
+    <input class="sunjoin large" type="button" onClick="location.href='/admin/news/add'" value="发布文章">
+<?php } ?>
 		</ul>
 	</div>
 	<div id="sunjoin">
