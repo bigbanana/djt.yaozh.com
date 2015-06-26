@@ -21,7 +21,7 @@
           <td align="left"><?=$vo['name']?></td>
           <td align="left"><?=$vo['duty']?></td>
           <td align="left"><?=$vo['company']?></td>
-          <td align="center"><a href="<{:U('add')}>?id=<?=$vo['id']?>">编辑</a> / <a href="<{:U('delete')}>?id=<?=$vo['id']?>" onclick="if(!confirm('确定要删除吗？\n\n此操作不可以恢复！'))return false;">删除</a>
+          <td align="center"><a href="<{:U('News/index')}>?user_id=<?=$vo['id']?>&user_news_type=1">动态</a> / <a href="<{:U('News/index')}>?user_id=<?=$vo['id']?>&user_news_type=2">报道</a> / <a href="<{:U('add')}>?id=<?=$vo['id']?>">编辑</a> / <a href="<{:U('delete')}>?id=<?=$vo['id']?>" onclick="if(!confirm('确定要删除吗？\n\n此操作不可以恢复！'))return false;">删除</a>
           </td>
         </tr>
         <?php endforeach ?>
