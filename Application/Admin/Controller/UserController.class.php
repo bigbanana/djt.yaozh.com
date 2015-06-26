@@ -12,7 +12,9 @@ class UserController extends BaseController
 		$this->assign('list',$UserList);
 		$this->display();
 	}
-
+	public function index(){
+		$this->display();
+	}
 	public function apply()
 	{
 			$start_time = strtotime(I('get.start_time'));
