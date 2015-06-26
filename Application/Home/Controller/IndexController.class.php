@@ -167,9 +167,9 @@ class IndexController extends BaseController
     {
         echo $key = I('get.q');
         $listRows = 5;
-        $count = M('news')->where(array('title'=>['like',$key],'status' => 1, 'user_id' => 0))->count();
+        $count = M('news')->where(array('title'=>['LIKE',$key],'status' => 1, 'user_id' => 0))->count();
         $p = new Page($count, $listRows);
-        $list = M('news')->where(array('title'=>['like',$key],'status' => 1, 'user_id' => 0))->limit($p->firstRow . ',' . $p->listRows)->select();
+        $list = M('news')->where(array('title'=>['LIKE',$key],'status' => 1, 'user_id' => 0))->limit($p->firstRow . ',' . $p->listRows)->select();
         
         foreach ($list as $key => $value) {
             if ($value['news_id']) {
