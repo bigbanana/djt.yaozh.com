@@ -118,9 +118,9 @@ foreach ($pic_list as $pic) { ?>
                 <div class="ui-panel-content">
                   <ul class="news-list square">
                     <div class="first">
-                      <p class="title"><a href="#" target="_blank"><{$reports[0].title}></a></p>
+                      <p class="title"><a href="/index/newsDetail/id/<{$reports[0].id}>" target="_blank"><{$reports[0].title}></a></p>
                       <p class="summary"><{$reports[0].description|htmlspecialchars_decode|strip_tags|mb_substr=0,25}> 
-                        <a class="cl-blue" target="_blank" href="#">[详细]</a>
+                        <a class="cl-blue" target="_blank" href="/index/newsDetail/id/<{$reports[0].id}>">[详细]</a>
                       </p>
                     </div>
                     <?php foreach ($reports as $key => $report): ?>
