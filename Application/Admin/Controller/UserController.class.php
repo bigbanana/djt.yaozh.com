@@ -29,6 +29,10 @@ class UserController extends BaseController
 				$this->error('添加失败！');
 			}
 		} else {
+			if(I('get.id')) {
+				$vo = M('User')->getbyId(I('get.id'));
+				$this->assign('vo',$vo);
+			}
 			$this->display();
 		}
 	}
