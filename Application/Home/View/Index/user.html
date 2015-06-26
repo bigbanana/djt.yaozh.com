@@ -41,11 +41,13 @@
               </div>
               <div class="ui-panel-content">
                 <div class="img-list">
-                  <a href="/public/home/images/jiesao_02.jpg" data-lightbox="fengcai" class="img"><img src="/public/home/images/jiesao_02.jpg" alt=""></a>
-                  <a href="/public/home/images/jiesao_02.jpg" data-lightbox="fengcai" class="img"><img src="/public/home/images/jiesao_02.jpg" alt=""></a>
-                  <a href="/public/home/images/jiesao_02.jpg" data-lightbox="fengcai" class="img"><img src="/public/home/images/jiesao_02.jpg" alt=""></a>
-                  <a href="/public/home/images/jiesao_02.jpg" data-lightbox="fengcai" class="img"><img src="/public/home/images/jiesao_02.jpg" alt=""></a>
-                  <a href="/public/home/images/jiesao_02.jpg" data-lightbox="fengcai" class="img"><img src="/public/home/images/jiesao_02.jpg" alt=""></a>
+<?php
+$pic_list = explode(',', $user_info['pic_list']);
+foreach ($pic_list as $pic) { ?>
+                <a href="<{$pic}>" data-lightbox="fengcai" class="img"><img src="<{$pic}>@130w_150h.jpg" alt=""></a>
+<?php
+}
+?>
                 </div>
               </div>
             </div>
@@ -59,34 +61,34 @@
                     <li>
                       <p>
                         <i class="mark">“</i>
-                        <span class="text">药智精英俱乐部是由药智网和高圣生物医药发起组建，由大健康产业的专业技术精英及企业家、银行家组成的非营利性的服务组织。</span>
+                        <span class="text"><{$user_info.quotations1}></span>
                         <i class="mark">”</i>
                       </p>
-                      <p class="tr">——于明德</p>
+                      <p class="tr">——<{$user_info.name}></p>
                     </li>
                     <li>
                       <p>
                         <i class="mark">“</i>
-                        <span class="text">药智精英俱乐部是由药智网和高圣生物医药发起组建，由大健康产业的专业技术精英及企业家、银行家组成的非营利性的服务组织。</span>
+                        <span class="text"><{$user_info.quotations2}></span>
                         <i class="mark">”</i>
                       </p>
-                      <p class="tr">——于明德</p>
+                      <p class="tr">——<{$user_info.name}></p>
                     </li>
                     <li>
                       <p>
                         <i class="mark">“</i>
-                        <span class="text">药智精英俱乐部是由药智网和高圣生物医药发起组建，由大健康产业的专业技术精英及企业家、银行家组成的非营利性的服务组织。</span>
+                        <span class="text"><{$user_info.quotations3}></span>
                         <i class="mark">”</i>
                       </p>
-                      <p class="tr">——于明德</p>
+                      <p class="tr">——<{$user_info.name}></p>
                     </li>
                     <li>
                       <p>
                         <i class="mark">“</i>
-                        <span class="text">药智精英俱乐部是由药智网和高圣生物医药发起组建，由大健康产业的专业技术精英及企业家、银行家组成的非营利性的服务组织。</span>
+                        <span class="text"><{$user_info.quotations4}></span>
                         <i class="mark">”</i>
                       </p>
-                      <p class="tr">——于明德</p>
+                      <p class="tr">——<{$user_info.name}></p>
                     </li>
                   </ul>
                 </div>
@@ -136,9 +138,9 @@
               <span class="ui-panel-name"><i class="jieshao_icon icon2"></i>他的公司</span>
             </div>
             <div class="ui-panel-content">
-              <a href="#" class="company-img"><img src="/public/home/images/jiesao_03.jpg" alt=""></a>
+              <a href="#" class="company-img"><img src="<{$user_info.company_logo}>@297w_180h.jpg" alt=""></a>
               <div class="mt20 fs16">公司简介</div>
-              <p class="indent mt20">于明德中国医药企业管理协会、中国医药企业家协会会长。长期从事药品生产、流通管理工作。曾任辽宁省阜新制药厂、中药厂技术科长、厂长；阜新市医药总公司总经理、市医药管理局局长；辽宁省医药管理局副局长、局长；国家医药管理局财务与流通司司长；国家经济贸易委员会医药司司长、经济运行局副局长；国家发展与改革委员会经济运行局副局长；现任北京医药集团公司名誉董事长；医药经济报首席专家；国家发展改革委员会生物医药专家委员会副主任；国家科技部国家重大专项专家委员会专家。
+              <p class="indent mt20"><{$user_info.company_description|htmlspecialchars_decode}>
                 <a class="cl-blue" target="_blank" href="#">[详细]</a>
               </p>
             </div>
