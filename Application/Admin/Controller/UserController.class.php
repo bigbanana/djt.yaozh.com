@@ -16,7 +16,7 @@ class UserController extends BaseController
 		$map = array(
         );
         $this->_list(M('User'), $map);
-		$this->display();
+		// $this->display();
 	}
 	public function add (){
 		if(IS_POST){
