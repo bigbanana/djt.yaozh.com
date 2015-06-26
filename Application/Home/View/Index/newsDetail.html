@@ -26,7 +26,7 @@
         <h2>作者：<{$detail['author']}>　|　时间：<{:date('Y-m-d',$detail['create_time'])}> |　来自:<{$detail['refer_url']}><span class="de-span">分享到：
         <a class="de1" href="javascript:;" title="新浪微博"></a><a class="de2" href="javascript:;" title="微信"></a><a class="de3" href="javascript:;" title="腾讯微博"></a><a class="de4" href="javascript:;" title="人人网"></a></span></h2> 
         <div class="de-p">
-          <{$detail['content']}>
+          <{$detail['content']|htmlspecialchars_decode}>
         </div>
       </div>
       <div class="sidebar">
