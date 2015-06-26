@@ -21,9 +21,9 @@
             </div>
           </foreach>
         </div>
-        <form action="#" target="_blank" class="search">
+        <form action="/index/search" target="_blank" class="search">
           <div class="to-input">
-            <input class="text" type="text" />
+            <input class="text" type="text" name='q' value="<?=I('get.q')?>" />
             <a href="javascript:;" class="button"></a>
           </div>
         </form>
