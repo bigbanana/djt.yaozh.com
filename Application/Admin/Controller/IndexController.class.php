@@ -45,5 +45,6 @@ class IndexController extends BaseController
     }
     public function clear()
     {
+        $this->error('暂时无此功能！');
     }
 }
