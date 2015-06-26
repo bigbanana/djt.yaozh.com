@@ -17,7 +17,9 @@ class UserController extends BaseController
 	}
 	public function add (){
 		if(IS_POST){
-			dump(I('post.'));
+			$data = I('post.');
+			unset($data['editorValue']);
+			dump($data);
 		} else {
 			$this->display();
 		}
