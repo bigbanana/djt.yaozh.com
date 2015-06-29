@@ -14,7 +14,7 @@ class IndexController extends BaseController
         foreach ($last_news as $key => $value) {
             if ($value['news_id']) {
                 $last_news[$key] = D('news')->find($value['news_id']);
-                $last_news[$key]['id'] = $value['id'];
+                // $last_news[$key]['id'] = $value['id'];
             }
         }
         $last_active = M('news')->where(array('type' => 2, 'status' => 1, 'is_top' => 1, 'user_id' => 0))->limit(5)->select();
