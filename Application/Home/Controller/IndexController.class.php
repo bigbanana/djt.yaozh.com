@@ -14,14 +14,14 @@ class IndexController extends BaseController
         foreach ($last_news as $key => $value) {
             if ($value['news_id']) {
                 $last_news[$key] = D('news')->find($value['news_id']);
-                $last_news[$k]['id'] = $value['id'];
+                $last_news[$key]['id'] = $value['id'];
             }
         }
         $last_active = M('news')->where(array('type' => 2, 'status' => 1, 'is_top' => 1, 'user_id' => 0))->limit(6)->select();
         foreach ($last_active as $k => $v) {
             if ($v['news_id']) {
                 $last_active[$k] = D('news')->find($v['news_id']);
-                $last_active[$k]['id'] = $v['id'];
+                // $last_active[$k]['id'] = $v['id'];
             }
         }
         $this->banner = M('adv')->where(array('adv_id' => 1, 'status' => 1))->select();
