@@ -55,8 +55,8 @@
                 <p class="summary"><{$ln['description']}></p>
               </div>
             <else/>
+            	<li><a href="<{:U('index/newsDetail',array('id'=>$ln['id']))}>" title="<{$ln['title']}>"><{$ln['title']}></a></li>
             </if>
-              <li><a href="<{:U('index/newsDetail',array('id'=>$ln['id']))}>" title="<{$ln['title']}>"><{$ln['title']}></a></li>
             </foreach>
           </ul>
         </div>
