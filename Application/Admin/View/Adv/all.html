@@ -31,12 +31,12 @@
             </td>
             <td>
                 &nbsp;
-                <select name="place_id">
+                <select name="adv_id">
                     <option value=''>
                         >不限广告位
                     </option>
                     <foreach name='place' item='vo'>
-                    <option value="<{$vo['id']}>" <if condition="$vo[id] eq $_GET['place_id']">selected</if>>
+                    <option value="<{$vo['id']}>" <if condition="$vo[id] eq $_GET['adv_id']">selected</if>>
                         <{$vo['title']}>
                     </option>
                     </foreach>
