@@ -26,7 +26,13 @@
       </div>
       <div class="jiesao-main">
         <div class="top-box">
-          <a href="javascript:;" class="img"><img src="<{$user_info.pic_title}>@370w_230h.jpg" alt="<{$user_info.name}>"><span><{$user_info.name}> <{$user_info.duty}></span></a>
+          <a href="javascript:;" class="img">
+            <span class="text">
+              <span><{$user_info.name}></span>
+              <span class="ml20"><{$user_info.duty}></span>
+            </span>
+            <img src="<{$user_info.pic_title}>@370w_230h.jpg" alt="<{$user_info.name}>">
+          </a>
           <div class="summary">
             <p class="fs18">会员介绍</p>
             <p class="indent mt10"><{$user_info.description|htmlspecialchars_decode}></p>
@@ -52,7 +58,7 @@ foreach ($pic_list as $pic) { ?>
               </div>
             </div>
             <div class="clearfix mt20">
-              <div class="fl w350 ui-panel">
+              <div class="fl w350 ui-panel" style="background-color:#fff;">
                 <div class="ui-panel-title">
                   <span class="ui-panel-name"><i class="jieshao_icon icon3"></i>他的语录</span>
                 </div>
@@ -131,7 +137,7 @@ foreach ($pic_list as $pic) { ?>
               </div>
             </div>
           </div>
-          <div class="ui-panel right-box">
+          <div class="ui-panel right-box" style="background-color:#fff;">
             <div class="ui-panel-title">
               <span class="ui-panel-name"><i class="jieshao_icon icon2"></i>他的公司</span>
             </div>

@@ -448,7 +448,10 @@ div.quotes span.disabled {
 .jiesao-main .indent{line-height: 2.2;}
 .jiesao-main a:hover{color:#005ca1;}
 .jiesao-main .top-box{overflow: hidden;*zoom:1;}
-.jiesao-main .top-box .img{float:left;width:370px;height:230px;padding: 6px;border:1px solid #ddd;}
+.jiesao-main .top-box .img{float:left;width:370px;height:230px;padding: 6px;border:1px solid #ddd;position: relative;}
+.jiesao-main .top-box .img .text{position: absolute;bottom: 6px;left: 6px;width: 370px;height: 30px;color: #fff;background-color: #34495e;line-height: 30px;text-align: center;
+  opacity: 0.8;filter:alpha(opacity=80);font-size: 14px;
+}
 .jiesao-main .top-box .img img{width:100%;height:100%;}
 .jiesao-main .top-box .summary{overflow: hidden;*zoom:1;background-color: #f9f9fa;padding: 20px 40px;height: 204px;}
 .jiesao-main .top-box .yuedu-btn{padding: 5px 10px;background-color: #517394;color:#fff;}
