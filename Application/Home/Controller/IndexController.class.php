@@ -152,7 +152,7 @@ class IndexController extends BaseController
         $this->banner = M('adv')->where(array('adv_id' => '4', 'status' => 1))->getField('pic');
         $this->list = $list;
         $this->page = $p->show();
-        $this->display('index/news');
+        $this->display('Index/news');
     }
     public function newsDetail()
     {
