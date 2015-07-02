@@ -81,6 +81,7 @@ class IndexController extends BaseController
     public function apply()
     {
         $this->condition = 5;
+        $this->banner = M('adv')->where(array('adv_id' => '5', 'status' => 1))->getField('pic');
         $this->display();
     }
 
