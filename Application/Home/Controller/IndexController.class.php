@@ -81,6 +81,7 @@ class IndexController extends BaseController
     public function apply()
     {
         $this->condition = 5;
+        $this->banner = M('adv')->where(array('adv_id' => '5', 'status' => 1))->getField('pic');
         $this->display();
     }
 
@@ -102,6 +103,7 @@ class IndexController extends BaseController
     {
         $this->condition = 2;
         $this->banner = M('adv')->where(array('adv_id' => '2', 'status' => 1))->getField('pic');
+        $this->users = M('User')->order('sort desc')->limit(5)->select();
         $this->display();
     }
 
@@ -132,7 +134,26 @@ class IndexController extends BaseController
         $this->page = $p->show();
         $this->display();
     }
-
+    public function user_news()
+    {
+        $this->condition = 4;
+        $listRows = 5;
+        $count = M('news')->where(array('status' => 1, 'type' => 1, 'user_id' => ['gt',0]))->count();
+        $p = new Page($count, $listRows);
+        $list = M('news')->where(array('status' => 1, 'type' => 1, 'user_id' => ['gt',0]))->limit($p->firstRow . ',' . $p->listRows)->select();
+        foreach ($list as $key => $value) {
+            if ($value['news_id']) {
+                $list[$key] = D('News')->find($value['news_id']);
+                $list[$key]['create_time'] = $value['create_time'];
+                $list[$key]['id'] = $value['id'];
+                isset($list[$key]['pic_title']) ? $list[$key]['pic_title'] = 'http://news.yaozh.com' . $list[$key]['pic_title'] : $list[$key]['pic_title'] = '';
+            }
+        }
+        $this->banner = M('adv')->where(array('adv_id' => '4', 'status' => 1))->getField('pic');
+        $this->list = $list;
+        $this->page = $p->show();
+        $this->display('news');
+    }
     public function newsDetail()
     {
         $this->condition = 4;
