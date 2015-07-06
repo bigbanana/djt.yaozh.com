@@ -50,21 +50,21 @@
   </div>
 <!--banner-->
 	<div class="banner">
-		<?php if(is_array($banner)): foreach($banner as $key=>$bn): ?><img src="<?php echo ($bn['pic']); ?>" ><?php endforeach; endif; ?>
+		<?php if(is_array($banner)): foreach($banner as $key=>$bn): ?><a target="_blank" href="<?php echo ($bn['link']); ?>"><img src="<?php echo ($bn['pic']); ?>" ></a><?php endforeach; endif; ?>
 	</div>
 <!--Notification-->
   <div class="w">
     <div class="not w1">
       <div class="nots">
-        <div class="nis ni-1"><i class="i"></i></div>
+        <a href="<?php echo U('index/active');?>" class="nis ni-1"><i class="i"></i></a>
         <h2>俱乐部活动</h2>
         <div class="noe">
           <ul class="circle">
             <?php if(is_array($last_active)): foreach($last_active as $key=>$la): if($key == 0): ?><div class="first-item">
                 <a class="text-overflow" href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>" title="<?php echo ($la['title']); ?>"><?php echo ($la['title']); ?></a>
-                <p class="summary"><?php echo ($la['description']); ?></p>
+                <p class="summary"><?php echo (mb_substr($la['description'],0,36)); ?> <a class="cl-blue" href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>">[详细]</a></p>
               </div>
-            <?php else: ?>
+            <?php elseif($key < 4): ?>
               <li><a href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>" title="<?php echo ($la['title']); ?>"><?php echo ($la['title']); ?></a></li><?php endif; endforeach; endif; ?>
           </ul>
           <!-- <p>
@@ -73,21 +73,21 @@
         </div>
       </div>
       <div class="nots nots2">
-        <div class="nis ni-2"><i class="i"></i></div>
+        <a href="<?php echo U('index/news');?>" class="nis ni-2"><i class="i"></i></a>
         <h2>俱乐部新闻</h2>
         <div class="noe">
           <ul class="circle">
             <?php if(is_array($last_news)): foreach($last_news as $key=>$ln): if($key == 0): ?><div class="first-item">
                 <a class="text-overflow" href="<?php echo U('index/newsDetail',array('id'=>$ln['id']));?>" title="<?php echo ($ln['title']); ?>"><?php echo ($ln['title']); ?></a>
-                <p class="summary"><?php echo ($ln['description']); ?></p>
+                <p class="summary"><?php echo (mb_substr($ln['description'],0,36)); ?> <a class="cl-blue" href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>">[详细]</a></p>
               </div>
-            <?php else: ?>
+            <?php elseif($key < 4): ?>
             	<li><a href="<?php echo U('index/newsDetail',array('id'=>$ln['id']));?>" title="<?php echo ($ln['title']); ?>"><?php echo ($ln['title']); ?></a></li><?php endif; endforeach; endif; ?>
           </ul>
         </div>
       </div>
       <div class="nots">
-        <div class="nis ni-3"><i class="i"></i></div>
+        <a href="<?php echo U('index/apply');?>" class="nis ni-3"><i class="i"></i></a>
         <h2>入会流程</h2>
         <div class="noe">
           <ul class="tc">
@@ -205,7 +205,7 @@
 			<h1><span class="title">会员介绍</span><span class="en">MEMBER PROFILE</span></h1>
 			<div class="mbs">
 				<?php foreach ($users as $user): ?>
-				<a href="index/user/id/<?php echo ($user["id"]); ?>" target="_blank">
+				<a href="/index/user/id/<?php echo ($user["id"]); ?>" target="_blank">
 					<div class="mbs-x">
 						<div class="img">
 							<img src="<?php echo ($user["pic_title"]); ?>@1e_140w_140h_1c_0i_1o_90Q_1x.jpg">

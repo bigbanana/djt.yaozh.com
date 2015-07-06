@@ -134,7 +134,7 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 .not{ overflow:hidden; *zoom:1; }
 .nots{ width:250px; overflow:hidden; color: #606060; height:auto; float:left; display:inline; margin-top:100px}
 .nots2{ margin:100px 225px 0}
-.nis{width:100px;height:100px;margin:0 auto;background-color: #bbb;border-radius:50%;position: relative;cursor:pointer;overflow: hidden;}
+.nis{width:100px;height:100px;display:block;margin:0 auto;background-color: #bbb;border-radius:50%;position: relative;cursor:pointer;overflow: hidden;}
 .nis:after{content: "";position:absolute;width:100%;height:100%;top:100%;left:0;border-radius: 50%;
   transition:0.3s top;
 }
@@ -151,7 +151,7 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 .nots .noe li a{ font-size:14px;color:#606060}
 
 .nots .noe .circle li{background-position: 0 center;padding-left: 10px;}
-.nots .noe .first-item a{display: block;color:#111;font-weight:700;font-size: 14px;}
+.nots .noe .first-item .text-overflow{display: block;color:#111;font-weight:700;font-size: 14px;}
 .nots .noe .first-item .summary{color:#606060;height: 36px;overflow: hidden;line-height: 18px;margin: 5px;}
 
 .intr{ overflow:hidden; color:#666;line-height: 1.8;}

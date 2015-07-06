@@ -16,14 +16,15 @@
 <!--banner-->
 	<div class="banner">
 		<foreach name="banner" item="bn">
-			<img src="<{$bn['pic']}>" >
+      <a target="_blank" href="<{$bn['link']}>"><img src="<{$bn['pic']}>" ></a>
+			
 		</foreach>
 	</div>
 <!--Notification-->
   <div class="w">
     <div class="not w1">
       <div class="nots">
-        <div class="nis ni-1"><i class="i"></i></div>
+        <a href="<{:U('index/active')}>" class="nis ni-1"><i class="i"></i></a>
         <h2>俱乐部活动</h2>
         <div class="noe">
           <ul class="circle">
@@ -31,9 +32,9 @@
             <if condition="$key eq 0">
               <div class="first-item">
                 <a class="text-overflow" href="<{:U('index/newsDetail',array('id'=>$la['id']))}>" title="<{$la['title']}>"><{$la['title']}></a>
-                <p class="summary"><{$la['description']}></p>
+                <p class="summary"><{$la['description']|mb_substr=###,0,36}> <a class="cl-blue" href="<{:U('index/newsDetail',array('id'=>$la['id']))}>">[详细]</a></p>
               </div>
-            <else/>
+            <elseif condition="$key lt 4" />
               <li><a href="<{:U('index/newsDetail',array('id'=>$la['id']))}>" title="<{$la['title']}>"><{$la['title']}></a></li>
             </if>
             </foreach>
@@ -44,7 +45,7 @@
         </div>
       </div>
       <div class="nots nots2">
-        <div class="nis ni-2"><i class="i"></i></div>
+        <a href="<{:U('index/news')}>" class="nis ni-2"><i class="i"></i></a>
         <h2>俱乐部新闻</h2>
         <div class="noe">
           <ul class="circle">
@@ -52,9 +53,9 @@
             <if condition="$key eq 0">
               <div class="first-item">
                 <a class="text-overflow" href="<{:U('index/newsDetail',array('id'=>$ln['id']))}>" title="<{$ln['title']}>"><{$ln['title']}></a>
-                <p class="summary"><{$ln['description']}></p>
+                <p class="summary"><{$ln['description']|mb_substr=###,0,36}> <a class="cl-blue" href="<{:U('index/newsDetail',array('id'=>$la['id']))}>">[详细]</a></p>
               </div>
-            <else/>
+            <elseif condition="$key lt 4" />
             	<li><a href="<{:U('index/newsDetail',array('id'=>$ln['id']))}>" title="<{$ln['title']}>"><{$ln['title']}></a></li>
             </if>
             </foreach>
@@ -62,7 +63,7 @@
         </div>
       </div>
       <div class="nots">
-        <div class="nis ni-3"><i class="i"></i></div>
+        <a href="<{:U('index/apply')}>" class="nis ni-3"><i class="i"></i></a>
         <h2>入会流程</h2>
         <div class="noe">
           <ul class="tc">

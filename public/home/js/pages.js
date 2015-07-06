@@ -25,7 +25,7 @@ define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jque
         duration:500
       },
       createControl : function($this,i){
-        return $('<a href="javascript:;"><img src="'+$this.attr('src')+'" /></a>');
+        return $('<a href="javascript:;"><img src="'+$this.find('img').attr('src')+'" /></a>');
       }
     });
     $banner.on('mouseenter','.ui-sliderbox-control>a',function(){
