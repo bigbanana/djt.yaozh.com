@@ -35,6 +35,13 @@ define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jque
       if(e.keyCode && e.keyCode != 27) return;
       $search.submit();
     });
+    $body.on('click','.go-top',function(){
+      $("html,body").animate({scrollTop:0},200);
+    });
+    $body.on('click','.go-bottom',function(){
+      $("html,body").animate({scrollTop:document.body.scrollHeight},200);
+    });
+
   })();
 
   function share_s_weibo(url,title){

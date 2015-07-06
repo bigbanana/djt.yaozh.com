@@ -11,6 +11,7 @@
 	}
 	var baseUrl = '/public/home';
 </script>
+<link rel="stylesheet" type="text/css" href="http://static.yaozh.com/css/app.css">
 <link rel="stylesheet" type="text/css" href="/public/home/css/cb.css">
 <script src="http://static.yaozh.com/js/app.js"></script>
 <script>
@@ -222,6 +223,14 @@
 		</div>
 	</div>
 <!--foot-->
+  <div class="side-bar">
+    <a href="javascript:;" class="item go-top">
+      <i class="fa"></i>
+    </a>
+    <a href="javascript:;" class="item go-bottom">
+      <i class="fa"></i>
+    </a>
+  </div>
   <div class="w foot">
     <div class=" w1 ft">
       <div class="ft-r">
