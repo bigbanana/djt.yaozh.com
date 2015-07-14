@@ -12,7 +12,7 @@
 	var baseUrl = '/public/home';
 </script>
 <link rel="stylesheet" type="text/css" href="http://static.yaozh.com/css/app.css">
-<link rel="stylesheet" type="text/css" href="/public/home/css/cb.css">
+<link rel="stylesheet" type="text/css" href="/public/home/css/cb.css?v=1.1.1">
 <script src="http://static.yaozh.com/js/app.js"></script>
 <script>
 	require([baseUrl+'/js/pages.js'],function(pages){

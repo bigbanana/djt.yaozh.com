@@ -458,11 +458,11 @@ div.quotes span.disabled {
 .jiesao-main .top-box .yuedu-btn{padding: 5px 10px;background-color: #517394;color:#fff;}
 
 .jiesao-main .bottom-box{overflow: hidden;*zoom:1;margin-top: 40px;}
-.jiesao-main .left-box{width:830px;float:left;}
-.jiesao-main .right-box{width:350px;margin-left:20px;float:left;}
-.jiesao-main .w350{width:350px;}
-.jiesao-main .w450{width:450px;}
-.jiesao-main .ui-panel-title{border-bottom:1px solid #ddd;padding: 0;line-height: 36px;font-size: 18px;}
+.jiesao-main .left-box{width: 840px;float:left;}
+.jiesao-main .right-box{width: 300px;margin-left:20px;float:left;}
+.jiesao-main .w350{width: 320px;}
+.jiesao-main .w450{width: 430px;}
+.jiesao-main .ui-panel-title{border-bottom:1px solid #ddd;padding: 0;line-height: 36px;height: 36px;font-size: 18px;}
 .jiesao-main .ui-panel-title .ui-panel-name{border-left: 8px solid #34495e;padding-left: 8px;font-weight: 400;}
 .jieshao_icon{width:30px;margin-right:6px;height:25px;display: inline-block;vertical-align:middle;background: url(../images/jieshao_icon.png) no-repeat 0 0 transparent;}
 .jieshao_icon.icon2{background-position: 0 -25px;}
