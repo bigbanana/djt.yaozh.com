@@ -261,7 +261,7 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 .de-p p{ text-indent:40px; font-family:"宋体"}
 
 
-.t{ background:#34495e;position: fixed;z-index: 2;height: 80px;top:0;}
+.t{ background:#34495e;position: fixed;z-index: 10;height: 80px;top:0;}
 .w .h1-56{ font-size:40px; padding:80px 0 10px; color:#3498DB;position: relative;}
 .w .h1-56 span{}
 .p-x{ width:450px; padding-top:20px}
@@ -322,7 +322,7 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 .bt label.validate-success{background: url(../images/icon_m2.png) 0px 0px no-repeat;}
 
 .bt .input-c{ border:1px #03a9f4 solid;}
-.alss{ overflow:hidden; padding:200px 0 300px}
+.alss{ overflow:hidden; padding:100px 0 300px}
 .attl-button button{ background:#03a9f4; width:346px; height:42px; border-radius:3px; border:0 none; text-align:center; color:#fff; font-size:16px;font-family:"microsoft yahei"}
 .attl-button button:hover{background:#00c6ff;}
 .dow a{ display:block; font-size:14px; color:#2672ec; margin-top:20px; font-weight:700;}
