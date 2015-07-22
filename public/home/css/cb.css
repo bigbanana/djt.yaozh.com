@@ -166,6 +166,10 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 
 .mb{ overflow:hidden; }
 .mbs{ overflow:hidden;}
+.mbs a{
+    display: inline-block;
+    vertical-align: top;
+}
 .mbs-o{   overflow:hidden; float:left; margin-right:7px; width:280px; padding:5px; height:120px; margin-bottom:50px}
 .m-img{ float:left; width:100px; height:120px;}
 .m-img img{ width:100px; height:120px;}
@@ -328,7 +332,7 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 .dow a{ display:block; font-size:14px; color:#2672ec; margin-top:20px; font-weight:700;}
 .dow h3{ font-size:15px; color:#404040}
 
-.mbs-x{ overflow:hidden; text-align:center;font-size:14px; float:left; width:210px; margin-right:30px; height:auto;}
+.mbs-x{ overflow:hidden; text-align:center;font-size:14px; float:left; width:210px; margin: 0 10px; height:auto;}
 .mbs-x h3{ font-size:18px; padding:5px 0; color:#404040}
 .mbs-x h4{ font-size:14px; padding:2px 0; color:#606060}
 .mbs-x-span span{ display:block; color:#606060;opacity: 0;filter:alpha(opacity=0);transition:0.5s opacity;}
