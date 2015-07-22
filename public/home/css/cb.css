@@ -471,7 +471,7 @@ div.quotes span.disabled {
 .jiesao-main .company-img{display: block;text-align: center;height: 180px;line-height: 180px;}
 
 .jiesao-main .img-list{}
-.jiesao-main .img-list a{width:130px;height:150px;display: inline-block;margin: 0px 14px;}
+.jiesao-main .img-list a{width: 126px;height: 146px;display: inline-block;margin: 10px 14px 0;}
 .jiesao-main .img-list a img{width:100%;height:100%;}
 .jiesao-main .yvlu-list{overflow: hidden;}
 .jiesao-main .yvlu-list .mark{font-size: 30px;color:#ddd;font-family: "SimSun";line-height: 0;display: inline-block;position: relative;top: 10px;}
