@@ -25,7 +25,7 @@ define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jque
         duration:500
       },
       createControl : function($this,i){
-        return $('<a href="javascript:;"><img src="'+$this.attr('src')+'" /></a>');
+        return $('<a href="javascript:;"><img src="'+$this.find('img').attr('src')+'" /></a>');
       }
     });
     $banner.on('mouseenter','.ui-sliderbox-control>a',function(){
@@ -35,6 +35,13 @@ define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jque
       if(e.keyCode && e.keyCode != 27) return;
       $search.submit();
     });
+    $body.on('click','.go-top',function(){
+      $("html,body").animate({scrollTop:0},200);
+    });
+    $body.on('click','.go-bottom',function(){
+      $("html,body").animate({scrollTop:document.body.scrollHeight},200);
+    });
+
   })();
 
   function share_s_weibo(url,title){

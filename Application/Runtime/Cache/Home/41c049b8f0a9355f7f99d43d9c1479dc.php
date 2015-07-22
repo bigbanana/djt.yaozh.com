@@ -11,6 +11,7 @@
 	}
 	var baseUrl = '/public/home';
 </script>
+<link rel="stylesheet" type="text/css" href="http://static.yaozh.com/css/app.css">
 <link rel="stylesheet" type="text/css" href="/public/home/css/cb.css">
 <script src="http://static.yaozh.com/js/app.js"></script>
 <script>
@@ -30,7 +31,7 @@
 <!--top-->
           <div class="w t">
     <div class="top">
-      <a class="logo" href="#" target="_blank" title="药智俱乐部"><img src="/public/home/images/logo.png"></a>
+      <a class="logo" href="/" target="_blank" title="药智俱乐部"><img src="/public/home/images/logo.png"></a>
       <div class="to">
         <div id="nav" class="nav">
           <?php if(is_array($topNav)): foreach($topNav as $k=>$tn): ?><div class="item <?php if($k==0){echo 'first-item';} ?>"><a class="name" href="<?php echo $tn['url']; ?>"><?php echo ($tn['title']); ?></a>
@@ -45,10 +46,10 @@
               </div><?php endif; ?> 
             </div><?php endforeach; endif; ?>
         </div>
-        <form action="#" target="_blank" class="search">
+        <form action="/index/search" target="_blank" class="search" id='search'>
           <div class="to-input">
-            <input class="text" type="text" />
-            <a href="javascript:;" class="button"></a>
+            <input class="text" type="text" name='q' value="<?=I('get.q')?>" />
+            <a href="javascript:$('#search').submit();" class="button"></a>
           </div>
         </form>
       </div>
@@ -59,26 +60,26 @@
     <div class="w intr us-bj">
     	<div class="w1 int intss ">	
             	<div class="intss-w">
-                        <div class="intss-ws">
+                        <div class="intss-ws" style="line-height:1.42;">
                             <div class="us-o">
                                 <span class="us-o-t">网址</span>
                                 <span class="us-o-x"><a href="http://club.yaozh.com/" title="药智俱乐部">club.yaozh.com</a></span>
                             </div>
                             <div class="us-o">
                                 <span class="us-o-t">联系人</span>
-                                <span class="us-o-x">王忆芯</span>
+                                <span class="us-o-x"><?php echo getConfig('contact_name');?></span>
                             </div>
                             <div class="us-o">
                                 <span class="us-o-t">手机</span>
-                                <span class="us-o-x">13883076195</span>
+                                <span class="us-o-x"><?php echo getConfig('contact_mobile');?></span>
                             </div>
                             <div class="us-o">
                                 <span class="us-o-t">座机</span>
-                                <span class="us-o-x">023-62988285-8007 </span>
+                                <span class="us-o-x"><?php echo getConfig('contact_tel');?></span>
                             </div>
                             <div class="us-o">
                                 <span class="us-o-t">Email</span>
-                                <span class="us-o-x">service@yaozh.com</span>
+                                <span class="us-o-x"><?php echo getConfig('contact_email');?></span>
                             </div>
                         </div>
                 </div>
@@ -86,7 +87,15 @@
     </div>
      
 <!--foot-->
-	  <div class="w foot">
+	  <div class="side-bar">
+    <a href="javascript:;" class="item go-top">
+      <i class="fa"></i>
+    </a>
+    <a href="javascript:;" class="item go-bottom">
+      <i class="fa"></i>
+    </a>
+  </div>
+  <div class="w foot">
     <div class=" w1 ft">
       <div class="ft-r">
         <div class="fts">
@@ -104,9 +113,9 @@
       </div>
       <div class="ft-xx">
         <div class="fx-1">
-          <span>会员部：1609316746</span>
-          <span>电子邮箱：1609316746@qq.com</span>
-          <span>电话：023-62988285-8005</span>
+          <span>会员部：<?php echo getConfig('contact_qq');?></span>
+          <span>电子邮箱：<?php echo getConfig('contact_email');?></span>
+          <span>电话：<?php echo getConfig('contact_tel');?></span>
         </div>
         <div class="fps">
           友情链接：

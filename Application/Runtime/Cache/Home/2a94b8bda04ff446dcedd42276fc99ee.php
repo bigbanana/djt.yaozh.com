@@ -11,12 +11,13 @@
 	}
 	var baseUrl = '/public/home';
 </script>
-<link rel="stylesheet" type="text/css" href="/public/home/css/cb.css">
+<link rel="stylesheet" type="text/css" href="http://static.yaozh.com/css/app.css">
+<link rel="stylesheet" type="text/css" href="/public/home/css/cb.css?v=1.1.1">
 <script src="http://static.yaozh.com/js/app.js"></script>
 <script>
-  require([baseUrl+'/js/pages.js'],function(pages){
-    pages.index();
-  });
+	require([baseUrl+'/js/pages.js'],function(pages){
+		pages.index();
+	});
 </script>
 </head>
 <body>
@@ -24,7 +25,7 @@
 <!--top-->
   <div class="w t">
     <div class="top">
-      <a class="logo" href="#" target="_blank" title="药智俱乐部"><img src="/public/home/images/logo.png"></a>
+      <a class="logo" href="/" target="_blank" title="药智俱乐部"><img src="/public/home/images/logo.png"></a>
       <div class="to">
         <div id="nav" class="nav">
           <?php if(is_array($topNav)): foreach($topNav as $k=>$tn): ?><div class="item <?php if($k==0){echo 'first-item';} ?>"><a class="name" href="<?php echo $tn['url']; ?>"><?php echo ($tn['title']); ?></a>
@@ -39,32 +40,32 @@
               </div><?php endif; ?> 
             </div><?php endforeach; endif; ?>
         </div>
-        <form action="#" target="_blank" class="search">
+        <form action="/index/search" target="_blank" class="search" id='search'>
           <div class="to-input">
-            <input class="text" type="text" />
-            <a href="javascript:;" class="button"></a>
+            <input class="text" type="text" name='q' value="<?=I('get.q')?>" />
+            <a href="javascript:$('#search').submit();" class="button"></a>
           </div>
         </form>
       </div>
     </div>
   </div>
 <!--banner-->
-  <div class="banner">
-    <?php if(is_array($banner)): foreach($banner as $key=>$bn): ?><img src="<?php echo ($bn['pic']); ?>" ><?php endforeach; endif; ?>
-  </div>
+	<div class="banner">
+		<?php if(is_array($banner)): foreach($banner as $key=>$bn): ?><a target="_blank" href="<?php echo ($bn['link']); ?>"><img src="<?php echo ($bn['pic']); ?>" ></a><?php endforeach; endif; ?>
+	</div>
 <!--Notification-->
   <div class="w">
     <div class="not w1">
       <div class="nots">
-        <div class="nis ni-1"><i class="i"></i></div>
+        <a href="<?php echo U('index/active');?>" class="nis ni-1"><i class="i"></i></a>
         <h2>俱乐部活动</h2>
         <div class="noe">
           <ul class="circle">
             <?php if(is_array($last_active)): foreach($last_active as $key=>$la): if($key == 0): ?><div class="first-item">
                 <a class="text-overflow" href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>" title="<?php echo ($la['title']); ?>"><?php echo ($la['title']); ?></a>
-                <p class="summary"><?php echo ($la['description']); ?></p>
+                <p class="summary"><?php echo (mb_substr($la['description'],0,36)); ?> <a class="cl-blue" href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>">[详细]</a></p>
               </div>
-            <?php else: ?>
+            <?php elseif($key < 4): ?>
               <li><a href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>" title="<?php echo ($la['title']); ?>"><?php echo ($la['title']); ?></a></li><?php endif; endforeach; endif; ?>
           </ul>
           <!-- <p>
@@ -73,24 +74,24 @@
         </div>
       </div>
       <div class="nots nots2">
-        <div class="nis ni-2"><i class="i"></i></div>
+        <a href="<?php echo U('index/news');?>" class="nis ni-2"><i class="i"></i></a>
         <h2>俱乐部新闻</h2>
         <div class="noe">
           <ul class="circle">
             <?php if(is_array($last_news)): foreach($last_news as $key=>$ln): if($key == 0): ?><div class="first-item">
                 <a class="text-overflow" href="<?php echo U('index/newsDetail',array('id'=>$ln['id']));?>" title="<?php echo ($ln['title']); ?>"><?php echo ($ln['title']); ?></a>
-                <p class="summary"><?php echo ($ln['description']); ?></p>
+                <p class="summary"><?php echo (mb_substr($ln['description'],0,36)); ?> <a class="cl-blue" href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>">[详细]</a></p>
               </div>
-            <?php else: endif; ?>
-              <li><a href="<?php echo U('index/newsDetail',array('id'=>$ln['id']));?>" title="<?php echo ($ln['title']); ?>"><?php echo ($ln['title']); ?></a></li><?php endforeach; endif; ?>
+            <?php elseif($key < 4): ?>
+            	<li><a href="<?php echo U('index/newsDetail',array('id'=>$ln['id']));?>" title="<?php echo ($ln['title']); ?>"><?php echo ($ln['title']); ?></a></li><?php endif; endforeach; endif; ?>
           </ul>
         </div>
       </div>
       <div class="nots">
-        <div class="nis ni-3"><i class="i"></i></div>
+        <a href="<?php echo U('index/apply');?>" class="nis ni-3"><i class="i"></i></a>
         <h2>入会流程</h2>
         <div class="noe">
-          <ul>
+          <ul class="tc">
             <li><a href="<?php echo U('index/member');?>" target="_blank" title="俱乐部会员八项权益">俱乐部会员八项权益</a></li>
             <li><a href="<?php echo U('index/apply');?>" target="_blank" title="俱乐部入会流程">俱乐部入会流程</a></li>
             <li><a href="<?php echo U('index/apy');?>" target="_blank" title="俱乐部入会申请">俱乐部入会申请</a></li>
@@ -100,10 +101,10 @@
     </div>
   </div>
 <!--Introduction-->
-  <div class="w intr intrs">
+  <div class="w intr intrs" style="padding:20px 0;">
     <div class="w1 int p-p">
       <div class="p-left">
-        <h1 class="h1-56"><span class="title">俱乐部简介</span></h1>
+        <h1><span class="title" style="background:#f9f9fa;">俱乐部简介</span></h1>
         <h2>INTRODUCTION OF THE CLUB</h2>
         <div class="p-x">
           <p>药智精英俱乐部是由药智网和高圣生物医药发起组建，由大健康产业的专业技术精英及企业家、银行家组成的非营利性的服务组织,秉承“整合资源，发展事业，共创辉煌”之理念，定期或不定期向俱乐部成员提供：项目路演，学术研讨，政策解读，企业诊断，游学考试，案例分析，项目对接等活动。</p>
@@ -117,147 +118,119 @@
           <div class="circle"></div>
           <div class="circle"></div>
           <div class="circle"></div>
+					<div class="label yellow" data-rotation="10" data-height="50">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label green" data-rotation="30" data-height="20">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label yellow" data-rotation="50" data-height="40">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label green" data-rotation="74" data-height="20">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label yellow" data-rotation="94" data-height="70">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label green" data-rotation="114" data-height="10">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label yellow" data-rotation="134" data-height="60">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label green" data-rotation="154" data-height="18">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label yellow" data-rotation="178" data-height="40">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label green" data-rotation="200" data-height="16">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label yellow" data-rotation="218" data-height="70">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label green" data-rotation="238" data-height="10">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label yellow" data-rotation="258" data-height="50">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label green" data-rotation="278" data-height="10">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label green" data-rotation="298" data-height="20">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label yellow" data-rotation="324" data-height="68">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
+					<div class="label green" data-rotation="344" data-height="20">
+						<div class="rec"></div>
+						<div class="dot"></div>
+					</div>
 
-          <div class="label yellow" data-rotation="10" data-height="50">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label green" data-rotation="30" data-height="20">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label yellow" data-rotation="50" data-height="40">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label green" data-rotation="74" data-height="20">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label yellow" data-rotation="94" data-height="70">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label green" data-rotation="114" data-height="10">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label yellow" data-rotation="134" data-height="60">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label green" data-rotation="154" data-height="18">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label yellow" data-rotation="178" data-height="40">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label green" data-rotation="200" data-height="16">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label yellow" data-rotation="218" data-height="70">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label green" data-rotation="238" data-height="10">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label yellow" data-rotation="258" data-height="50">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label green" data-rotation="278" data-height="10">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label green" data-rotation="298" data-height="20">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label yellow" data-rotation="324" data-height="68">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-          <div class="label green" data-rotation="344" data-height="20">
-            <div class="rec"></div>
-            <div class="dot"></div>
-          </div>
-
-          <div class="text" style="left: 274px;top: 5px;">项目路演</div>
-          <div class="text" style="left: 390px;top: 86px;">企业诊断</div>
-          <div class="text" style="top: 220px;left: 440px;">案例分析</div>
-          <div class="text" style="top: 390px;left: 430px;">精英沙龙</div>
-          <div class="text" style="left: 220px;top: 460px;">资金对接</div>
-          <div class="text" style="top: 380px;left: 60px;">学术研讨</div>
-          <div class="text" style="left: 10px;top: 250px;">游学考察</div>
-          <div class="text" style="left: 40px;top: 70px;">政策解读</div>
-        
-        </div>
-      </div>
-    </div>
-  </div>
+					<div class="text" style="left: 274px;top: 5px;">项目路演</div>
+					<div class="text" style="left: 390px;top: 86px;">企业诊断</div>
+					<div class="text" style="top: 220px;left: 440px;">案例分析</div>
+					<div class="text" style="top: 390px;left: 430px;">精英沙龙</div>
+					<div class="text" style="left: 220px;top: 460px;">资金对接</div>
+					<div class="text" style="top: 380px;left: 60px;">学术研讨</div>
+					<div class="text" style="left: 10px;top: 250px;">游学考察</div>
+					<div class="text" style="left: 40px;top: 70px;">政策解读</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
 <!--Member-->
-  <div class=" w mbr">
-        <div class="w1 mb">
-          <h1><span class="title">会员介绍</span><span class="en">MEMBER PROFILE</span></h1>
-          <div class="mbs">
-            <div class="mbs-x">
-              <div class="img">
-                <img src="/public/home/images/cimg2.png">
-              </div>
-              <h3>于明德</h3>
-              <h4>（名誉会长）</h4>
-              <div class="mbs-x-span ">
-                <span>中国医药企业管理协会、中国医药企业家协会会长</span>
-              </div>
-            </div>
-            <div class="mbs-x">
-              <div class="img">
-                <img src="/public/home/images/cimg6.png">
-              </div>
-              <h3>刘忠良</h3>
-              <h4>（名誉会长）</h4>
-              <div class="mbs-x-span ">
-                <span>中国医药物资协会执行会长</span>
-              </div>
-            </div>
-            <div class="mbs-x mbs-c">
-              <div class="img"><img src="/public/home/images/cimg3.png"></div>
-              <h3>房志武</h3>
-              <h4>（高级顾问）</h4>
-              <div class="mbs-x-span ">
-                <span>国务院医改专家咨询委员会委员</span>
-              </div>  
-            </div>
-            <div class="mbs-x">
-              <div class="img">
-                <img src="/public/home/images/cimg4.png">
-              </div>
-              <h3>保育钧</h3>
-              <h4>（高级顾问）</h4>
-              <div class="mbs-x-span ">
-                <span>中华民营企业联合会会长、国务院参事室特派研究员</span>
-              </div>  
-            </div>
-            <div class="mbs-x">
-              <div class="img">
-                <img src="/public/home/images/cimg5.png">
-              </div>
-              <h3>欧伦全</h3>
-              <h4>（会长）</h4>
-              <div class="mbs-x-span ">
-                <span>药智网营销中心总经理</span>
-              </div>  
-            </div>
-            
-          </div>
-        </div>
-      </div>
+	<div class=" w mbr">
+		<div class="w1 mb">
+			<h1><span class="title">会员介绍</span><span class="en">MEMBER PROFILE</span></h1>
+			<div class="mbs">
+				<?php foreach ($users as $user): ?>
+				<a href="/index/user/id/<?php echo ($user["id"]); ?>" target="_blank">
+					<div class="mbs-x">
+						<div class="img">
+							<img src="<?php echo ($user["pic_title"]); ?>@1e_140w_140h_1c_0i_1o_90Q_1x.jpg">
+						</div>
+						<h3><?php echo ($user["name"]); ?></h3>
+						<h4>（<?php echo ($user["duty"]); ?>）</h4>
+						<div class="mbs-x-span ">
+							<span><?php echo ($user["duty2"]); ?></span>
+						</div>
+					</div>
+				</a>
+				<?php endforeach ?>
+			</div>
+		</div>
+	</div>
 <!--foot-->
+  <div class="side-bar">
+    <a href="javascript:;" class="item go-top">
+      <i class="fa"></i>
+    </a>
+    <a href="javascript:;" class="item go-bottom">
+      <i class="fa"></i>
+    </a>
+  </div>
   <div class="w foot">
     <div class=" w1 ft">
       <div class="ft-r">
@@ -276,9 +249,9 @@
       </div>
       <div class="ft-xx">
         <div class="fx-1">
-          <span>会员部：1609316746</span>
-          <span>电子邮箱：1609316746@qq.com</span>
-          <span>电话：023-62988285-8005</span>
+          <span>会员部：<?php echo getConfig('contact_qq');?></span>
+          <span>电子邮箱：<?php echo getConfig('contact_email');?></span>
+          <span>电话：<?php echo getConfig('contact_tel');?></span>
         </div>
         <div class="fps">
           友情链接：
