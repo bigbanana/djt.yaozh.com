@@ -144,7 +144,7 @@ foreach ($pic_list as $pic) { ?>
             <div class="ui-panel-content">
               <a href="#" class="company-img"><img src="<{$user_info.company_logo}>@297w_180h.jpg" alt=""></a>
               <div class="mt20 fs16">公司简介</div>
-              <p class="indent mt20"><{$user_info.company_description|htmlspecialchars_decode=###|strip_tags=###|mb_substr=0,900}>
+              <p class="indent mt20"><{$user_info.company_description|htmlspecialchars_decode=###|strip_tags=###|trim=###|mb_substr=0,900}>
                 <a class="cl-blue" target="_blank" href="#">[详细]</a>
               </p>
             </div>
