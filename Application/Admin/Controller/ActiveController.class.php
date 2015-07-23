@@ -48,7 +48,7 @@ class ActiveController extends BaseController
     {
         $id = I('get.id');
         $this->info = M('news')->find($id);
-        $this->display('News/add');
+        $this->display('Active/add');
     }
 
     public function delete()
