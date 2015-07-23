@@ -32,7 +32,7 @@
             <if condition="$key eq 0">
               <div class="first-item">
                 <a class="text-overflow" href="<{:U('index/newsDetail',array('id'=>$la['id']))}>" title="<{$la['title']}>"><{$la['title']}></a>
-                <p class="summary"><{$la['description']|strip_tags=###|mb_substr=###,0,36}> <a class="cl-blue" href="<{:U('index/newsDetail',array('id'=>$la['id']))}>">[详细]</a></p>
+                <p class="summary"><{$la['description']|htmlspecialchars_decode=###|strip_tags=###|mb_substr=###,0,36}> <a class="cl-blue" href="<{:U('index/newsDetail',array('id'=>$la['id']))}>">[详细]</a></p>
               </div>
             <elseif condition="$key lt 4" />
               <li><a href="<{:U('index/newsDetail',array('id'=>$la['id']))}>" title="<{$la['title']}>"><{$la['title']}></a></li>
@@ -53,7 +53,7 @@
             <if condition="$key eq 0">
               <div class="first-item">
                 <a class="text-overflow" href="<{:U('index/newsDetail',array('id'=>$ln['id']))}>" title="<{$ln['title']}>"><{$ln['title']}></a>
-                <p class="summary"><{$ln['description']|mb_substr=###,0,36}> <a class="cl-blue" href="<{:U('index/newsDetail',array('id'=>$la['id']))}>">[详细]</a></p>
+                <p class="summary"><{$ln['description']|htmlspecialchars_decode=###|strip_tags=###|mb_substr=###,0,36}> <a class="cl-blue" href="<{:U('index/newsDetail',array('id'=>$la['id']))}>">[详细]</a></p>
               </div>
             <elseif condition="$key lt 4" />
             	<li><a href="<{:U('index/newsDetail',array('id'=>$ln['id']))}>" title="<{$ln['title']}>"><{$ln['title']}></a></li>
