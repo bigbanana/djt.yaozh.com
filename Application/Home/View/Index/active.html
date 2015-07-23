@@ -32,7 +32,7 @@
                 <div class="me-w me-ww">
                     <div class="me-x">
                         <h3><a href="<{:U('index/newsDetail',array('id'=>$ls['id']))}>" target="_blank"><{$ls['title']}></a><span class="me-w-span"><{:date('Y-m-d',$ls['create_time'])}></span></h3>
-                        <P><{$ls['description']}></P>
+                        <P><{$ls['description']|htmlspecialchars_decode=###|strip_tags=###}></P>
                     </div>
                 </div>
             </div>
