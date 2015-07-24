@@ -40,6 +40,14 @@ class UserController extends BaseController
 			$this->display();
 		}
 	}
+	public function delete (){
+		$req = M('User')->delete(I('get.id'));
+		if($req){
+				$this->success('操作成功！');
+			}else{
+				$this->error('操作失败！');
+			}
+	}
 	public function apply()
 	{
 			$start_time = strtotime(I('get.start_time'));

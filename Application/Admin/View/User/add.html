@@ -15,6 +15,24 @@
             <td colspan="3"> <input name="duty2" id="duty2" type="text" class="text" value="<{$vo.duty2}>" size="50"> <font color="red">*</font></td>
         </tr>
         <tr bgcolor="#f5fbff" >
+            <td width="50px" align="right">会员头像(列表圆形头像)</td>
+            <td colspan="3">
+                <input id="upload4" name='pic_title_cycle' type="hidden" style='width: 300px' value="<{$vo.pic_title_cycle}>" />
+                <div id="myeditor4" class="edui-default" style="display: none;"></div>
+                <input type="button" id='image4' value='上传图片'/>
+            </td>
+        </tr>
+        <tr>
+            <td width="50px" align="right"></td>
+            <td colspan="3" id="previewtr4">
+                <if condition="$vo['pic_title_cycle'] neq ''">
+                    <img src="<{$vo.pic_title_cycle}>@1e_113w_113h_1c_0i_1o_90Q_1x.jpg" id="preview4" style='max-height:200px'/>
+                <else />
+                    <img src="/public/images/nopic.gif" id="preview<{$i}>" style='max-height:200px'/>
+                </if>
+            </td>
+        </tr>
+        <tr bgcolor="#f5fbff" >
             <td width="50px" align="right">会员头像</td>
             <td colspan="3">
                 <input id="upload2" name='pic_title' type="hidden" style='width: 300px' value="<{$vo.pic_title}>" />
@@ -164,6 +182,10 @@
         $(function() {
             image.init("myeditor3", "upload3");
             image.show("image3");
+        });
+        $(function() {
+            image.init("myeditor4", "upload4");
+            image.show("image4");
         });
     })(jQuery);
     window.UEDITOR_HOME_URL = "/public/ueditor/";  //UEDITOR_HOME_URL、config、all这三个顺序不能改变

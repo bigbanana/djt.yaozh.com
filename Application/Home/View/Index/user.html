@@ -50,7 +50,7 @@
 <?php
 $pic_list = explode(',', $user_info['pic_list']);
 foreach ($pic_list as $pic) { ?>
-                <a href="<{$pic}>" data-lightbox="fengcai" class="img"><img src="<{$pic}>@130w_150h.jpg" alt=""></a>
+                <a href="<{$pic}>" data-lightbox="fengcai" class="img"><img src="<{$pic}>@126w_146h.jpg" alt=""></a>
 <?php
 }
 ?>
@@ -144,7 +144,7 @@ foreach ($pic_list as $pic) { ?>
             <div class="ui-panel-content">
               <a href="#" class="company-img"><img src="<{$user_info.company_logo}>@297w_180h.jpg" alt=""></a>
               <div class="mt20 fs16">公司简介</div>
-              <p class="indent mt20"><{$user_info.company_description|htmlspecialchars_decode}>
+              <p class="indent mt20"><{$user_info.company_description|htmlspecialchars_decode=###|strip_tags=###|trim=###|mb_substr=0,500}>
                 <a class="cl-blue" target="_blank" href="#">[详细]</a>
               </p>
             </div>

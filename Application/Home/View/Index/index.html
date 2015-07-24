@@ -32,7 +32,7 @@
             <if condition="$key eq 0">
               <div class="first-item">
                 <a class="text-overflow" href="<{:U('index/newsDetail',array('id'=>$la['id']))}>" title="<{$la['title']}>"><{$la['title']}></a>
-                <p class="summary"><{$la['description']|mb_substr=###,0,36}> <a class="cl-blue" href="<{:U('index/newsDetail',array('id'=>$la['id']))}>">[详细]</a></p>
+                <p class="summary"><{$la['description']|htmlspecialchars_decode=###|strip_tags=###|mb_substr=###,0,36}> <a class="cl-blue" href="<{:U('index/newsDetail',array('id'=>$la['id']))}>">[详细]</a></p>
               </div>
             <elseif condition="$key lt 4" />
               <li><a href="<{:U('index/newsDetail',array('id'=>$la['id']))}>" title="<{$la['title']}>"><{$la['title']}></a></li>
@@ -53,7 +53,7 @@
             <if condition="$key eq 0">
               <div class="first-item">
                 <a class="text-overflow" href="<{:U('index/newsDetail',array('id'=>$ln['id']))}>" title="<{$ln['title']}>"><{$ln['title']}></a>
-                <p class="summary"><{$ln['description']|mb_substr=###,0,36}> <a class="cl-blue" href="<{:U('index/newsDetail',array('id'=>$la['id']))}>">[详细]</a></p>
+                <p class="summary"><{$ln['description']|htmlspecialchars_decode=###|strip_tags=###|mb_substr=###,0,36}> <a class="cl-blue" href="<{:U('index/newsDetail',array('id'=>$la['id']))}>">[详细]</a></p>
               </div>
             <elseif condition="$key lt 4" />
             	<li><a href="<{:U('index/newsDetail',array('id'=>$ln['id']))}>" title="<{$ln['title']}>"><{$ln['title']}></a></li>
@@ -184,7 +184,7 @@
 				<a href="/index/user/id/<{$user.id}>" target="_blank">
 					<div class="mbs-x">
 						<div class="img">
-							<img src="<{$user.pic_title}>@1e_140w_140h_1c_0i_1o_90Q_1x.jpg">
+							<img src="<{$user.pic_title_cycle}>@1e_140w_140h_1c_0i_1o_90Q_1x.jpg">
 						</div>
 						<h3><{$user.name}></h3>
 						<h4>（<{$user.duty}>）</h4>
