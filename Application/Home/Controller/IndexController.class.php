@@ -10,7 +10,7 @@ class IndexController extends BaseController
     public function index()
     {
         $this->condition = 1;
-        $last_news = M('news')->where(array('type' => 1, 'status' => 1, 'is_top' => 1, 'user_id' => 0))->limit(5)->select();
+        $last_news = M('news')->where(array('type' => 1, 'status' => 1, 'is_top' => 1, 'user_id' => 0))->order('id desc')->limit(5)->select();
         foreach ($last_news as $key => $value) {
             if ($value['news_id']) {
                 $last_news[$key] = D('news')->find($value['news_id']);
