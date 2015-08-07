@@ -61,10 +61,9 @@ class ActiveController extends BaseController
     }
 
     // 相册列表
-    public function lists(){        
-        $pic = M('pic');
+    public function lists(){
         // 查询
-        $this->info = $pic->select();
+        $this->_list(M('pic'));
 
         $this->display();
     }
