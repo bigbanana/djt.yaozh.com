@@ -1,0 +1,33 @@
+<include file="Common:header" />
+	<div class="ccc2">
+		<ul>
+	   <input class="sunjoin large" type="button" onClick="location.href='/admin/Active/addpic'" value="添加相册">
+		</ul>
+	</div>
+	<div id="sunjoin">
+    <table border="0" cellspacing="0" cellpadding="0" class="vbm">
+        <tbody><tr class="firstr">
+          <td width="60">ID</td>
+          <td>文章标题</td>
+          <td>添加日期</td>
+          <td>操作</td>
+        </tr>
+      </tbody>
+      <tbody>
+      	<?php foreach ($info as $vo): ?>
+    	<tr bgcolor="white">
+    	  <td><label><?=$vo['id']?></label></td>
+    	  <td align="left"><a href="<{:U('editpic')}>?id=<?=$vo['id']?>"><?=$vo['title']?></a></td>
+        <td align="left"><?=date("Y-m-d H:i:s",$vo['time'])?></td>
+    	  <td align="center"><a href="<{:U('editpic')}>?id=<?=$vo['id']?>">编辑</a> / <a href="<{:U('deletepic')}>?id=<?=$vo['id']?>" onclick="if(!confirm('确定要删除吗？\n\n此操作不可以恢复！'))return false;">删除</a>
+    	  </td>
+    	</tr>
+    	<?php endforeach ?>
+      </tbody>
+
+    </table>
+  </div>
+	<div class="pagination">
+	    <{$page}>
+	</div>
+<include file="Common:footer" />
