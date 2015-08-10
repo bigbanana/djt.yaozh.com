@@ -78,7 +78,7 @@
         <div class="w1 mb">
           <h1><span class="title">顾问风采</span></h1>
           <div class="mbs">
-
+            
             <?php foreach ($users as $user): ?>
               <a href="/index/user/id/<{$user.id}>" target="_blank">
                 <div class="mbs-x">
@@ -93,8 +93,9 @@
                 </div>
               </a>
               <?php endforeach ?>
-
-            <p class="fs20 tc" style="margin: 60px 0;">暂无会员</p>
+            <empty name="users">
+              <p class="fs20 tc" style="margin: 60px 0;">暂无会员</p>
+            </empty>
           </div>
         </div>
       </div>
