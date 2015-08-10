@@ -28,7 +28,7 @@ class IndexController extends BaseController
         $this->last_news = $last_news;
         $this->last_active = $last_active;
 
-        $this->users = M('User')->order('sort desc')->limit(15)->select();
+        $this->users = M('User')->where('type=3')->order('sort desc')->limit(15)->select();
         $this->display();
     }
 

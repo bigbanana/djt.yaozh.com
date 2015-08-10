@@ -63,7 +63,7 @@
           <ul class="circle">
             <?php if(is_array($last_active)): foreach($last_active as $key=>$la): if($key == 0): ?><div class="first-item">
                 <a class="text-overflow" href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>" title="<?php echo ($la['title']); ?>"><?php echo ($la['title']); ?></a>
-                <p class="summary"><?php echo (mb_substr($la['description'],0,36)); ?> <a class="cl-blue" href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>">[详细]</a></p>
+                <p class="summary"><?php echo (mb_substr(strip_tags(htmlspecialchars_decode($la['description'])),0,36)); ?> <a class="cl-blue" href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>">[详细]</a></p>
               </div>
             <?php elseif($key < 4): ?>
               <li><a href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>" title="<?php echo ($la['title']); ?>"><?php echo ($la['title']); ?></a></li><?php endif; endforeach; endif; ?>
@@ -80,7 +80,7 @@
           <ul class="circle">
             <?php if(is_array($last_news)): foreach($last_news as $key=>$ln): if($key == 0): ?><div class="first-item">
                 <a class="text-overflow" href="<?php echo U('index/newsDetail',array('id'=>$ln['id']));?>" title="<?php echo ($ln['title']); ?>"><?php echo ($ln['title']); ?></a>
-                <p class="summary"><?php echo (mb_substr($ln['description'],0,36)); ?> <a class="cl-blue" href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>">[详细]</a></p>
+                <p class="summary"><?php echo (mb_substr(strip_tags(htmlspecialchars_decode($ln['description'])),0,36)); ?> <a class="cl-blue" href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>">[详细]</a></p>
               </div>
             <?php elseif($key < 4): ?>
             	<li><a href="<?php echo U('index/newsDetail',array('id'=>$ln['id']));?>" title="<?php echo ($ln['title']); ?>"><?php echo ($ln['title']); ?></a></li><?php endif; endforeach; endif; ?>
@@ -91,10 +91,10 @@
         <a href="<?php echo U('index/apply');?>" class="nis ni-3"><i class="i"></i></a>
         <h2>入会流程</h2>
         <div class="noe">
-          <ul class="tc">
+          <ul style="margin-left:60px;">
             <li><a href="<?php echo U('index/member');?>" target="_blank" title="俱乐部会员八项权益">俱乐部会员八项权益</a></li>
             <li><a href="<?php echo U('index/apply');?>" target="_blank" title="俱乐部入会流程">俱乐部入会流程</a></li>
-            <li><a href="<?php echo U('index/apy');?>" target="_blank" title="俱乐部入会申请">俱乐部入会申请</a></li>
+            <li><a href="<?php echo U('index/apy');?>" target="_blank" title="俱乐部入会申请">俱乐部入会申请 <img src="/public/home/images/hot.gif" alt=""></a></li>
           </ul>
         </div>
       </div>
@@ -107,7 +107,7 @@
         <h1><span class="title" style="background:#f9f9fa;">俱乐部简介</span></h1>
         <h2>INTRODUCTION OF THE CLUB</h2>
         <div class="p-x">
-          <p>药智精英俱乐部是由药智网和高圣生物医药发起组建，由大健康产业的专业技术精英及企业家、银行家组成的非营利性的服务组织,秉承“整合资源，发展事业，共创辉煌”之理念，定期或不定期向俱乐部成员提供：项目路演，学术研讨，政策解读，企业诊断，游学考试，案例分析，项目对接等活动。</p>
+          <p>药智精英俱乐部由大健康产业的专业技术精英及企业家、银行家组成的非营利性的服务组织,秉承“整合资源，发展事业，共创辉煌”之理念，定期或不定期向俱乐部成员提供：项目路演，学术研讨，政策解读，企业诊断，游学考试，案例分析，项目对接等活动。</p>
           <P>俱乐部为会员嫁接人脉资源，发挥“情义圈、智慧谷、资源库”的桥梁和纽带作用。俱乐部会员均为拥有大健康产业专业素养和丰富经验的圈层精英，
     致力于为促进资源共享、深化医疗卫生体制改革、推动行业发展、实现医药经济的整体腾飞而贡献力量。</P>
         </div>
@@ -209,7 +209,7 @@
 				<a href="/index/user/id/<?php echo ($user["id"]); ?>" target="_blank">
 					<div class="mbs-x">
 						<div class="img">
-							<img src="<?php echo ($user["pic_title"]); ?>@1e_140w_140h_1c_0i_1o_90Q_1x.jpg">
+							<img src="<?php echo ($user["pic_title_cycle"]); ?>@1e_140w_140h_1c_0i_1o_90Q_1x.jpg">
 						</div>
 						<h3><?php echo ($user["name"]); ?></h3>
 						<h4>（<?php echo ($user["duty"]); ?>）</h4>
