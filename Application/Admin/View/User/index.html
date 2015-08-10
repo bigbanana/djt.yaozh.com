@@ -22,10 +22,11 @@
           <td align="left"><?=$vo['name']?></td>
           <td align="left">
           <?php
-            if($vo['type']==1) echo "顾问";
-            elseif($vo['type']==2) echo "专家";
-            elseif($vo['type']==3) echo "领导";
-            else echo "会员";
+            $url = U('index')."?type=".$vo['type'];
+            if($vo['type']==1) echo "<a href=".$url.">顾问</a>";
+            elseif($vo['type']==2) echo "<a href=".$url.">专家</a>";
+            elseif($vo['type']==3) echo "<a href=".$url.">领导</a>";
+            else echo "<a href=".$url.">会员</a>";
           ?>
             <!-- <if condition="$list['type'] eq 3">领导
             <elseif condition="$list['type'] eq 1">顾问
