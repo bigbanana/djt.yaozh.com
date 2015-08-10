@@ -205,29 +205,6 @@
     </div>
   </div>
 <!--Member-->
-<<<<<<< HEAD
-	<div class=" w mbr">
-		<div class="w1 mb">
-			<h1><span class="title">会员介绍</span><span class="en">MEMBER PROFILE</span></h1>
-			<div class="mbs">
-				<?php foreach ($users as $user): ?>
-				<a href="/index/user/id/<?php echo ($user["id"]); ?>" target="_blank">
-					<div class="mbs-x">
-						<div class="img">
-							<img src="<?php echo ($user["pic_title_cycle"]); ?>@1e_140w_140h_1c_0i_1o_90Q_1x.jpg">
-						</div>
-						<h3><?php echo ($user["name"]); ?></h3>
-						<h4>（<?php echo ($user["duty"]); ?>）</h4>
-						<div class="mbs-x-span ">
-							<span><?php echo ($user["duty2"]); ?></span>
-						</div>
-					</div>
-				</a>
-				<?php endforeach ?>
-			</div>
-		</div>
-	</div>
-=======
   <div class=" w mbr">
     <div class="w1 mb">
       <h1><span class="title">俱乐部领导风采</span></h1>
@@ -249,7 +226,6 @@
       </div>
     </div>
   </div>
->>>>>>> b2f69165fac85e6b8afeb179ffa3134db12cb15e
 <!--foot-->
   <div class="side-bar">
     <a href="javascript:;" class="item go-top">
