@@ -15,9 +15,9 @@
 <link rel="stylesheet" type="text/css" href="/public/home/css/cb.css?v=1.1.2">
 <script src="http://static.yaozh.com/js/app.js"></script>
 <script>
-	require([baseUrl+'/js/pages.js'],function(pages){
-		pages.index();
-	});
+  require([baseUrl+'/js/pages.js'],function(pages){
+    pages.index();
+  });
 </script>
 </head>
 <body>
@@ -50,9 +50,13 @@
     </div>
   </div>
 <!--banner-->
-	<div class="banner">
-		<?php if(is_array($banner)): foreach($banner as $key=>$bn): ?><a target="_blank" href="<?php echo ($bn['link']); ?>"><img src="<?php echo ($bn['pic']); ?>" ></a><?php endforeach; endif; ?>
-	</div>
+  <div class="banner">
+    <div class="sliderbox">
+      <?php if(is_array($banner)): foreach($banner as $key=>$bn): ?><a target="_blank" href="<?php echo ($bn['link']); ?>"><img src="<?php echo ($bn['pic']); ?>" ></a><?php endforeach; endif; ?>
+    </div>
+    <a href="javascript:;" class="fa arrow-left"></a>
+    <a href="javascript:;" class="fa arrow-right"></a>
+  </div>
 <!--Notification-->
   <div class="w">
     <div class="not w1">
@@ -83,7 +87,7 @@
                 <p class="summary"><?php echo (mb_substr(strip_tags(htmlspecialchars_decode($ln['description'])),0,36)); ?> <a class="cl-blue" href="<?php echo U('index/newsDetail',array('id'=>$la['id']));?>">[详细]</a></p>
               </div>
             <?php elseif($key < 4): ?>
-            	<li><a href="<?php echo U('index/newsDetail',array('id'=>$ln['id']));?>" title="<?php echo ($ln['title']); ?>"><?php echo ($ln['title']); ?></a></li><?php endif; endforeach; endif; ?>
+              <li><a href="<?php echo U('index/newsDetail',array('id'=>$ln['id']));?>" title="<?php echo ($ln['title']); ?>"><?php echo ($ln['title']); ?></a></li><?php endif; endforeach; endif; ?>
           </ul>
         </div>
       </div>
@@ -118,89 +122,90 @@
           <div class="circle"></div>
           <div class="circle"></div>
           <div class="circle"></div>
-					<div class="label yellow" data-rotation="10" data-height="50">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label green" data-rotation="30" data-height="20">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label yellow" data-rotation="50" data-height="40">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label green" data-rotation="74" data-height="20">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label yellow" data-rotation="94" data-height="70">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label green" data-rotation="114" data-height="10">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label yellow" data-rotation="134" data-height="60">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label green" data-rotation="154" data-height="18">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label yellow" data-rotation="178" data-height="40">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label green" data-rotation="200" data-height="16">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label yellow" data-rotation="218" data-height="70">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label green" data-rotation="238" data-height="10">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label yellow" data-rotation="258" data-height="50">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label green" data-rotation="278" data-height="10">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label green" data-rotation="298" data-height="20">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label yellow" data-rotation="324" data-height="68">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
-					<div class="label green" data-rotation="344" data-height="20">
-						<div class="rec"></div>
-						<div class="dot"></div>
-					</div>
+          <div class="label yellow" data-rotation="10" data-height="50">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label green" data-rotation="30" data-height="20">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label yellow" data-rotation="50" data-height="40">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label green" data-rotation="74" data-height="20">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label yellow" data-rotation="94" data-height="70">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label green" data-rotation="114" data-height="10">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label yellow" data-rotation="134" data-height="60">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label green" data-rotation="154" data-height="18">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label yellow" data-rotation="178" data-height="40">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label green" data-rotation="200" data-height="16">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label yellow" data-rotation="218" data-height="70">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label green" data-rotation="238" data-height="10">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label yellow" data-rotation="258" data-height="50">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label green" data-rotation="278" data-height="10">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label green" data-rotation="298" data-height="20">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label yellow" data-rotation="324" data-height="68">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="label green" data-rotation="344" data-height="20">
+            <div class="rec"></div>
+            <div class="dot"></div>
+          </div>
 
-					<div class="text" style="left: 274px;top: 5px;">项目路演</div>
-					<div class="text" style="left: 390px;top: 86px;">企业诊断</div>
-					<div class="text" style="top: 220px;left: 440px;">案例分析</div>
-					<div class="text" style="top: 390px;left: 430px;">精英沙龙</div>
-					<div class="text" style="left: 220px;top: 460px;">资金对接</div>
-					<div class="text" style="top: 380px;left: 60px;">学术研讨</div>
-					<div class="text" style="left: 10px;top: 250px;">游学考察</div>
-					<div class="text" style="left: 40px;top: 70px;">政策解读</div>
-				
-				</div>
-			</div>
-		</div>
-	</div>
+          <div class="text" style="left: 274px;top: 5px;">项目路演</div>
+          <div class="text" style="left: 390px;top: 86px;">企业诊断</div>
+          <div class="text" style="top: 220px;left: 440px;">案例分析</div>
+          <div class="text" style="top: 390px;left: 430px;">精英沙龙</div>
+          <div class="text" style="left: 220px;top: 460px;">资金对接</div>
+          <div class="text" style="top: 380px;left: 60px;">学术研讨</div>
+          <div class="text" style="left: 10px;top: 250px;">游学考察</div>
+          <div class="text" style="left: 40px;top: 70px;">政策解读</div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
 <!--Member-->
+<<<<<<< HEAD
 	<div class=" w mbr">
 		<div class="w1 mb">
 			<h1><span class="title">会员介绍</span><span class="en">MEMBER PROFILE</span></h1>
@@ -222,6 +227,29 @@
 			</div>
 		</div>
 	</div>
+=======
+  <div class=" w mbr">
+    <div class="w1 mb">
+      <h1><span class="title">俱乐部领导风采</span></h1>
+      <div class="mbs">
+        <?php foreach ($users as $user): ?>
+        <a href="/index/user/id/<?php echo ($user["id"]); ?>" target="_blank">
+          <div class="mbs-x">
+            <div class="img">
+              <img src="<?php echo ($user["pic_title_cycle"]); ?>@1e_140w_140h_1c_0i_1o_90Q_1x.jpg">
+            </div>
+            <h3><?php echo ($user["name"]); ?></h3>
+            <h4>（<?php echo ($user["duty"]); ?>）</h4>
+            <div class="mbs-x-span ">
+              <span><?php echo ($user["duty2"]); ?></span>
+            </div>
+          </div>
+        </a>
+        <?php endforeach ?>
+      </div>
+    </div>
+  </div>
+>>>>>>> b2f69165fac85e6b8afeb179ffa3134db12cb15e
 <!--foot-->
   <div class="side-bar">
     <a href="javascript:;" class="item go-top">

@@ -2,6 +2,7 @@ define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jque
   (function(){
     var $body = $(document.body);
     var $banner = $('.banner');
+    var $sliderbox = $banner.find('.sliderbox');
     var $search = $('.search');
     var start = {top : 10,opacity:'0'};
     var end = {top:44,opacity:1};
@@ -19,18 +20,15 @@ define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jque
       });
     });
 
-    $banner.find('img').width($body.width());
-    $banner.sliderbox({
-      fx:{
-        duration:500
-      },
-      createControl : function($this,i){
-        return $('<a href="javascript:;"><img src="'+$this.find('img').attr('src')+'" /></a>');
-      }
+    $sliderbox.find('img').width($body.width());
+    $sliderbox.sliderbox({eventType:'mouseover'});
+    $banner.on('click','.arrow-left',function(){
+      $sliderbox.sliderbox('prev');
     });
-    $banner.on('mouseenter','.ui-sliderbox-control>a',function(){
-      $banner.sliderbox('slider',$(this).index());
+    $banner.on('click','.arrow-right',function(){
+      $sliderbox.sliderbox('next');
     });
+
     $search.on('click keydown','.button',function(e){
       if(e.keyCode && e.keyCode != 27) return;
       $search.submit();
