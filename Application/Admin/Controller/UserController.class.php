@@ -13,8 +13,7 @@ class UserController extends BaseController
 		$this->display();
 	}
 	public function index(){
-		$map = array(
-        );
+		$map = isset($_GET['type']) && $_GET['type']!='' ? ['type' => I('GET.type')]:[];	
         $this->_list(M('User'), $map);
 		$this->display();
 	}

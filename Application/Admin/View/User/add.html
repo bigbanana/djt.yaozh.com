@@ -6,6 +6,18 @@
 			<td width="50px" align="right">名称</td>
 			<td colspan="3"> <input name="name" id="name" type="text" class="text" value="<{$vo.name}>" size="50"> <font color="red">*</font></td>
 		</tr>
+        <tr bgcolor="#f5fbff" >
+            <td width="50px" align="right">类型</td>
+            <td colspan="3">
+                <select name="type">
+                    <option value="0" <if condition="$vo['type'] eq 0"> selected="selected" </if> >会员</option>
+                    <option value="1" <if condition="$vo['type'] eq 1"> selected="selected" </if> >顾问</option>
+                    <option value="2" <if condition="$vo['type'] eq 2"> selected="selected" </if> >专家</option>
+                    <option value="3" <if condition="$vo['type'] eq 3"> selected="selected" </if> >领导</option>
+                </select>
+                <font color="red">*</font>
+            </td>
+        </tr>
 		<tr bgcolor="#f5fbff" >
 			<td width="50px" align="right">职位</td>
 			<td colspan="3"> <input name="duty" id="duty" type="text" class="text" value="<{$vo.duty}>" size="50"> <font color="red">*</font></td>

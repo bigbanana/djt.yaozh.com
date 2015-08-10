@@ -1,0 +1,156 @@
+<include file="Common:header" />
+<script language='javascript'>
+function CheckSubmit()
+{
+	if(!document.form1.title.value&&!document.form1.news_id.value)
+	{
+   		document.form1.title.focus();
+   		alert("请填写文章标题或要药智新闻id");
+   		return false;
+	}
+
+	return true;
+}
+</script>
+<form method=post  name="form1" action="<{:U('active/addpic')}>" onSubmit="return CheckSubmit();">
+	<input type="hidden" name="id" value="<{$info['id']}>">
+	<table border="0" cellspacing="0" cellpadding="0" class="vbm">
+		<tr bgcolor="#f5fbff" >
+		  <td width="12%" align="right">相册标题： </td>
+		  <td colspan="3"> <input name="title" type="text" class="text" value="<{$info['title']}>" size="50"></td>
+		</tr>
+		<tr bgcolor="#f5fbff" >
+			<td width="12%" align="right">相册封面：</td>
+			<td colspan="3">
+				<input id="upload" name='smallpic' type="hidden" style='width: 300px' value="<{$info['smallpic']}>" />
+                <div id="myeditor" class="edui-default" style="display: none;"></div>
+                <input type="button" id='image' value='上传封面'/>
+			</td>
+		</tr>
+		<tr id="previewtr">
+			<td width="12%" align="right"></td>
+			<td colspan="3"><img <if condition="$info['smallpic'] eq ''"> src="/public/images/pview.gif" <else/> src="<{$info['smallpic']}>" </if> id="preview" style='max-height:200px'/></td>
+		</tr>
+
+
+		<tr bgcolor="#f5fbff" >
+			<td width="12%" align="right">相片集合：</td>
+			<td colspan="3" id="picurl">
+				<notempty name='info'>
+					<foreach name="info['picurl']" item="vo" >
+						<input name='delurl' type="hidden" style='width: 300px' value="<{$vo}>" />
+					</foreach>
+				<else/>
+					<input id="upload2" name='picurl' type="hidden" style='width: 300px' value="<{$info['picurl']}>" />
+				</notempty>
+
+                <div id="myeditor2" class="edui-default" style="display: none;"></div>
+                <input type="button" id='image2' value='上传图集'/>
+			</td>
+		</tr>
+		<tr id="previewtr">
+			<td width="12%" align="right"></td>
+			<td colspan="3" id="picshow">
+				<notempty name='info'>
+					<foreach name="info['picurl']" item="vo" >
+						<img src="<{$vo}>" style="width:150px;height:100px;margin-left:10px;margin-top:10px;"/>
+					</foreach>
+				<else/>
+					<img src="/public/images/pview.gif" id="preview2" style='max-height:200px'/>
+				</notempty>
+			</td>
+		</tr>
+
+	</table>
+	<div style="margin-top:3px;">
+		摘要：
+		<textarea name="content" id="ueditor_contents" cols="" rows="10" style='height:300px;width:100%'><{$info['content']}></textarea>
+	</div>
+	<center>
+		<input type="submit" value="提 交" class="sunjoin large"/>
+	</center>
+</form>
+<script type="text/javascript" charset="utf-8" src="/public/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/public/ueditor/ueditor.all.min.js"> </script>
+<script type="text/javascript">
+	(function($) {
+        var image = {
+            editor: null,
+            init: function(editorid, keyid) {
+                var _editor = this.getEditor(editorid);
+                _editor.ready(function() {
+                    // _editor.hide();
+                    _editor.addListener('beforeInsertImage', function(t, args) {
+                        $("#" + keyid).val(args[0].src);
+                        $("#preview").attr('src',args[0].src);
+                    });
+                });
+            },
+            getEditor: function(editorid) {
+                this.editor = UE.getEditor(editorid);
+                return this.editor;
+            },
+            show: function(id) {
+                var _editor = this.editor;
+                //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）
+                //和网上一些朋友的代码不同之处就在这里
+                $("#" + id).click(function() {
+                    var image = _editor.getDialog("insertimage");
+                    image.render();
+                    image.open();
+                });
+            },
+            render: function(editorid) {
+                var _editor = this.getEditor(editorid);
+                _editor.render();
+            }
+        };
+        var pics = {
+            editor: null,
+            init: function(editorid, keyid) {
+                var _editor = this.getEditor(editorid);
+                _editor.ready(function() {
+                    // _editor.hide();
+                    _editor.addListener('beforeInsertImage', function(t, args) {
+                    	for (var i = 0; i < args.length; i++) {
+                    		$("#picurl").append('<input name="picurl[]" type="hidden" style="width: 300px"'+
+                    		 'value="'+args[i].src+'" />')
+	                        // $("#" + keyid).val(args[i].src);
+	                        $("#picshow").append('<img style="width:150px;height:100px;margin-left:10px;margin-top:10px;" src="'+args[i].src+'" />');
+                    	};
+                    });
+                });
+            },
+            getEditor: function(editorid) {
+                this.editor = UE.getEditor(editorid);
+                return this.editor;
+            },
+            show: function(id) {
+                var _editor = this.editor;
+                //注意这里只需要获取编辑器，无需渲染，如果强行渲染，在IE下可能会不兼容（切记）
+                //和网上一些朋友的代码不同之处就在这里
+                $("#" + id).click(function() {
+                    var image = _editor.getDialog("insertimage");
+                    image.render();
+                    image.open();
+                });
+            },
+            render: function(editorid) {
+                var _editor = this.getEditor(editorid);
+                _editor.render();
+            }
+        };
+        $(function() {
+            image.init("myeditor", "upload");
+            image.show("image");
+
+            // 相片集-上传
+            pics.init("myeditor2", "upload2");
+            pics.show("image2");
+        });
+    })(jQuery);
+    window.UEDITOR_HOME_URL = "/public/ueditor/";
+    ue1 = UE.getEditor('ueditor_contents');
+</script>
+
+<include file="Common:footer" />
