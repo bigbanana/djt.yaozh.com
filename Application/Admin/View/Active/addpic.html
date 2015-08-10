@@ -38,7 +38,7 @@ function CheckSubmit()
 			<td colspan="3" id="picurl">
 				<notempty name='info'>
 					<foreach name="info['picurl']" item="vo" >
-						<input id="upload2" name='delurl' type="hidden" style='width: 300px' value="<{$vo}>" />
+						<input name='delurl' type="hidden" style='width: 300px' value="<{$vo}>" />
 					</foreach>
 				<else/>
 					<input id="upload2" name='picurl' type="hidden" style='width: 300px' value="<{$info['picurl']}>" />
@@ -53,7 +53,7 @@ function CheckSubmit()
 			<td colspan="3" id="picshow">
 				<notempty name='info'>
 					<foreach name="info['picurl']" item="vo" >
-						<img src="<{$vo}>" id="preview2"  style="width:150px;height:100px;margin-left:10px;margin-top:10px;"/>
+						<img src="<{$vo}>" style="width:150px;height:100px;margin-left:10px;margin-top:10px;"/>
 					</foreach>
 				<else/>
 					<img src="/public/images/pview.gif" id="preview2" style='max-height:200px'/>
