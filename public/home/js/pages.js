@@ -22,6 +22,7 @@ define(['jquery','TweenMax','browser','jquery.validate','jquery.waypoints','jque
 
     $sliderbox.find('img').width($body.width());
     $sliderbox.sliderbox({eventType:'mouseover'});
+    $sliderbox.append($sliderbox.nextAll());
     $banner.on('click','.arrow-left',function(){
       $sliderbox.sliderbox('prev');
     });

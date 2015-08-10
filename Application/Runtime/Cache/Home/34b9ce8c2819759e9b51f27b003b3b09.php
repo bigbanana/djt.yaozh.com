@@ -108,6 +108,21 @@
           </div> 
         </form>
     </div>
+    <div class="w1 int">
+      <!--顾问风采-->
+      <div class=" w mbr">
+        <div class="w1 mb">
+          <h1><span class="title">顾问风采</span></h1>
+          <div class="mbs">
+
+
+
+            <p class="fs20 tc" style="margin: 80px 0;">暂无会员</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
    
 <!--foot-->

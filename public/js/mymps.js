@@ -15,10 +15,6 @@ var is_opera = userAgent.indexOf('opera') != -1 && opera.version();
 var is_moz = (navigator.product == 'Gecko') && userAgent.substr(userAgent.indexOf('firefox') + 8, 3);
 var is_ie = (userAgent.indexOf('msie') != -1 && !is_opera) && userAgent.substr(userAgent.indexOf('msie') + 5, 3);
 
-Array.prototype.push = function(value) {
-	this[this.length] = value;
-	return this.length;
-}
 
 function AllCheck(type, form, value, checkall, changestyle) {
 	var checkall = checkall ? checkall : 'chkall';
