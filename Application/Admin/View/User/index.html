@@ -9,6 +9,7 @@
         <tbody><tr class="firstr">
           <td width="60">ID</td>
           <td>名称</td>
+          <td>类型</td>
           <td>职位</td>
           <td>公司</td>
           <td>操作</td>
@@ -19,6 +20,19 @@
         <tr bgcolor="white">
           <td><label><?=$vo['id']?></label></td>
           <td align="left"><?=$vo['name']?></td>
+          <td align="left">
+          <?php
+            if($vo['type']==1) echo "顾问";
+            elseif($vo['type']==2) echo "专家";
+            elseif($vo['type']==3) echo "领导";
+            else echo "会员";
+          ?>
+            <!-- <if condition="$list['type'] eq 3">领导
+            <elseif condition="$list['type'] eq 1">顾问
+            <elseif condition="$list['type'] eq 2">专家
+            <else />会员
+            </if> -->
+          </td>
           <td align="left"><?=$vo['duty']?></td>
           <td align="left"><?=$vo['company']?></td>
           <td align="center"><a href="<{:U('News/index')}>?user_id=<?=$vo['id']?>&user_news_type=1">动态</a> / <a href="<{:U('News/index')}>?user_id=<?=$vo['id']?>&user_news_type=2">报道</a> / <a href="<{:U('add')}>?id=<?=$vo['id']?>">编辑</a> / <a href="<{:U('delete')}>?id=<?=$vo['id']?>" onclick="if(!confirm('确定要删除吗？\n\n此操作不可以恢复！'))return false;">删除</a>
