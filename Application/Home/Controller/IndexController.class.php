@@ -236,8 +236,17 @@ class IndexController extends BaseController
     }
     public function video()
     {
-        $this->banner = M('adv')->where(array('adv_id' => '3', 'status' => 1))->getField('pic');
-        // $this->lists = M('Pic')->select();
+        $this->banner = M('adv')->where(array('adv_id' => '3', 'status' => 1))->getField('pic');        
+        $listRows = 6;    
+        $count = M('Video')->count();
+        $p = new Page($count, $listRows);
+        $this->lists = M('Video')->order('time desc')->limit($p->firstRow . ',' . $p->listRows)->select();
+        $this->page = $p->show();
+        $this->display();
+    }
+    public function videoDetail()
+    {
+        $this->detail = M('Video')->where('id='.I('GET.id'))->getField('url');
         $this->display();
     }
 
