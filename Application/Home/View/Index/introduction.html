@@ -58,9 +58,9 @@
         <div class="w1 mb">
           <h1><span class="title">发起单位</span></h1>
           <div class="link-list">
-            <a href="#">单位一</a>
-            <a href="#">单位二</a>
-            <a href="#">单位三</a>
+          <volist name="company" id="vo">
+            <a href="<{:U('newsDetail')}>?id=<{$vo.id}>"><{$vo.title}></a>
+          </volist>
           </div>
         </div>
       </div>
@@ -70,9 +70,9 @@
         <div class="w1 mb">
           <h1><span class="title">发起人</span></h1>
           <div class="link-list">
-            <a href="#">张三</a>
-            <a href="#">李四</a>
-            <a href="#">王五</a>
+          <volist name="who" id="vo">
+            <a href="<{:U('newsDetail')}>?id=<{$vo.id}>"><{$vo.title}></a>
+          </volist>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@
         <div class="w1 mb">
           <h1><span class="title">专家风采</span></h1>
           <div class="mbs">
-            <?php foreach ($users as $user): ?>
+            <?php foreach ($user as $user): ?>
               <a href="/index/user/id/<{$user.id}>" target="_blank">
                 <div class="mbs-x">
                   <div class="img">

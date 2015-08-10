@@ -103,7 +103,11 @@ class IndexController extends BaseController
     {
         $this->condition = 2;
         $this->banner = M('adv')->where(array('adv_id' => '2', 'status' => 1))->getField('pic');
-        $this->users = M('User')->order('sort desc')->select();
+        $this->company = M('news')->where(array('status' => 1, 'type' => 3, 'user_id' => 0))->order('create_time desc')->select();
+        $this->who = M('news')->where(array('status' => 1, 'type' => 4, 'user_id' => 0))->order('create_time desc')->select();
+        $this->user = M('User')->where('type=2')->order('sort desc')->limit(15)->select();
+        $this->users = M('User')->where('type=1')->order('sort desc')->limit(15)->select();
+       
         $this->display();
     }
 
@@ -206,6 +210,22 @@ class IndexController extends BaseController
         $this->banner = M('adv')->where(array('adv_id' => '4', 'status' => 1))->getField('pic');
         $this->list = $list;
         $this->page = $p->show();
+        $this->display();
+    }
+    public function album()
+    {
+        $this->banner = M('adv')->where(array('adv_id' => '3', 'status' => 1))->getField('pic');
+        $listRows = 1;    
+        $count = M('Pic')->count();
+        $p = new Page($count, $listRows);
+        $this->lists = M('Pic')->order('time desc')->limit($p->firstRow . ',' . $p->listRows)->select();
+        $this->page = $p->show();
+        $this->display();
+    }
+    public function video()
+    {
+        $this->banner = M('adv')->where(array('adv_id' => '3', 'status' => 1))->getField('pic');
+        // $this->lists = M('Pic')->select();
         $this->display();
     }
 

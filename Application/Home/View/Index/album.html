@@ -22,48 +22,18 @@
     <div class="w1 int intr-p">
       <h1><span class="title">药智精英俱乐部相册</span> <span class="en">PHOTOS ALBUM</span></h1>
       <div class="photo-list">
-        <a class="item" href="#">
-          <img src="/public/home/images/video-test.png">
-          <span class="text">
-            <span class="text-overflow">药智精英俱乐部成立大会</span>
-            <span class="arrow">》</span>
-          </span>
-        </a>
-        <a class="item" href="#">
-          <img src="/public/home/images/video-test.png">
-          <span class="text">
-            <span class="text-overflow">药智精英俱乐部成立大会</span>
-            <span class="arrow">》</span>
-          </span>
-        </a>
-        <a class="item" href="#">
-          <img src="/public/home/images/video-test.png">
-          <span class="text">
-            <span class="text-overflow">药智精英俱乐部成立大会</span>
-            <span class="arrow">》</span>
-          </span>
-        </a>
-        <a class="item" href="#">
-          <img src="/public/home/images/video-test.png">
-          <span class="text">
-            <span class="text-overflow">药智精英俱乐部成立大会</span>
-            <span class="arrow">》</span>
-          </span>
-        </a>
-        <a class="item" href="#">
-          <img src="/public/home/images/video-test.png">
-          <span class="text">
-            <span class="text-overflow">药智精英俱乐部成立大会</span>
-            <span class="arrow">》</span>
-          </span>
-        </a>
-        <a class="item" href="#">
-          <img src="/public/home/images/video-test.png">
-          <span class="text">
-            <span class="text-overflow">药智精英俱乐部成立大会</span>
-            <span class="arrow">》</span>
-          </span>
-        </a>
+        <volist name="lists" id="vo">
+          <a class="item" href="<{:U('albumDetail')}>?id=<{$vo.id}>">
+            <img src="<{$vo.smallpic}>">
+            <span class="text">
+              <span class="text-overflow"><{$vo.title}></span>
+              <span class="arrow">》</span>
+            </span>
+          </a>
+        </volist>
+      </div>
+      <div class="quotes">
+          <{$page}>
       </div>
     </div>
   </div>
