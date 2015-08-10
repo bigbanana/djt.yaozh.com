@@ -17,20 +17,26 @@
   <div class="w intr mt20">
     <div class="w1 int album-detail">
       <div class="info">
-        <img class="img" src="/public/home/images/album-detail.png">
+        <img class="img" src="<{$pic.smallpic}>">
         <div class="title">
-          <span>药智精英俱乐部成立大会</span>
-          <span class="small">14张/2015-09-01</span>
+          <span><{$pic.title}></span>
+          <span class="small"><{$count}>张/<{$pic.time|date='Y-m-d',###}></span>
         </div>
-        <div class="summary">7月29日，由药智精英俱乐部主办，万全中国、川渝合作（广安）医药产业圆、中国医药城协办的药智精英俱乐部成立大会在成都城市名人酒店隆重召开...</div>
+        <div class="summary"><{$pic.content|htmlspecialchars_decode}></div>
       </div>
       <div class="gallery">
-        <a class="img first" data-lightbox="detail" href="/public/home/images/album-detail.png"><img src="/public/home/images/album-detail.png" alt=""></a>
-        <a class="img" data-lightbox="detail" href="/public/home/images/album-detail.png"><img src="/public/home/images/album-detail.png"></a>
-        <a class="img" data-lightbox="detail" href="/public/home/images/album-detail.png"><img src="/public/home/images/album-detail.png"></a>
-        <a class="img" data-lightbox="detail" href="/public/home/images/album-detail.png"><img src="/public/home/images/album-detail.png"></a>
-        <a class="img" href="javascript:;"></a>
-        <a class="img" href="javascript:;"></a>
+      <volist name="lists" id="vo" key="k">
+        <?php
+          if ($k==1) {
+            echo '<a class="img first" data-lightbox="detail" href="'.$vo['picurl'].'"><img src="'.$vo['picurl'].'" alt=""></a>';
+          }else{
+            echo '<a class="img" data-lightbox="detail" href="'.$vo['picurl'].'"><img src="'.$vo['picurl'].'" alt=""></a>';
+          }
+        ?>
+      </volist>
+      </div>
+      <div class="quotes">
+          <{$page}>
       </div>
     </div>
   </div>

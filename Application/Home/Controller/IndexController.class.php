@@ -215,10 +215,22 @@ class IndexController extends BaseController
     public function album()
     {
         $this->banner = M('adv')->where(array('adv_id' => '3', 'status' => 1))->getField('pic');
-        $listRows = 1;    
+        $listRows = 6;    
         $count = M('Pic')->count();
         $p = new Page($count, $listRows);
         $this->lists = M('Pic')->order('time desc')->limit($p->firstRow . ',' . $p->listRows)->select();
+        $this->page = $p->show();
+        $this->display();
+    }
+    public function albumDetail()
+    {
+        $pid = I('GET.id');
+        $this->pic = M('Pic')->where('id='.$pid)->order('time desc')->find();
+        $listRows = 6;
+        $count = M('Picshow')->where('pid='.$pid)->count();
+        $this->count = $count;
+        $p = new Page($count, $listRows);
+        $this->lists = M('Picshow')->where('pid='.$pid)->limit($p->firstRow . ',' . $p->listRows)->select();
         $this->page = $p->show();
         $this->display();
     }
