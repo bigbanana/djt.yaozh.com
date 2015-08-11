@@ -111,7 +111,11 @@ function CheckSubmit()
         });
     })(jQuery);
     window.UEDITOR_HOME_URL = "/public/ueditor/";
-    ue1 = UE.getEditor('ueditor_contents');
+    ue1 = UE.getEditor('ueditor_contents', {
+          toolbars: [
+               ['undo','redo','|' ,'bold','italic','underline','|','superscript', 'subscript','|','forecolor','backcolor','removeformat','insertorderedlist','insertunorderedlist','|','simpleupload','insertimage','|','selectall','cleardoc','paragraph','|','fontfamily', 'fontsize','|','justifyleft','justifycenter','justifyright','justifyjustify','|','horizontal','preview','fullscreen','link', 'unlink', 'emotion','formula','source']
+          ]
+    });
 </script>
 
 <include file="Common:footer" />
