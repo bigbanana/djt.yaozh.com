@@ -310,7 +310,7 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 .us-o .us-o-x{ font-size:20px; color:#fff;}
 .lct_img{ text-align:center;}
 
-.attls { background:#f9f9fa;}
+.attls { /* background:#f9f9fa; */}
 .attls .al-s{ overflow:hidden; _height:1%}
 .attls h2{ font-size:24px; font-weight:normal; color:#03a9f4}
 .attls .al-sh2{ color:#404040; font-size:20px; padding-top:5px}
