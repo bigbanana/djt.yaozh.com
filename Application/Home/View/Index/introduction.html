@@ -56,7 +56,7 @@
 <!-- 发起单位 -->
   <div class=" w mbr">
         <div class="w1 mb">
-          <h1><span class="title">发起单位</span></h1>
+          <h1><span class="title">发起单位</span> <span class="en">INITIATION   COMPANY</span></h1>
           <div class="link-list">
           <volist name="company" id="vo">
             <a href="<{:U('newsDetail')}>?id=<{$vo.id}>"><{$vo.title}></a>
@@ -68,7 +68,7 @@
 <!-- 发起人 -->
   <div class=" w mbr">
         <div class="w1 mb">
-          <h1><span class="title">发起人</span></h1>
+          <h1><span class="title">发起人</span> <span class="en">SPONSOR</span></h1>
           <div class="link-list">
           <volist name="who" id="vo">
             <a href="<{:U('newsDetail')}>?id=<{$vo.id}>"><{$vo.title}></a>
@@ -80,7 +80,7 @@
 <!--专家风采-->
   <div class=" w mbr">
         <div class="w1 mb">
-          <h1><span class="title">专家风采</span></h1>
+          <h1><span class="title">专家风采</span> <span class="en">CONSULTANTS PROFILE</span></h1>
           <div class="mbs">
             <?php foreach ($user as $user): ?>
               <a href="/index/user/id/<{$user.id}>" target="_blank">
@@ -103,7 +103,7 @@
 <!--顾问风采-->
   <div class=" w mbr">
         <div class="w1 mb">
-          <h1><span class="title">顾问风采</span></h1>
+          <h1><span class="title">顾问风采</span> <span class="en">EXPERTS PROFILE</span></h1>
           <div class="mbs">
             <?php foreach ($users as $user): ?>
               <a href="/index/user/id/<{$user.id}>" target="_blank">
