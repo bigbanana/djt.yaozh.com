@@ -475,5 +475,5 @@ div.quotes span.disabled {border-right: #f3f3f3 1px solid;padding-right: 5px;bor
 .album-detail .gallery .img.first {width: 730px; height: 540px; }
 
 .album-detail .gallery .img img {width: 100%; height: 100%; }
-.album-detail .gallery {overflow: hidden; padding: 0 40px 0 50px; margin-top:60px;}
+.album-detail .gallery {overflow: hidden; padding: 40px 40px 40px 50px;background-color: #f9f9fa}
 .link-list a {font-size: 16px; font-weight: 700; margin: 10px; }
