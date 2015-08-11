@@ -76,34 +76,11 @@
           </div>
         </div>
       </div>
-
-<!--专家风采-->
-  <div class=" w mbr">
-        <div class="w1 mb">
-          <h1><span class="title">专家风采</span> <span class="en">CONSULTANTS PROFILE</span></h1>
-          <div class="mbs">
-            <?php foreach ($user as $user): ?>
-              <a href="/index/user/id/<{$user.id}>" target="_blank">
-                <div class="mbs-x">
-                  <div class="img">
-                    <img src="<{$user.pic_title_cycle}>@1e_140w_140h_1c_0i_1o_90Q_1x.jpg">
-                  </div>
-                  <h3><{$user.name}></h3>
-                  <h4>（<{$user.duty}>）</h4>
-                  <div class="mbs-x-span ">
-                    <span><{$user.duty2}></span>
-                  </div>
-                </div>
-              </a>
-              <?php endforeach ?>
-          </div>
-        </div>
-      </div>
       
 <!--顾问风采-->
   <div class=" w mbr">
         <div class="w1 mb">
-          <h1><span class="title">顾问风采</span> <span class="en">EXPERTS PROFILE</span></h1>
+          <h1><span class="title">顾问风采</span> <span class="en">CONSULTANTS PROFILE</span></h1>
           <div class="mbs">
             <?php foreach ($users as $user): ?>
               <a href="/index/user/id/<{$user.id}>" target="_blank">
@@ -122,7 +99,30 @@
           </div>
         </div>
       </div>
-      
+
+<!--专家风采-->
+  <div class=" w mbr">
+        <div class="w1 mb">
+          <h1><span class="title">专家风采</span> <span class="en">EXPERTS PROFILE</span></h1>
+          <div class="mbs">
+            <?php foreach ($user as $user): ?>
+              <a href="/index/user/id/<{$user.id}>" target="_blank">
+                <div class="mbs-x">
+                  <div class="img">
+                    <img src="<{$user.pic_title_cycle}>@1e_140w_140h_1c_0i_1o_90Q_1x.jpg">
+                  </div>
+                  <h3><{$user.name}></h3>
+                  <h4>（<{$user.duty}>）</h4>
+                  <div class="mbs-x-span ">
+                    <span><{$user.duty2}></span>
+                  </div>
+                </div>
+              </a>
+              <?php endforeach ?>
+          </div>
+        </div>
+      </div>
+            
 <!--foot-->
   <include file="common/footer"/> 
 </div>
