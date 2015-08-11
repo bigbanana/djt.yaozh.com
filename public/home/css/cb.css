@@ -109,7 +109,7 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 .to .item .subnav .arrow-top{border-bottom-color:#fff;_border-bottom-style:solid;z-index:2;top:1px;}
 .to .item .subnav .arrow-bottom{border-bottom-color:#ccc;_border-bottom-style:solid;z-index:1;}
 
-.to .item .subnav ul{list-style:none;padding:10px 0;background-color: #fff;border:1px solid #ddd;border-radius: 3px;}
+.to .item .subnav ul{list-style:none;padding:10px 0;background-color: #fff;border:1px solid #ddd;border-radius: 3px;text-align: center;}
 .to .item .subnav .sname{padding:0 14px;_zoom:1;}
 .to .item .subnav .sname:hover{color: #00aeff;}
 
