@@ -310,7 +310,7 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 .us-o .us-o-x{ font-size:20px; color:#fff;}
 .lct_img{ text-align:center;}
 
-.attls { background:#f9f9fa;}
+.attls { /* background:#f9f9fa; */}
 .attls .al-s{ overflow:hidden; _height:1%}
 .attls h2{ font-size:24px; font-weight:normal; color:#03a9f4}
 .attls .al-sh2{ color:#404040; font-size:20px; padding-top:5px}
@@ -345,7 +345,7 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 .dow a{ display:block; font-size:14px; color:#2672ec; margin-top:20px; font-weight:700;}
 .dow h3{ font-size:15px; color:#404040}
 
-.mbs-x{ overflow:hidden; text-align:center;font-size:14px; float:left; width:210px; margin: 0 10px; height:auto;}
+.mbs-x{ overflow:hidden; text-align:center;font-size:14px; float:left; width:210px; margin: 10px; height:auto;}
 .mbs-x h3{ font-size:18px; padding:5px 0; color:#404040}
 .mbs-x h4{ font-size:14px; padding:2px 0; color:#606060}
 .mbs-x-span span{ display:block; color:#606060;opacity: 0;filter:alpha(opacity=0);transition:0.5s opacity;}
