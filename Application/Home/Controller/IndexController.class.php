@@ -53,6 +53,7 @@ class IndexController extends BaseController
             echo json_encode($result);
         } else {
             $this->condition = 5;
+            $this->users = M('User')->where('type=0')->order('sort desc')->select();
             $this->display();
         }
     }

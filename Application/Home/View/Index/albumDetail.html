@@ -32,8 +32,15 @@
           }else{
             echo '<a class="img" data-lightbox="detail" href="'.$vo['picurl'].'"><img src="'.$vo['picurl'].'" alt=""></a>';
           }
+        
+          // echo '<a class="img" data-lightbox="detail" href="javascript:void(0)"></a>';
         ?>
       </volist>
+      <?php
+      for($i=0;$i<6-count($lists);$i++){
+            echo '<a class="img" data-lightbox="detail" href="javascript:void(0)"></a>';
+          }
+      ?>
       </div>
       <div class="quotes">
           <{$page}>
