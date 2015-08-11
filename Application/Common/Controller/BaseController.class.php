@@ -59,7 +59,7 @@ class BaseController extends Controller
             $this->title = M('site')->where(array('name' => 'title'))->getField('value');
             $this->keyword = M('site')->where(array('name' => 'keywords'))->getField('value');
             $this->description = M('site')->where(array('name' => 'description'))->getField('value');
-            $topNav = M('nav')->where(array('type' => '顶部导航'))->select();
+            $topNav = M('nav')->where(array('type' => '顶部导航'))->order('sort asc')->select();
             $bottomNav = M('nav')->where(array('type' => '底部导航'))->select();
             $this->topNav = unlimitListTree($topNav);
             $this->bottomNav = unlimitListTree($bottomNav);
