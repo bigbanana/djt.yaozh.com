@@ -207,7 +207,7 @@
 <!--Member-->
   <div class=" w mbr">
     <div class="w1 mb">
-      <h1><span class="title">俱乐部领导风采</span></h1>
+      <h1><span class="title">俱乐部领导风采</span> <span class="en">LEADERS OF THE CLUB</span></h1>
       <div class="mbs">
         <?php foreach ($users as $user): ?>
         <a href="/index/user/id/<?php echo ($user["id"]); ?>" target="_blank">
