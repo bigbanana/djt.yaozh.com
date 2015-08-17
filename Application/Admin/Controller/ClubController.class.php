@@ -16,7 +16,7 @@ class ClubController extends BaseController
             'type' => 3,
             'status' => 1,
         );
-        $this->_list(M('news'), $map);
+        $this->_list(M('news'), $map,$sortBy='sort');
         $this->display();
     }
 
@@ -71,7 +71,7 @@ class ClubController extends BaseController
             'type' => 4,
             'status' => 1,
         );
-        $this->_list(M('news'), $map);
+        $this->_list(M('news'), $map,$sortBy='sort');
         $this->display();
     }
 

@@ -104,8 +104,8 @@ class IndexController extends BaseController
     {
         $this->condition = 2;
         $this->banner = M('adv')->where(array('adv_id' => '2', 'status' => 1))->getField('pic');
-        $this->company = M('news')->where(array('status' => 1, 'type' => 3, 'user_id' => 0))->order('create_time desc')->select();
-        $this->who = M('news')->where(array('status' => 1, 'type' => 4, 'user_id' => 0))->order('create_time desc')->select();
+        $this->company = M('news')->where(array('status' => 1, 'type' => 3, 'user_id' => 0))->order('sort desc')->select();
+        $this->who = M('news')->where(array('status' => 1, 'type' => 4, 'user_id' => 0))->order('sort desc')->select();
         $this->user = M('User')->where('type=2')->order('sort desc')->limit(15)->select();
         $this->users = M('User')->where('type=1')->order('sort desc')->limit(15)->select();
        

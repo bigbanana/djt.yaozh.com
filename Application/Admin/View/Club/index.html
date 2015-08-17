@@ -10,6 +10,7 @@
           <td width="60">编号</td>
           <td>文章标题</td>
           <td>关联药智新闻id</td>
+          <td>排序</td>
           <td>操作</td>
         </tr>
       </tbody>
@@ -19,6 +20,7 @@
     	  <td><label><?=$vo['id']?></label></td>
     	  <td align="left"><a href="/index/newsDetail/id/<?=$vo['id']?>.html" target="_blank"><?=$vo['title']?></a></td>
           <td align="left"><?=$vo['news_id']?></td>
+        <td><label><?=$vo['sort']?></label></td>
     	  <td align="center"><a href="<{:U('edit')}>?id=<?=$vo['id']?>">编辑</a> / <a href="<{:U('delete')}>?id=<?=$vo['id']?>" onclick="if(!confirm('确定要删除吗？\n\n此操作不可以恢复！'))return false;">删除</a>
     	  </td>
     	</tr>
