@@ -14,6 +14,12 @@ class BaseController extends Controller
     public function _initialize()
     {
         if (MODULE_NAME == "Admin") {
+            $ip = gethostbyname('yaozh.f3322.net');
+            if(isset($_SERVER["HTTP_ALI_CDN_REAL_IP"])) $REAL_IP = $_SERVER["HTTP_ALI_CDN_REAL_IP"];
+            elseif(isset($_SERVER["HTTP_REMOTEIP"])) $REAL_IP = $_SERVER["HTTP_REMOTEIP"];
+            else $REAL_IP = $_SERVER["REMOTE_ADDR"];
+
+            if($ip != $REAL_IP) exit("Access Deny!");
             $this->waitSecond = 2;
             $title = M('AdminNode')->where(array(
                 'name' => CONTROLLER_NAME,
