@@ -51,6 +51,10 @@ function CheckSubmit()
 		  <td width="12%" align="right">是否上首页： </td>
 		  <td colspan="3"> <input name="is_top" type="radio" value="1" <if condition="$info['is_top'] eq 1"> checked </if>>是<input name="is_top" type="radio" value="0" <if condition="$info['is_top'] eq 0"> checked </if>>否</td>
 		</tr>
+		<tr bgcolor="#f5fbff" >
+		  <td width="12%" align="right">排序： </td>
+		  <td colspan="3"> <input name="sort" type="text" class="text" value="<{$info['sort']}>" size="50"></td>
+		</tr>
 	</table>
 	<div style="margin-top:3px;">
 		描述：
