@@ -133,7 +133,7 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 }
 .banner .arrow-left{left:40px;}
 .banner .arrow-right{right:40px;}
-.banner .ui-sliderbox-box a{display:inline-block;height:300px;}
+.banner .ui-sliderbox-box a{display:block;height:300px;}
 .banner .ui-sliderbox-box img{width:1800px;height:300px;}
 .banner .ui-sliderbox-control{width:100%;text-align: center;bottom: 20px;}
 .banner .ui-sliderbox-control a{
