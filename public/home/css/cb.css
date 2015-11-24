@@ -122,7 +122,7 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 
 
 .banner{overflow:hidden;position: relative;}
-.banner .sliderbox{height: 300px;}
+.banner .sliderbox{height: 440px;}
 .banner .fa{
   position: absolute;top:50%;
   color: #fff;
@@ -133,8 +133,8 @@ ul.square li{background: url(../../images/square.png) 0 center no-repeat transpa
 }
 .banner .arrow-left{left:40px;}
 .banner .arrow-right{right:40px;}
-.banner .sliderbox a{display:block;height:300px;}
-.banner .sliderbox img{width:1800px;height:300px;}
+.banner .sliderbox a{display:block;height:440px;}
+.banner .sliderbox img{width:1800px;height:440px;}
 .banner .ui-sliderbox-control{width:100%;text-align: center;bottom: 20px;}
 .banner .ui-sliderbox-control a{
   display: inline-block;height: 20px;width:20px;
