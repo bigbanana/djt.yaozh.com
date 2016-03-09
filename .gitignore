@@ -18,7 +18,6 @@
 *.mht
 *.db
 *.config
-*.swf
 *.ico
 *.hhc
 *.txt
@@ -45,3 +44,4 @@ index.php
 nbproject/*
 public/ueditor/php/*
 public/ueditor/third-party/snapscreen/*
+static/node_modules
