@@ -675,7 +675,8 @@ section.main:after {
   text-align: center;
 }
 .js-list .actions {
-  margin: 16px 32px;
+  text-align: center;
+  margin: 16px 8px;
   color: #999;
 }
 .js-list .summary {
@@ -1076,6 +1077,53 @@ section.main:after {
 }
 .homepage .main {
   margin: 0 auto;
+}
+.homepage .banner {
+  height: 400px;
+  position: relative;
+}
+.homepage .banner .item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  opacity: 0;
+}
+.homepage .banner .item.active {
+  opacity: 1;
+  z-index: 2;
+}
+.homepage .banner img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1900px;
+  height: 400px;
+  margin-left: -950px;
+}
+.homepage .banner .control {
+  position: absolute;
+  z-index: 10;
+  bottom: 8px;
+  left: 50%;
+  width: 200px;
+  text-align: center;
+  margin-left: -100px;
+}
+.homepage .banner .control a {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: #fff;
+  margin: 0 6px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.homepage .banner .control a.active {
+  background: #15c288;
 }
 .listpage .zbyg {
   border-top: 3px solid #15c288;

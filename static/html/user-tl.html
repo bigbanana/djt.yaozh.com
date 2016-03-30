@@ -8,9 +8,13 @@
     <script src="//static.yaozh.com/js/app.js"></script>
     <script src="/static/js/config.js"></script>
     <script>
-      var server = {
-        date : 1458199645946
+      var ENV = {
+        baseTime: 1458199645946
       }
+      ENV.getServerTime = (function(){
+        var space = new Date().getTime() - ENV.baseTime;
+        return function(){return new Date(new Date().getTime()-space);}
+      })();
     </script>
     <!--[if lt IE 9]><script src="http://static.yaozh.com/js/special/html5shiv.js"></script><![endif]-->
 </head>

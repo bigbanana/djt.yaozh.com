@@ -8,9 +8,13 @@
     <script src="//static.yaozh.com/js/app.js"></script>
     <script src="/static/js/config.js"></script>
     <script>
-      var server = {
-        date : 1458199645946
+      var ENV = {
+        baseTime: 1458199645946
       }
+      ENV.getServerTime = (function(){
+        var space = new Date().getTime() - ENV.baseTime;
+        return function(){return new Date(new Date().getTime()-space);}
+      })();
     </script>
     <!--[if lt IE 9]><script src="http://static.yaozh.com/js/special/html5shiv.js"></script><![endif]-->
   <script>
@@ -60,36 +64,36 @@
       <div class="kc-label">直播课程</div>
       <div class="kc-logo">
         <img src="/static/images/u95.png">
-        <div class="date" data-time="1463673600000">
+        <div class="date">
           <div class="bg"></div>
           <div class="fg">
             <span class="text-djs">倒计时</span>
-            <div class="countdown">
+            <div class="countdown" data-time="1463673600000">
               <div class="group">
                 <div class="num">
-                  <span>0</span>
-                  <span>5</span>
+                  <span>-</span>
+                  <span>-</span>
                 </div>
                 <div class="unit">日</div>
               </div>
               <div class="group">
                 <div class="num">
-                  <span>2</span>
-                  <span>1</span>
+                  <span>-</span>
+                  <span>-</span>
                 </div>
                 <div class="unit">时</div>
               </div>
               <div class="group">
                 <div class="num">
-                  <span>3</span>
-                  <span>1</span>
+                  <span>-</span>
+                  <span>-</span>
                 </div>
                 <div class="unit">分</div>
               </div>
               <div class="group">
                 <div class="num">
-                  <span>0</span>
-                  <span>9</span>
+                  <span>-</span>
+                  <span>-</span>
                 </div>
                 <div class="unit">秒</div>
               </div>
@@ -131,7 +135,7 @@
     <div class="clearfix offset-top">
       <div class="main-left">
         <div class="kctab">
-          <div class="kctab-title" data-widget="activemenu,sticky" data-panels=".kctab-panel" data-offset="60%" data-stickyOffset="0">
+          <div class="kctab-title" data-widget="activemenu,sticky" data-panels=".kctab-panel" data-offset="40%" data-stickyOffset="0">
             <a href="javascript:;">课程简介</a>
             <a href="javascript:;">干货资源(2)</a>
             <a href="javascript:;">精彩答疑(10)</a>

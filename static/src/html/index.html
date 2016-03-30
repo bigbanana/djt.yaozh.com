@@ -2,6 +2,9 @@
 <html class="homepage" lang="en">
 <head>
   <include src="include/static.html" title="首页"></include>
+  <script>
+    require(['app.pages.home'],function(actions){actions.home()});
+  </script>
 </head>
 <body>
   <include src="include/topbar.html"></include>

@@ -17,6 +17,7 @@ require.config({
     
     //page
     "app.pages.develop": "/static/js/pages/develop",
+    "app.pages.home": "/static/js/pages/home",
     "app.pages.faq": "/static/js/pages/faq",
     "app.pages.kc": "/static/js/pages/kc",
 
